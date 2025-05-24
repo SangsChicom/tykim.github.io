@@ -1,46 +1,55 @@
- name: Update CV
- on:
-   schedule:
-     - cron: '0 0 * * *'
-   workflow_dispatch:
+name: Overleaf Sync with Git
+on:
+  schedule:
+    - cron: "0/5 * * * *"  # 5분마다 실행
+  push:
+  workflow_dispatch:
+      
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Delete Old Artifacts
+      uses: actions/github-script@v6
+      id: artifact
+      with:
+        script: |
+          const res = await github.rest.actions.listArtifactsForRepo({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+          })
 
- jobs:
-   update:
-     runs-on: ubuntu-latest
-     steps:
-       - uses: actions/checkout@v3
+          res.data.artifacts
+            .forEach(({ id }) => {
+              github.rest.actions.deleteArtifact({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                artifact_id: id,
+              })
+            })
 
-       - name: Download CV
-         run: |
-           echo "Starting CV download..."
-           
-           # API 응답 확인을 위한 디버깅
-           echo "Testing API connection..."
-           curl -v -X POST \
-             -H "Authorization: Bearer ${{ secrets.OVERLEAF_TOKEN }}" \
-             -H "Content-Type: application/json" \
-             -d '{"projectId": "${{ secrets.OVERLEAF_PROJECT_ID }}"}' \
-             https://www.overleaf.com/api/v1/projects/compile
-           
-           echo "Compilation requested, waiting..."
-           sleep 30  # 대기 시간 증가
-           
-           # PDF 다운로드 시도
-           echo "Attempting to download PDF..."
-           curl -v -X GET \
-             -H "Authorization: Bearer ${{ secrets.OVERLEAF_TOKEN }}" \
-             -H "Content-Type: application/json" \
-             https://www.overleaf.com/api/v1/projects/${{ secrets.OVERLEAF_PROJECT_ID }}/output \
-             -o static/cv.pdf
-           
-           # 파일 확인
-           echo "Checking downloaded file..."
-           ls -l static/cv.pdf
-           file static/cv.pdf
+    - name: Fetch the latest version from overleaf server
+      uses: subhamx/overleaf_sync_with_git@master
+      with:
+        OVERLEAF_PROJECT_ID: ${{ secrets.OVERLEAF_PROJECT_ID }}
+        OVERLEAF_COOKIE: ${{ secrets.OVERLEAF_COOKIE }}
 
-       - name: Deploy
-         uses: JamesIves/github-pages-deploy-action@v4
-         with:
-           branch: gh-pages
-           folder: static
-           clean: false
+    - name: Upload to Project Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: project
+        path: ./artifacts/
+
+    - uses: actions/checkout@v2
+      with:
+        path: repo/
+    
+    - run: |
+        cd repo/
+        mkdir -p overleaf_remote_src
+        cp -r ../artifacts/* ./overleaf_remote_src
+        git config user.name "Overleaf Sync Bot"
+        git config user.email "actions@github.com"
+        git add .
+        if [[ $(git diff HEAD --stat) == '' ]]; then (echo 'Working tree is clean') 
+        else (git commit -m "Sync with overleaf remote"  && git push) fi
