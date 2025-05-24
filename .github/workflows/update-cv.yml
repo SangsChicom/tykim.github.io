@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: Delete old artifacts
         run: |
-          rm -rf static/cv/cv.pdf
+          rm -rf static/cv.pdf
           
       - name: Fetch latest version from Overleaf
         uses: actions/checkout@v4
@@ -25,8 +25,7 @@ jobs:
           
       - name: Download from Overleaf
         run: |
-          mkdir -p static/cv
-          curl -L -o static/cv/cv.pdf "https://www.overleaf.com/download/project/${{ secrets.OVERLEAF_PROJECT_ID }}/build/$(curl -s -H "Cookie: overleaf_session2=${{ secrets.OVERLEAF_COOKIE }}" https://www.overleaf.com/project/${{ secrets.OVERLEAF_PROJECT_ID }}/builds | jq -r '.builds[0].outputFiles[0].url')"
+          curl -L -o static/cv.pdf "https://www.overleaf.com/download/project/${{ secrets.OVERLEAF_PROJECT_ID }}/build/$(curl -s -H "Cookie: overleaf_session2=${{ secrets.OVERLEAF_COOKIE }}" https://www.overleaf.com/project/${{ secrets.OVERLEAF_PROJECT_ID }}/builds | jq -r '.builds[0].outputFiles[0].url')"
           
       - name: Commit and push if changed
         run: |
