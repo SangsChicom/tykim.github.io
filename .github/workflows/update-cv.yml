@@ -19,20 +19,27 @@ jobs:
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'actions@github.com'
           
-      - name: Install LaTeX
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-latex-recommended
-          
       - name: Clone Overleaf repository
         run: |
           git clone https://git:${{ secrets.OVERLEAF_TOKEN }}@git.overleaf.com/${{ secrets.OVERLEAF_PROJECT_ID }} overleaf
           
-      - name: Compile LaTeX
+      - name: Install required LaTeX packages
         run: |
-          cd overleaf
-          pdflatex main.tex
-          pdflatex main.tex  # 두 번 실행하여 참조 업데이트
+          docker run --rm -v $PWD/overleaf:/compile registry.gitlab.com/islandoftex/images/texlive:latest bash -c "
+            # main.tex에서 사용된 패키지 추출
+            PACKAGES=\$(grep -o '\\\\usepackage{[^}]*}' main.tex | sed 's/\\\\usepackage{//g' | sed 's/}//g' | tr ',' '\n' | tr ' ' '\n' | grep -v '^$')
+            
+            # 각 패키지 설치
+            for pkg in \$PACKAGES; do
+              echo \"Installing package: \$pkg\"
+              tlmgr install \$pkg || true
+            done
+          "
+          
+      - name: Compile LaTeX using Overleaf's Docker image
+        run: |
+          docker run --rm -v $PWD/overleaf:/compile registry.gitlab.com/islandoftex/images/texlive:latest pdflatex main.tex
+          docker run --rm -v $PWD/overleaf:/compile registry.gitlab.com/islandoftex/images/texlive:latest pdflatex main.tex
           
       - name: Copy PDF
         run: |
