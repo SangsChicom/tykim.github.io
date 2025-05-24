@@ -2,18 +2,14 @@ name: Overleaf Sync
 
 on:
   schedule:
-    - cron: '*/5 * * * *'  # 5분마다 실행
+    - cron: '0 0 * * *'  # 매일 자정에 실행
   workflow_dispatch:  # 수동 실행 가능
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Delete old artifacts
-        run: |
-          rm -rf static/cv.pdf
-          
-      - name: Fetch latest version from Overleaf
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -23,9 +19,20 @@ jobs:
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'actions@github.com'
           
-      - name: Download from Overleaf
+      - name: Clone Overleaf repository
         run: |
-          curl -L -o static/cv.pdf "https://www.overleaf.com/download/project/${{ secrets.OVERLEAF_PROJECT_ID }}/build/$(curl -s -H "Cookie: overleaf_session2=${{ secrets.OVERLEAF_COOKIE }}" https://www.overleaf.com/project/${{ secrets.OVERLEAF_PROJECT_ID }}/builds | jq -r '.builds[0].outputFiles[0].url')"
+          git clone https://${{ secrets.OVERLEAF_GIT_TOKEN }}@git.overleaf.com/${{ secrets.OVERLEAF_PROJECT_ID }} overleaf
+          
+      - name: Compile LaTeX
+        run: |
+          cd overleaf
+          pdflatex main.tex
+          pdflatex main.tex  # 두 번 실행하여 참조 업데이트
+          
+      - name: Copy PDF
+        run: |
+          mkdir -p static
+          cp overleaf/main.pdf static/cv.pdf
           
       - name: Commit and push if changed
         run: |
