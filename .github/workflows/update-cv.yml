@@ -25,7 +25,7 @@ jobs:
           
       - name: Install required LaTeX packages
         run: |
-          docker run --rm -v $PWD/overleaf:/compile registry.gitlab.com/islandoftex/images/texlive:latest bash -c "
+          docker run --rm -v $PWD/overleaf:/compile -w /compile registry.gitlab.com/islandoftex/images/texlive:latest bash -c "
             # main.tex에서 사용된 패키지 추출
             PACKAGES=\$(grep -o '\\\\usepackage{[^}]*}' main.tex | sed 's/\\\\usepackage{//g' | sed 's/}//g' | tr ',' '\n' | tr ' ' '\n' | grep -v '^$')
             
@@ -38,8 +38,8 @@ jobs:
           
       - name: Compile LaTeX using Overleaf's Docker image
         run: |
-          docker run --rm -v $PWD/overleaf:/compile registry.gitlab.com/islandoftex/images/texlive:latest pdflatex main.tex
-          docker run --rm -v $PWD/overleaf:/compile registry.gitlab.com/islandoftex/images/texlive:latest pdflatex main.tex
+          docker run --rm -v $PWD/overleaf:/compile -w /compile registry.gitlab.com/islandoftex/images/texlive:latest pdflatex main.tex
+          docker run --rm -v $PWD/overleaf:/compile -w /compile registry.gitlab.com/islandoftex/images/texlive:latest pdflatex main.tex
           
       - name: Copy PDF
         run: |
