@@ -29,5 +29,5 @@ jobs:
           
       - name: Commit and push if changed
         run: |
-          git add static/cv/cv.pdf
+          git add static/cv.pdf
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update CV from Overleaf" && git push)
