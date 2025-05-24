@@ -1,4 +1,4 @@
-baseURL: "https://tykim.github.io" 
+baseURL: "https://sangschicom.github.io" 
 title: Taeyoung Kim
 theme: PaperMod
 
@@ -51,26 +51,20 @@ params:
     math: true
     profileMode:
           enabled: true
-          title: Professor Dr von Igelfeld
-          subtitle: "I am a Professor in the Institute of Romance Philology at the University of Regensburg, Germany. My research focuses on Portuguese irregular verbs. I was a doctoral student of Professor Dr Dieter Vogelsang in Munich, and later a second assistant of Professor Walter Schoeffler-Henschell at the University of Wiesbaden."
+          title: Taeyoung Kim
+          subtitle: "Subtitle \n subtitle2"
           imageUrl: "picture.jpeg"
           imageWidth: 160
           imageHeight: 160
           buttons:
-            - name: Papers
-              url: papers/
-            - name: Data
-              url: data/
-            - name: Books
-              url: books/
-            - name: Courses
-              url: courses/
-            - name: Tags
-              url: tags/
-            - name: Archive
-              url: archive/
+            - name: Research
+              url: research/
+            - name: Resume
+              url: resume/
+            - name: CV
+              url: cv/
             - name: Blog
-              url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
+              url: https://www.tykim.me
 
     socialIcons:
         - name: CV
