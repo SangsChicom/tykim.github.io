@@ -51,6 +51,10 @@
 {{- $license_css := (resources.Get "css/core/license.css") }}
 {{- $common := (resources.Match "css/common/*.css") | resources.Concat "assets/css/common.css" }}
 
+<!-- custom css 추가 -->
+{{ $custom := resources.Get "css/custom.css" | minify }}
+<link rel="stylesheet" href="{{ $custom.RelPermalink }}">
+
 {{- /* markup.highlight.noClasses should be set to `false` */}}
 {{- $chroma_styles := (resources.Get "css/includes/chroma-styles.css") }}
 {{- $chroma_mod := (resources.Get "css/includes/chroma-mod.css") }}

@@ -39,4 +39,5 @@ share 에서 link share 되어있는지 확인
 https://github.com/marketplace/actions/overleaf-sync-with-git
 
 
-
+# git 관련
+   git reset --hard HEAD

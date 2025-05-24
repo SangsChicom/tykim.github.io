@@ -52,43 +52,45 @@ params:
     profileMode:
           enabled: true
           title: Taeyoung Kim
-          subtitle: "Subtitle \n subtitle2"
+          subtitle: 
           imageUrl: "picture.jpeg"
           imageWidth: 160
           imageHeight: 160
           buttons:
-            - name: Research
+            - name: Research Project
               url: research/
-            - name: Resume
-              url: resume/
-            - name: CV
-              url: cv/
+            - name: Publication
+              url: publication/
+            - name: CV/Resume
+              url: cv-resume/
+            - name: News
+              url: news/
             - name: Blog
               url: https://www.tykim.me
 
     socialIcons:
-        - name: CV
-          url: cv.pdf
+        # - name: CV
+          # url: cv.pdf
         - name: Email
-          url: mailto:igelfeld@regensburg.edu
-        - name: Zoom
-          url: https://www.zoom.us/my/igelfeld
-        - name: Location
-          url: location/
+          url: mailto:falcon@yonsei.ac.kr
+        # - name: Zoom
+          # url: https://www.zoom.us/my/igelfeld
+        # - name: Location
+          # url: location/
         - name: Office Hours
           url: officehours/
         - name: Google Scholar
-          url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
+          url: https://scholar.google.com/citations?user=U3-aG5oAAAAJ
         - name: GitHub
-          url: https://github.com/pmichaillat
-        - name: Substack
-          url: https://pmichaillat.substack.com
-        - name: YouTube
-          url: https://www.youtube.com/@pmichaillat
-        - name: Twitter
-          url: https://x.com/pmichaillat
-        - name: Bluesky
-          url: https://bsky.app/profile/pmichaillat.bsky.social
+          url: https://github.com/SangsChicom
+        # - name: Substack
+          # url: https://pmichaillat.substack.com
+        # - name: YouTube
+          # url: https://www.youtube.com/@pmichaillat
+        # - name: Twitter
+          # url: https://x.com/pmichaillat
+        # - name: Bluesky
+          # url: https://bsky.app/profile/pmichaillat.bsky.social
 
     assets:
         disableScrollBarStyle: true

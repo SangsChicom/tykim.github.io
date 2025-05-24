@@ -1,0 +1,47 @@
+.title-social-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    flex-wrap: nowrap;  /* 줄바꿈 방지 */
+}
+
+.title-social-container h1 {
+    margin: 0;
+    white-space: nowrap;  /* 제목 줄바꿈 방지 */
+}
+
+.title-social-container .social-icons {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: nowrap;  /* 아이콘 줄바꿈 방지 */
+}
+
+/* 소셜 아이콘 크기 조정 */
+.title-social-container .social-icon {
+    font-size: 1.2rem;
+    padding: 0.3rem;
+}
+
+/* 프로필 내부 컨테이너 조정 */
+.profile_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;  /* 중앙 정렬에서 왼쪽 정렬로 변경 */
+}
+
+/* 전체적인 상하간격 조절 */
+.profile_inner {
+    margin-top: 1.2rem;     /* 위쪽 여백 */
+    margin-bottom: 1.2rem;  /* 아래쪽 여백 */
+}
+
+/* 제목과 소셜 아이콘 컨테이너만 왼쪽 정렬 */
+.title-social-container {
+    text-align: left;
+    width: 100%;
+    max-width: 600px;  /* 적절한 최대 너비 설정 */
+}
