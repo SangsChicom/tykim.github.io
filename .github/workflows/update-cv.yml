@@ -1,0 +1,36 @@
+ name: Update CV
+ on:
+   schedule:
+     - cron: '0 0 * * *'  # 매일 자정에 실행
+   workflow_dispatch:      # 수동 실행 옵션
+
+ jobs:
+   update:
+     runs-on: ubuntu-latest
+     steps:
+       - uses: actions/checkout@v2
+
+       - name: Download CV
+         run: |
+           # Overleaf API를 통해 PDF 컴파일 요청
+           curl -X POST \
+             -H "Authorization: Bearer ${{ secrets.OVERLEAF_TOKEN }}" \
+             -H "Content-Type: application/json" \
+             -d '{"projectId": "${{ secrets.OVERLEAF_PROJECT_ID }}"}' \
+             https://www.overleaf.com/api/v1/projects/compile
+
+           # 컴파일 완료 대기
+           sleep 10
+
+           # PDF 다운로드
+           curl -X GET \
+             -H "Authorization: Bearer ${{ secrets.OVERLEAF_TOKEN }}" \
+             -H "Content-Type: application/json" \
+             https://www.overleaf.com/api/v1/projects/${{ secrets.OVERLEAF_PROJECT_ID }}/output \
+             -o static/cv.pdf
+
+       - name: Deploy
+         uses: JamesIves/github-pages-deploy-action@4.1.4
+         with:
+           branch: gh-pages
+           folder: static
