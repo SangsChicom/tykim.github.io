@@ -29,84 +29,143 @@ jobs:
           
       - name: Compile LaTeX documents
         run: |
-          # 공통 함수 정의
-          cat << 'EOF' > check_compiler.sh
-          #!/bin/bash
-          
-          # 필요한 패키지 설치
-          PACKAGES=\$(grep -o '\\\\usepackage{[^}]*}' *.tex *.cls 2>/dev/null | sed 's/\\\\usepackage{//g' | sed 's/}//g' | tr ',' '\n' | tr ' ' '\n' | grep -v '^$')
-          PACKAGES+=\$(grep -o '\\\\RequirePackage{[^}]*}' *.tex *.cls 2>/dev/null | sed 's/\\\\RequirePackage{//g' | sed 's/}//g' | tr ',' '\n' | tr ' ' '\n' | grep -v '^$')
-          
-          for pkg in \$PACKAGES; do
-            echo \"Installing package: \$pkg\"
-            tlmgr install \$pkg || true
-          done
-          
-          # 컴파일러 결정을 위한 패키지 체크
-          XETEX_PACKAGES=(
-            \"fontspec\"
-            \"unicode-math\"
-            \"polyglossia\"
-            \"xunicode\"
-            \"xltxtra\"
-            \"realscripts\"
-            \"metalogo\"
-            \"fontawesome\"
-            \"fontawesome5\"
-          )
-          
-          LUATEX_PACKAGES=(
-            \"luacode\"
-            \"luatexbase\"
-            \"luatexja\"
-            \"luatexja-fontspec\"
-            \"luacolor\"
-            \"luainputenc\"
-            \"luatex85\"
-            \"luatexja-otf\"
-          )
-          
-          # XeTeX 필요 여부 확인
-          needs_xetex=false
-          for pkg in \"\${XETEX_PACKAGES[@]}\"; do
-            if grep -q \"\\\\usepackage{\$pkg}\" *.tex *.cls 2>/dev/null || grep -q \"\\\\RequirePackage{\$pkg}\" *.tex *.cls 2>/dev/null; then
-              needs_xetex=true
-              break
-            fi
-          done
-          
-          # LuaTeX 필요 여부 확인
-          needs_luatex=false
-          for pkg in \"\${LUATEX_PACKAGES[@]}\"; do
-            if grep -q \"\\\\usepackage{\$pkg}\" *.tex *.cls 2>/dev/null || grep -q \"\\\\RequirePackage{\$pkg}\" *.tex *.cls 2>/dev/null; then
-              needs_luatex=true
-              break
-            fi
-          done
-          
-          # 컴파일러 선택 및 실행
-          if \$needs_luatex; then
-            echo \"Using LuaLaTeX\"
-            lualatex main.tex
-            lualatex main.tex
-          elif \$needs_xetex; then
-            echo \"Using XeLaTeX\"
-            xelatex main.tex
-            xelatex main.tex
-          else
-            echo \"Using pdfLaTeX\"
-            pdflatex main.tex
-            pdflatex main.tex
-          fi
-          EOF
-          
-          chmod +x check_compiler.sh
-          
           # CV 컴파일
-          docker run --rm -v $PWD/overleaf-cv:/compile -w /compile registry.gitlab.com/islandoftex/images/texlive:latest ./check_compiler.sh
+          docker run --rm -v $PWD/overleaf-cv:/compile -w /compile registry.gitlab.com/islandoftex/images/texlive:latest bash -c "
+            # 필요한 패키지 설치
+            PACKAGES=\$(grep -o '\\\\usepackage{[^}]*}' *.tex *.cls 2>/dev/null | sed 's/\\\\usepackage{//g' | sed 's/}//g' | tr ',' '\n' | tr ' ' '\n' | grep -v '^$')
+            PACKAGES+=\$(grep -o '\\\\RequirePackage{[^}]*}' *.tex *.cls 2>/dev/null | sed 's/\\\\RequirePackage{//g' | sed 's/}//g' | tr ',' '\n' | tr ' ' '\n' | grep -v '^$')
+            
+            for pkg in \$PACKAGES; do
+              echo \"Installing package: \$pkg\"
+              tlmgr install \$pkg || true
+            done
+            
+            # 컴파일러 결정을 위한 패키지 체크
+            XETEX_PACKAGES=(
+              \"fontspec\"
+              \"unicode-math\"
+              \"polyglossia\"
+              \"xunicode\"
+              \"xltxtra\"
+              \"realscripts\"
+              \"metalogo\"
+              \"fontawesome\"
+              \"fontawesome5\"
+            )
+            
+            LUATEX_PACKAGES=(
+              \"luacode\"
+              \"luatexbase\"
+              \"luatexja\"
+              \"luatexja-fontspec\"
+              \"luacolor\"
+              \"luainputenc\"
+              \"luatex85\"
+              \"luatexja-otf\"
+            )
+            
+            # XeTeX 필요 여부 확인
+            needs_xetex=false
+            for pkg in \"\${XETEX_PACKAGES[@]}\"; do
+              if grep -q \"\\\\usepackage{\$pkg}\" *.tex *.cls 2>/dev/null || grep -q \"\\\\RequirePackage{\$pkg}\" *.tex *.cls 2>/dev/null; then
+                needs_xetex=true
+                break
+              fi
+            done
+            
+            # LuaTeX 필요 여부 확인
+            needs_luatex=false
+            for pkg in \"\${LUATEX_PACKAGES[@]}\"; do
+              if grep -q \"\\\\usepackage{\$pkg}\" *.tex *.cls 2>/dev/null || grep -q \"\\\\RequirePackage{\$pkg}\" *.tex *.cls 2>/dev/null; then
+                needs_luatex=true
+                break
+              fi
+            done
+            
+            # 컴파일러 선택 및 실행
+            if \$needs_luatex; then
+              echo \"Using LuaLaTeX\"
+              lualatex main.tex
+              lualatex main.tex
+            elif \$needs_xetex; then
+              echo \"Using XeLaTeX\"
+              xelatex main.tex
+              xelatex main.tex
+            else
+              echo \"Using pdfLaTeX\"
+              pdflatex main.tex
+              pdflatex main.tex
+            fi
+          "
           
           # Resume 컴파일
-          docker run --rm -v $PWD/overleaf-resume:/compile -w /compile registry.gitlab.com/islandoftex/images/texlive:latest ./check_compiler.sh
+          docker run --rm -v $PWD/overleaf-resume:/compile -w /compile registry.gitlab.com/islandoftex/images/texlive:latest bash -c "
+            # 필요한 패키지 설치
+            PACKAGES=\$(grep -o '\\\\usepackage{[^}]*}' *.tex *.cls 2>/dev/null | sed 's/\\\\usepackage{//g' | sed 's/}//g' | tr ',' '\n' | tr ' ' '\n' | grep -v '^$')
+            PACKAGES+=\$(grep -o '\\\\RequirePackage{[^}]*}' *.tex *.cls 2>/dev/null | sed 's/\\\\RequirePackage{//g' | sed 's/}//g' | tr ',' '\n' | tr ' ' '\n' | grep -v '^$')
+            
+            for pkg in \$PACKAGES; do
+              echo \"Installing package: \$pkg\"
+              tlmgr install \$pkg || true
+            done
+            
+            # 컴파일러 결정을 위한 패키지 체크
+            XETEX_PACKAGES=(
+              \"fontspec\"
+              \"unicode-math\"
+              \"polyglossia\"
+              \"xunicode\"
+              \"xltxtra\"
+              \"realscripts\"
+              \"metalogo\"
+              \"fontawesome\"
+              \"fontawesome5\"
+            )
+            
+            LUATEX_PACKAGES=(
+              \"luacode\"
+              \"luatexbase\"
+              \"luatexja\"
+              \"luatexja-fontspec\"
+              \"luacolor\"
+              \"luainputenc\"
+              \"luatex85\"
+              \"luatexja-otf\"
+            )
+            
+            # XeTeX 필요 여부 확인
+            needs_xetex=false
+            for pkg in \"\${XETEX_PACKAGES[@]}\"; do
+              if grep -q \"\\\\usepackage{\$pkg}\" *.tex *.cls 2>/dev/null || grep -q \"\\\\RequirePackage{\$pkg}\" *.tex *.cls 2>/dev/null; then
+                needs_xetex=true
+                break
+              fi
+            done
+            
+            # LuaTeX 필요 여부 확인
+            needs_luatex=false
+            for pkg in \"\${LUATEX_PACKAGES[@]}\"; do
+              if grep -q \"\\\\usepackage{\$pkg}\" *.tex *.cls 2>/dev/null || grep -q \"\\\\RequirePackage{\$pkg}\" *.tex *.cls 2>/dev/null; then
+                needs_luatex=true
+                break
+              fi
+            done
+            
+            # 컴파일러 선택 및 실행
+            if \$needs_luatex; then
+              echo \"Using LuaLaTeX\"
+              lualatex main.tex
+              lualatex main.tex
+            elif \$needs_xetex; then
+              echo \"Using XeLaTeX\"
+              xelatex main.tex
+              xelatex main.tex
+            else
+              echo \"Using pdfLaTeX\"
+              pdflatex main.tex
+              pdflatex main.tex
+            fi
+          "
           
       - name: Copy PDFs
         run: |
