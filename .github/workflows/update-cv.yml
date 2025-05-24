@@ -1,42 +1,46 @@
-name: Update CV
-on:
-  schedule:
-    - cron: '0 0 * * *'
-  workflow_dispatch:
+ name: Update CV
+ on:
+   schedule:
+     - cron: '0 0 * * *'
+   workflow_dispatch:
 
-jobs:
-  update:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3  # v2에서 v3로 업데이트
+ jobs:
+   update:
+     runs-on: ubuntu-latest
+     steps:
+       - uses: actions/checkout@v3
 
-      - name: Download CV
-        run: |
-          echo "Starting CV download..."
-          
-          # Overleaf API를 통해 PDF 컴파일 요청
-          curl -X POST \
-            -H "Authorization: Bearer ${{ secrets.OVERLEAF_TOKEN }}" \
-            -H "Content-Type: application/json" \
-            -d '{"projectId": "${{ secrets.OVERLEAF_PROJECT_ID }}"}' \
-            https://www.overleaf.com/api/v1/projects/compile
-          
-          echo "Compilation requested, waiting..."
-          sleep 20
-          
-          # PDF 다운로드
-          curl -X GET \
-            -H "Authorization: Bearer ${{ secrets.OVERLEAF_TOKEN }}" \
-            -H "Content-Type: application/json" \
-            https://www.overleaf.com/api/v1/projects/${{ secrets.OVERLEAF_PROJECT_ID }}/output \
-            -o static/cv.pdf
-          
-          echo "CV downloaded, checking file..."
-          ls -l static/cv.pdf
+       - name: Download CV
+         run: |
+           echo "Starting CV download..."
+           
+           # API 응답 확인을 위한 디버깅
+           echo "Testing API connection..."
+           curl -v -X POST \
+             -H "Authorization: Bearer ${{ secrets.OVERLEAF_TOKEN }}" \
+             -H "Content-Type: application/json" \
+             -d '{"projectId": "${{ secrets.OVERLEAF_PROJECT_ID }}"}' \
+             https://www.overleaf.com/api/v1/projects/compile
+           
+           echo "Compilation requested, waiting..."
+           sleep 30  # 대기 시간 증가
+           
+           # PDF 다운로드 시도
+           echo "Attempting to download PDF..."
+           curl -v -X GET \
+             -H "Authorization: Bearer ${{ secrets.OVERLEAF_TOKEN }}" \
+             -H "Content-Type: application/json" \
+             https://www.overleaf.com/api/v1/projects/${{ secrets.OVERLEAF_PROJECT_ID }}/output \
+             -o static/cv.pdf
+           
+           # 파일 확인
+           echo "Checking downloaded file..."
+           ls -l static/cv.pdf
+           file static/cv.pdf
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4  # v4로 업데이트
-        with:
-          branch: gh-pages
-          folder: static
-          clean: false
+       - name: Deploy
+         uses: JamesIves/github-pages-deploy-action@v4
+         with:
+           branch: gh-pages
+           folder: static
+           clean: false
