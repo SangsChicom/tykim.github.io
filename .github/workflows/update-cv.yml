@@ -1,55 +1,50 @@
-name: Overleaf Sync with Git
+name: Overleaf Sync and Compile
 on:
   schedule:
-    - cron: "0/5 * * * *"  # 5분마다 실행
+    - cron: "0/5 * * * *"
   push:
   workflow_dispatch:
-      
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Delete Old Artifacts
-      uses: actions/github-script@v6
-      id: artifact
-      with:
-        script: |
-          const res = await github.rest.actions.listArtifactsForRepo({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-          })
+    # 저장소 체크아웃
+    - uses: actions/checkout@v2
 
-          res.data.artifacts
-            .forEach(({ id }) => {
-              github.rest.actions.deleteArtifact({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                artifact_id: id,
-              })
-            })
-
-    - name: Fetch the latest version from overleaf server
+    # Overleaf에서 소스 파일 가져오기
+    - name: Fetch from Overleaf
       uses: subhamx/overleaf_sync_with_git@master
       with:
         OVERLEAF_PROJECT_ID: ${{ secrets.OVERLEAF_PROJECT_ID }}
         OVERLEAF_COOKIE: ${{ secrets.OVERLEAF_COOKIE }}
 
-    - name: Upload to Project Artifacts
-      uses: actions/upload-artifact@v4
+    # LaTeX 컴파일 환경 설정
+    - name: Setup LaTeX
+      uses: xu-cheng/texlive-action@v2
       with:
-        name: project
-        path: ./artifacts/
+        packages: 'latexmk texlive-lang-korean'
 
-    - uses: actions/checkout@v2
-      with:
-        path: repo/
-    
-    - run: |
-        cd repo/
-        mkdir -p overleaf_remote_src
-        cp -r ../artifacts/* ./overleaf_remote_src
+    # PDF 컴파일
+    - name: Compile PDF
+      run: |
+        cd artifacts
+        latexmk -pdf -interaction=nonstopmode main.tex  # main.tex을 실제 메인 파일명으로 변경하세요
+
+    # static/cv 디렉토리 생성 및 PDF 복사
+    - name: Copy PDF to static/cv
+      run: |
+        mkdir -p static/cv
+        cp artifacts/*.pdf static/cv/cv.pdf
+
+    # 변경사항 커밋
+    - name: Commit changes
+      run: |
         git config user.name "Overleaf Sync Bot"
         git config user.email "actions@github.com"
-        git add .
-        if [[ $(git diff HEAD --stat) == '' ]]; then (echo 'Working tree is clean') 
-        else (git commit -m "Sync with overleaf remote"  && git push) fi
+        git add static/cv/cv.pdf
+        if [[ $(git diff HEAD --stat) == '' ]]; then 
+          echo "No changes to commit"
+        else 
+          git commit -m "Update CV PDF" && git push
+        fi
