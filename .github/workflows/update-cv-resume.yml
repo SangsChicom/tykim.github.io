@@ -1,0 +1,73 @@
+name: Overleaf Sync
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 매일 자정에 실행
+  workflow_dispatch:  # 수동 실행 가능
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: Setup Git
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          
+      - name: Clone CV repository
+        run: |
+          git clone https://git:${{ secrets.OVERLEAF_TOKEN }}@git.overleaf.com/${{ secrets.OVERLEAF_PROJECT_ID }} overleaf-cv
+          
+      - name: Clone Resume repository
+        run: |
+          git clone https://git:${{ secrets.OVERLEAF_TOKEN }}@git.overleaf.com/${{ secrets.OVERLEAF_PROJECT_RESUME }} overleaf-resume
+          
+      - name: Install required LaTeX packages and compile CV
+        run: |
+          docker run --rm -v $PWD/overleaf-cv:/compile -w /compile registry.gitlab.com/islandoftex/images/texlive:latest bash -c "
+            # main.tex에서 사용된 패키지 추출
+            PACKAGES=\$(grep -o '\\\\usepackage{[^}]*}' main.tex | sed 's/\\\\usepackage{//g' | sed 's/}//g' | tr ',' '\n' | tr ' ' '\n' | grep -v '^$')
+            
+            # 각 패키지 설치
+            for pkg in \$PACKAGES; do
+              echo \"Installing package: \$pkg\"
+              tlmgr install \$pkg || true
+            done
+            
+            # 컴파일
+            pdflatex main.tex
+            pdflatex main.tex
+          "
+          
+      - name: Install required LaTeX packages and compile Resume
+        run: |
+          docker run --rm -v $PWD/overleaf-resume:/compile -w /compile registry.gitlab.com/islandoftex/images/texlive:latest bash -c "
+            # main.tex에서 사용된 패키지 추출
+            PACKAGES=\$(grep -o '\\\\usepackage{[^}]*}' main.tex | sed 's/\\\\usepackage{//g' | sed 's/}//g' | tr ',' '\n' | tr ' ' '\n' | grep -v '^$')
+            
+            # 각 패키지 설치
+            for pkg in \$PACKAGES; do
+              echo \"Installing package: \$pkg\"
+              tlmgr install \$pkg || true
+            done
+            
+            # 컴파일
+            pdflatex main.tex
+            pdflatex main.tex
+          "
+          
+      - name: Copy PDFs
+        run: |
+          mkdir -p static
+          cp overleaf-cv/main.pdf static/cv.pdf
+          cp overleaf-resume/main.pdf static/resume.pdf
+          
+      - name: Commit and push if changed
+        run: |
+          git add static/cv.pdf static/resume.pdf
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update CV and Resume from Overleaf" && git push)
