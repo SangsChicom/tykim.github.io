@@ -21,7 +21,7 @@ jobs:
           
       - name: Clone Overleaf repository
         run: |
-          git clone https://${{ secrets.OVERLEAF_TOKEN }}@git.overleaf.com/${{ secrets.OVERLEAF_PROJECT_ID }} overleaf
+          git clone https://git:${{ secrets.OVERLEAF_TOKEN }}@git.overleaf.com/${{ secrets.OVERLEAF_PROJECT_ID }} overleaf
           
       - name: Compile LaTeX
         run: |
