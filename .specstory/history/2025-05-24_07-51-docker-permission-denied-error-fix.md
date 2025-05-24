@@ -10271,3 +10271,141 @@ _**Assistant**_
 
 ---
 
+_**User**_
+
+원래는 이 이미지에, 마우스커서를 올리면 뒤집어지면서 다른 내 사진이 나오게했으면 좋겠는데 어디부터 수정하면 될까?
+
+---
+
+_**Assistant**_
+
+이미지 호버 효과를 추가하기 위해서는 HTML과 CSS를 수정해야 합니다. 다음과 같이 진행해보세요:
+
+1. 먼저 `themes/PaperMod/layouts/partials/index_profile.html` 파일에서 이미지 부분을 수정합니다:
+
+```html
+{{- if .imageUrl -}}
+    {{- $img := "" }}
+    {{- if not (urls.Parse .imageUrl).IsAbs }}
+        {{- $img = resources.Get .imageUrl }}
+    {{- end }}
+    {{- if $img }}
+        <div class="profile-image-container">
+            <div class="profile-image">
+                <div class="front">
+                    <img draggable="false" src="{{ $img.Permalink }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
+                        height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+                </div>
+                <div class="back">
+                    <img draggable="false" src="{{ "picture2.jpeg" | absURL }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
+                        height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+                </div>
+            </div>
+        </div>
+    {{- else }}
+        <div class="profile-image-container">
+            <div class="profile-image">
+                <div class="front">
+                    <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
+                        height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+                </div>
+                <div class="back">
+                    <img draggable="false" src="{{ "picture2.jpeg" | absURL }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
+                        height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+                </div>
+            </div>
+        </div>
+    {{- end }}
+{{- end }}
+```
+
+2. `assets/css/custom.css` 파일에 다음 CSS를 추가합니다:
+
+```css
+.profile-image-container {
+    perspective: 1000px;
+    margin-bottom: 1rem;
+}
+
+.profile-image {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.profile-image:hover {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+```
+
+3. 두 번째 이미지 파일(`picture2.jpeg`)을 `static` 폴더에 추가합니다.
+
+이렇게 하면:
+1. 기본 이미지가 표시됩니다
+2. 마우스를 올리면 이미지가 3D로 뒤집히면서 두 번째 이미지가 보입니다
+3. 마우스를 떼면 다시 원래 이미지로 돌아갑니다
+
+추가로 수정할 수 있는 부분:
+- 회전 속도: `transition: transform 0.8s`의 `0.8s` 값을 조절
+- 회전 방향: `rotateY`를 `rotateX`로 변경하면 위아래로 뒤집힘
+- 이미지 크기: `.profile-image`의 `width`와 `height` 값을 조절
+
+어떤 부분을 더 수정하고 싶으신가요?
+
+---
+
+_**User**_
+
+picture2 로 지정하는 부분을 config.yml에 추가할 수 있어?
+
+---
+
+_**Assistant**_
+
+네, `config.yml`에 두 번째 이미지를 위한 설정을 추가할 수 있습니다. 다음과 같이 수정해보세요:
+
+1. `config.yml` 파일의 `profileMode` 섹션을 수정합니다:
+
+```yaml
+params:
+    profileMode:
+          enabled: true
+          title: Taeyoung Kim
+          imageUrl: "picture.jpeg"
+          imageWidth: 160
+          imageHeight: 160
+          hoverImageUrl: "picture2.jpeg"  # 두 번째 이미지 추가
+```
+
+2. 그리고 `index_profile.html` 파일에서 이미지 부분을 수정합니다:
+
+```html
+{{- if .imageUrl -}}
+    {{- $img := "" }}
+    {{- $hoverImg := "" }}
+    {{- if not (urls.Parse .imageUrl).IsAbs }}
+        {{- $img = resources.Get .imageUrl }
+
+---
+

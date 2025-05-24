@@ -54,6 +54,7 @@ params:
           title: Taeyoung Kim
           subtitle: 
           imageUrl: "picture.jpeg"
+          hoverImageUrl: "picture2.jpeg"  # 두 번째 이미지 추가
           imageWidth: 160
           imageHeight: 160
           buttons:
