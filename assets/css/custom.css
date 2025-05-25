@@ -33,6 +33,11 @@
     text-align: left;  /* 중앙 정렬에서 왼쪽 정렬로 변경 */
 }
 
+.profile_inner p {
+    text-align: justify;
+    width: 100%;
+}
+
 /* 전체적인 상하간격 조절 */
 .profile_inner {
     margin-top: 1.2rem;     /* 위쪽 여백 */

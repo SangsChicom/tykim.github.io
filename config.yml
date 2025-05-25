@@ -28,7 +28,7 @@ menu:
 params:
     description: "This website hosts Taeyoung Kim's research papers, books, course materials, data, curriculum vitae, and contact information."
     author: Taeyoung Kim
-    # googleAnalyticsID: "G-XXXXX"
+    googleAnalyticsID: "G-2YHZ2DBRDN"
     DateFormat: "May 2025"
     defaultTheme: light
     hideFooter: false
@@ -58,12 +58,12 @@ params:
           imageWidth: 160
           imageHeight: 160
           buttons:
+            - name: CV / Resume
+              url: cv-resume/
             - name: Research Project
               url: research/
             - name: Publication
               url: publication/
-            - name: CV/Resume
-              url: cv-resume/
             - name: News
               url: news/
             - name: Blog

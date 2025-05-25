@@ -55,6 +55,35 @@
 {{ $custom := resources.Get "css/custom.css" | minify }}
 <link rel="stylesheet" href="{{ $custom.RelPermalink }}">
 
+<!-- 구글 애널리틱스 추가 -->
+{{ if site.Params.googleAnalyticsID }}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2YHZ2DBRDN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2YHZ2DBRDN');
+</script>
+{{ end }}
+
+{{ if site.Params.googleAnalyticsID }}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.Params.googleAnalyticsID }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{ site.Params.googleAnalyticsID }}', {
+    'anonymize_ip': true,
+    'cookie_expires': 30 * 24 * 60 * 60  // 30일
+  });
+</script>
+{{ end }}
+
+
 {{- /* markup.highlight.noClasses should be set to `false` */}}
 {{- $chroma_styles := (resources.Get "css/includes/chroma-styles.css") }}
 {{- $chroma_mod := (resources.Get "css/includes/chroma-mod.css") }}

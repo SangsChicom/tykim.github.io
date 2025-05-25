@@ -1,9 +1,10 @@
 
 
 
-
+## 테스트 설정 관련
 sudo chown -R $(whoami) $(brew --prefix)/* #brew sudo error
 
+## git setup
 git config --global core.editor "nano"
 
 rm -f .git/index.lock
@@ -39,5 +40,11 @@ share 에서 link share 되어있는지 확인
 https://github.com/marketplace/actions/overleaf-sync-with-git
 
 
-# git 관련
+## git 관련 초기화
    git reset --hard HEAD
+
+##
+
+
+
+

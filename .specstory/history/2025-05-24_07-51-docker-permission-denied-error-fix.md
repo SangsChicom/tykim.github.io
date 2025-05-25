@@ -10405,7 +10405,620 @@ params:
     {{- $img := "" }}
     {{- $hoverImg := "" }}
     {{- if not (urls.Parse .imageUrl).IsAbs }}
-        {{- $img = resources.Get .imageUrl }
+        {{- $img = resources.Get .imageUrl }}
+    {{- end }}
+    {{- if not (urls.Parse .hoverImageUrl).IsAbs }}
+        {{- $hoverImg = resources.Get .hoverImageUrl }}
+    {{- end }}
+    {{- if $img }}
+        <div class="profile-image-container">
+            <div class="profile-image">
+                <div class="front">
+                    <img draggable="false" src="{{ $img.Permalink }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
+                        height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+                </div>
+                <div class="back">
+                    <img draggable="false" src="{{ $hoverImg.Permalink }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
+                        height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+                </div>
+            </div>
+        </div>
+    {{- else }}
+        <div class="profile-image-container">
+            <div class="profile-image">
+                <div class="front">
+                    <img draggable="false" src="{{ .imageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
+                        height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+                </div>
+                <div class="back">
+                    <img draggable="false" src="{{ .hoverImageUrl | absURL }}" alt="{{ .imageTitle | default "profile image" }}" title="{{ .imageTitle }}"
+                        height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+                </div>
+            </div>
+        </div>
+    {{- end }}
+{{- end }}
+```
+
+이렇게 하면:
+1. `config.yml`에서 두 이미지 모두 관리할 수 있습니다
+2. 이미지 파일을 바꿀 때 `config.yml`만 수정하면 됩니다
+3. 이미지 크기도 한 번에 설정할 수 있습니다
+
+이미지 파일들은 여전히 `static` 폴더에 있어야 합니다. 이렇게 수정하면 될까요?
+
+---
+
+_**User**_
+
+아까 왼쪽정렬 말고 양쪽정렬로 바꾸고싶어
+
+---
+
+_**Assistant**_
+
+양쪽 정렬(justify)을 적용하기 위해 `assets/css/custom.css` 파일을 다음과 같이 수정해보세요:
+
+```css
+/* 프로필 내부 컨테이너 조정 */
+.profile_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;  /* 양쪽 정렬로 변경 */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 마크다운 내용 정렬 */
+.profile_inner p,
+.profile_inner h3,
+.profile_inner ul {
+    text-align: justify;  /* 양쪽 정렬로 변경 */
+    width: 100%;
+}
+
+/* 제목과 소셜 아이콘은 왼쪽 정렬 유지 */
+.title-social-container {
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+}
+```
+
+이렇게 하면:
+1. 일반 텍스트는 양쪽 정렬됩니다
+2. 제목과 소셜 아이콘은 왼쪽 정렬을 유지합니다
+3. 리스트와 다른 요소들도 양쪽 정렬됩니다
+
+양쪽 정렬이 마음에 들지 않으시면 다시 왼쪽 정렬로 돌아갈 수 있습니다. 어떤 스타일이 더 좋으신가요?
+
+---
+
+_**User**_
+
+google analytics 랑 연동하는 방법 알려줘
+
+---
+
+_**Assistant**_
+
+Google Analytics를 Hugo 사이트와 연동하는 방법을 알려드리겠습니다:
+
+1. **Google Analytics 계정 설정**
+- Google Analytics 계정 생성
+- 새 속성(Property) 생성
+- 측정 ID(예: G-XXXXXXXXXX) 확인
+
+2. **`config.yml` 파일 수정**
+```yaml
+params:
+    # 기존 설정들...
+    googleAnalyticsID: "G-XXXXXXXXXX"  # 측정 ID 입력
+```
+
+3. **`layouts/partials/head.html` 파일 생성/수정**
+```html
+{{ if site.Params.googleAnalyticsID }}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.Params.googleAnalyticsID }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{ site.Params.googleAnalyticsID }}');
+</script>
+{{ end }}
+```
+
+4. **개인정보 보호를 위한 설정 (선택사항)**
+```html
+{{ if site.Params.googleAnalyticsID }}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.Params.googleAnalyticsID }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{ site.Params.googleAnalyticsID }}', {
+    'anonymize_ip': true,
+    'cookie_expires': 30 * 24 * 60 * 60  // 30일
+  });
+</script>
+{{ end }}
+```
+
+5. **쿠키 동의 배너 추가 (선택사항)**
+`layouts/partials/cookie-consent.html` 파일 생성:
+```html
+<div id="cookie-consent" style="display: none; position: fixed; bottom: 0; left: 0; right: 0; background: #333; color: white; padding: 1rem; text-align: center;">
+    <p>이 웹사이트는 Google Analytics를 사용하여 방문자 통계를 수집합니다.</p>
+    <button onclick="acceptCookies()">동의</button>
+    <button onclick="declineCookies()">거부</button>
+</div>
+
+<script>
+function acceptCookies() {
+    document.getElementById('cookie-consent').style.display = 'none';
+    localStorage.setItem('cookie-consent', 'accepted');
+    // Google Analytics 활성화
+    gtag('consent', 'update', {
+        'analytics_storage': 'granted'
+    });
+}
+
+function declineCookies() {
+    document.getElementById('cookie-consent').style.display = 'none';
+    localStorage.setItem('cookie-consent', 'declined');
+    // Google Analytics 비활성화
+    gtag('consent', 'update', {
+        'analytics_storage': 'denied'
+    });
+}
+
+// 페이지 로드 시 쿠키 동의 상태 확인
+window.onload = function() {
+    if (!localStorage.getItem('cookie-consent')) {
+        document.getElementById('cookie-consent').style.display = 'block';
+    }
+}
+</script>
+```
+
+그리고 `layouts/partials/footer.html`에 추가:
+```html
+{{ partial "cookie-consent.html" . }}
+```
+
+이렇게 하면:
+1. Google Analytics가 사이트에 통합됩니다
+2. 방문자 통계를 수집할 수 있습니다
+3. 개인정보 보호를 위한 기본적인 설정이 적용됩니다
+4. 사용자에게 쿠키 사용 동의를 요청할 수 있습니다
+
+추가로 필요한 설정이 있으신가요?
+
+---
+
+_**User**_
+
+1번과정 예시를 알려줄래?
+
+---
+
+_**Assistant**_
+
+Google Analytics 계정 설정 과정을 단계별로 설명해드리겠습니다:
+
+1. **Google Analytics 계정 생성**
+   - [Google Analytics](https://analytics.google.com/) 접속
+   - Google 계정으로 로그인
+   - "시작하기" 클릭
+   - 계정 이름 입력 (예: "My Personal Website")
+   - 계정 데이터 공유 설정 선택 (기본값 유지 가능)
+
+2. **속성(Property) 생성**
+   - "속성 만들기" 클릭
+   - 속성 이름 입력 (예: "tykim.github.io")
+   - 보고 시간대 선택 (예: "대한민국")
+   - 통화 선택 (예: "KRW")
+
+3. **데이터 스트림 설정**
+   - "웹" 선택
+   - 웹사이트 URL 입력 (예: "https://sangschicom.github.io")
+   - 스트림 이름 입력 (예: "My Website")
+   - "스트림 만들기" 클릭
+
+4. **측정 ID 확인**
+   - 생성된 스트림에서 "측정 ID" 확인
+   - 형식: "G-XXXXXXXXXX"
+   - 이 ID를 `config.yml`에 입력:
+   ```yaml
+   params:
+       googleAnalyticsID: "G-XXXXXXXXXX"  # 여기에 실제 측정 ID 입력
+   ```
+
+5. **추가 설정 (선택사항)**
+   - 이벤트 설정
+   - 전환 추적
+   - 사용자 속성 설정
+   - 맞춤 보고서 설정
+
+이렇게 설정하면 Google Analytics가 웹사이트의 방문자 데이터를 수집하기 시작합니다. 실제 측정 ID를 받으시면 `config.yml`에 입력하시면 됩니다.
+
+---
+
+_**User**_
+
+쿠키 동의는 만들어야해?
+
+---
+
+_**Assistant**_
+
+쿠키 동의 배너는 GDPR(유럽 개인정보보호법)과 같은 개인정보 보호법을 준수하기 위해 권장됩니다. 하지만 다음 사항을 고려해보세요:
+
+1. **필수적인 경우**:
+   - 유럽 방문자가 있는 경우
+   - 개인정보를 수집하는 경우
+   - 광고를 사용하는 경우
+
+2. **선택적인 경우**:
+   - 단순 방문자 통계만 수집하는 경우
+   - 한국 내 방문자만 있는 경우
+   - 개인정보를 수집하지 않는 경우
+
+현재 설정하신 Google Analytics는 기본적인 방문자 통계만 수집하는 것으로 보입니다. 이 경우 쿠키 동의 배너는 필수는 아닙니다.
+
+하지만 나중에 필요하다면 언제든지 추가할 수 있습니다. 지금은 기본적인 Google Analytics 설정만 하시는 것을 추천드립니다:
+
+1. `config.yml`에 측정 ID만 추가:
+```yaml
+params:
+    googleAnalyticsID: "G-XXXXXXXXXX"
+```
+
+2. `layouts/partials/head.html`에 기본 스크립트만 추가:
+```html
+{{ if site.Params.googleAnalyticsID }}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.Params.googleAnalyticsID }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ site.Params.googleAnalyticsID }}');
+</script>
+{{ end }}
+```
+
+이렇게 기본 설정만 하시는 것은 어떠신가요?
+
+---
+
+_**User**_
+
+4번은 어떤거야?
+
+---
+
+_**Assistant**_
+
+Google Analytics의 추가 설정(4번)에 대해 자세히 설명해드리겠습니다:
+
+1. **이벤트 설정**
+   - 특정 버튼 클릭 추적
+   - 파일 다운로드 추적
+   - 외부 링크 클릭 추적
+   - 예시:
+   ```javascript
+   gtag('event', 'download', {
+     'file_name': 'cv.pdf'
+   });
+   ```
+
+2. **전환 추적**
+   - 특정 페이지 방문 횟수
+   - 특정 행동 완료 횟수
+   - 예시: CV 다운로드 횟수, 이메일 클릭 횟수
+
+3. **사용자 속성 설정**
+   - 방문자 국가/지역
+   - 사용 기기 (모바일/데스크톱)
+   - 브라우저 종류
+   - 방문 시간대
+
+4. **맞춤 보고서 설정**
+   - 자주 방문하는 페이지
+   - 평균 체류 시간
+   - 이탈률
+   - 사용자 행동 흐름
+
+이러한 설정들은 Google Analytics 대시보드에서 설정할 수 있으며, 기본적인 방문자 통계만 필요하시다면 이 설정들은 건너뛰셔도 됩니다. 어떤 통계가 필요하신가요?
+
+---
+
+_**User**_
+
+일단 4.개인정보 보호를 위한 설정 (선택사항) 이거 물어본거야
+
+
+---
+
+_**Assistant**_
+
+아, 죄송합니다. 개인정보 보호를 위한 설정에 대해 설명드리겠습니다:
+
+```html
+{{ if site.Params.googleAnalyticsID }}
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.Params.googleAnalyticsID }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{ site.Params.googleAnalyticsID }}', {
+    'anonymize_ip': true,        // IP 주소 익명화
+    'cookie_expires': 30 * 24 * 60 * 60  // 쿠키 만료 기간 30일
+  });
+</script>
+{{ end }}
+```
+
+이 설정의 의미:
+1. `anonymize_ip`: true
+   - 방문자의 IP 주소를 익명화
+   - 개인 식별이 불가능한 형태로 저장
+   - GDPR 등 개인정보 보호법 준수에 도움
+
+2. `cookie_expires`: 30 * 24 * 60 * 60
+   - 쿠키 저장 기간을 30일로 설정
+   - 30일 후 자동 삭제
+   - 기본값은 2년
+
+이 설정은 선택사항이지만, 개인정보 보호를 위해 권장됩니다. 이 설정을 추가하시겠습니까?
+
+---
+
+_**User**_
+
+ 방문자 국가/지역, cv 다운로드, 링크나 버튼 확인하고싶어
+
+
+---
+
+_**Assistant**_
+
+Google Analytics에서 이러한 정보를 추적하기 위한 설정 방법을 알려드리겠습니다:
+
+1. **방문자 국가/지역 확인**
+- Google Analytics 대시보드에서 자동으로 확인 가능
+- 추가 설정 필요 없음
+
+2. **CV 다운로드 추적**
+`layouts/partials/head.html`에 다음 스크립트를 추가:
+```html
+<script>
+// CV 다운로드 추적
+document.addEventListener('DOMContentLoaded', function() {
+    const cvLinks = document.querySelectorAll('a[href*="cv.pdf"]');
+    cvLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            gtag('event', 'download', {
+                'file_name': 'cv.pdf',
+                'file_type': 'pdf'
+            });
+        });
+    });
+});
+</script>
+```
+
+3. **링크/버튼 클릭 추적**
+`layouts/partials/head.html`에 다음 스크립트를 추가:
+```html
+<script>
+// 외부 링크 클릭 추적
+document.addEventListener('DOMContentLoaded', function() {
+    const externalLinks = document.querySelectorAll('a[href^="http"]');
+    externalLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            gtag('event', 'click', {
+                'link_url': link.href,
+                'link_text': link.textContent
+            });
+        });
+    });
+});
+
+// 버튼 클릭 추적
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.button');
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            gtag('event', 'click', {
+                'button_name': button.textContent.trim(),
+                'button_url': button.href
+            });
+        });
+    });
+});
+</script>
+```
+
+이렇게 설정하면:
+1. 방문자 국가/지역은 Google Analytics 대시보드에서 확인 가능
+2. CV 다운로드 횟수 추적 가능
+3. 외부 링크 클릭 추적 가능
+4. 버튼 클릭 추적 가능
+
+Google Analytics 대시보드에서:
+- "이벤트" 섹션에서 다운로드와 클릭 이벤트 확인
+- "사용자" 섹션에서 국가/지역 확인
+- "행동" 섹션에서 페이지별 통계 확인
+
+이 설정을 추가하시겠습니까?
+
+---
+
+_**User**_
+
+다음에 할게
+
+---
+
+_**Assistant**_
+
+네, 알겠습니다. 
+
+지금까지 설정한 내용을 정리하면:
+1. Google Analytics 기본 연동
+2. 측정 ID 설정
+3. 기본 방문자 통계 수집
+
+나중에 추가하고 싶으실 때:
+1. CV 다운로드 추적
+2. 링크/버튼 클릭 추적
+3. 상세한 사용자 행동 분석
+
+이 기능들을 추가하실 수 있습니다. 필요하실 때 다시 말씀해 주세요!
+
+---
+
+_**User**_
+
+subtitle 양쪽정렬해서 보이고싶어
+
+---
+
+_**Assistant**_
+
+`assets/css/custom.css` 파일에서 subtitle 관련 스타일을 수정하면 됩니다:
+
+```css
+/* subtitle 양쪽 정렬 */
+.profile_inner span {
+    text-align: justify;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 마크다운 내용 양쪽 정렬 */
+.profile_inner p,
+.profile_inner h3,
+.profile_inner ul {
+    text-align: justify;
+    width: 100%;
+}
+
+/* 제목과 소셜 아이콘은 왼쪽 정렬 유지 */
+.title-social-container {
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+}
+```
+
+이렇게 하면:
+1. subtitle 텍스트가 양쪽 정렬됩니다
+2. 마크다운 내용도 양쪽 정렬됩니다
+3. 제목과 소셜 아이콘은 왼쪽 정렬을 유지합니다
+
+양쪽 정렬이 마음에 들지 않으시면 다시 왼쪽 정렬로 돌아갈 수 있습니다. 어떤 스타일이 더 좋으신가요?
+
+---
+
+_**User**_
+
+특정 줄만 왼쪽정렬하게 할 수 있어?
+
+---
+
+_**Assistant**_
+
+네, 특정 줄만 왼쪽 정렬하고 나머지는 양쪽 정렬하도록 CSS를 수정할 수 있습니다. `assets/css/custom.css` 파일을 다음과 같이 수정해보세요:
+
+```css
+/* 기본적으로 모든 텍스트 양쪽 정렬 */
+.profile_inner span {
+    text-align: justify;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 특정 클래스나 요소만 왼쪽 정렬 */
+.profile_inner .left-align {
+    text-align: left;
+}
+
+/* 또는 특정 줄만 왼쪽 정렬하고 싶다면 */
+.profile_inner p:first-of-type {
+    text-align: left;
+}
+
+/* Research Interests 제목은 왼쪽 정렬 */
+.profile_inner h3 {
+    text-align: left;
+}
+
+/* 리스트는 왼쪽 정렬 */
+.profile_inner ul {
+    text-align: left;
+}
+```
+
+그리고 `subtitle.md` 파일에서 특정 줄에 클래스를 추가할 수 있습니다:
+
+```markdown
+<div class="left-align">
+Hi, I'm a Ph.D candidate at Electric and Electronic Engineering in Yonsei University.
+</div>
+
+**Research Interests**: Computational Imaging
+```
+
+이렇게 하면:
+1. 첫 번째 줄은 왼쪽 정렬
+2. 나머지 텍스트는 양쪽 정렬
+3. Research Interests 제목과 리스트는 왼쪽 정렬
+
+어떤 줄을 왼쪽 정렬하고 싶으신가요?
+
+---
+
+_**User**_
+
+마크다운에서만은 가능해?
+
+---
+
+_**Assistant**_
+
+네, 마크다운에서도 특정 줄만 왼쪽 정렬할 수 있습니다. `subtitle.md` 파일을 다음과 같이 수정해보세요:
+
+```markdown
+<div style="text-align: left;">
+Hi, I'm a Ph.D candidate at Electric and Electronic Engineering in Yonsei University.
+</div>
+
+**Research Interests**: Computational Imaging
+```
+
+또는 HTML 태그를 사용하지 않고 마크다운 문법만으로도 가능합니다:
+
+```markdown
+> Hi, I'm a Ph.D candidate at Electric and Electronic Engineering in Yonsei University.
+
+**Research Interests**: Computational Imaging
+```
+
+`>` 기호를 사용하면 인용구 형식으로 왼쪽 정렬이 됩니다. 어떤 방식이 더 좋으신가요?
 
 ---
 

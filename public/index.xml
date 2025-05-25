@@ -89,7 +89,7 @@
       <description>&lt;p&gt;Hi, I&amp;rsquo;m a Ph.D candidate at Electric and Electronic Engineering in Yonsei University,
 supervised by &lt;strong&gt;Prof. Seung Ah Lee&lt;/strong&gt; on &lt;strong&gt;Imaging Inteligence Lab&lt;/strong&gt; on SNU&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m now visiting &lt;strong&gt;Computational Imaging Lab&lt;/strong&gt; in UC Berkeley, supervised by &lt;strong&gt;Prof. Laura Waller&lt;/strong&gt;.&lt;/p&gt;
-&lt;div style=&#34;margin-top: 2rem;&#34;&gt;&lt;/div&gt;  &lt;!-- 2rem 만큼 공간 생성 --&gt;
+&lt;div style=&#34;margin-top: 1.5rem;&#34;&gt;&lt;/div&gt;  &lt;!-- 2rem 만큼 공간 생성 --&gt;
 &lt;p&gt;&lt;strong&gt;Research Interests&lt;/strong&gt; : Computational Imaging, Lensless Cameara, Hyperspectral Imaging, Optimization, Image Security&lt;/p&gt;
 &lt;!-- &amp;nbsp;&amp;nbsp; --&gt;</description>
     </item>
