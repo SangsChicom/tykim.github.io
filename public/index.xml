@@ -703,7 +703,7 @@ function openTab(evt, tabName) {
       <description>&lt;div class=&#34;tab-container&#34;&gt;
   &lt;div class=&#34;tab-buttons&#34;&gt;
     &lt;button class=&#34;tab-button active&#34; onclick=&#34;openTab(event, &#39;resume&#39;)&#34;&gt;Resume&lt;/button&gt;
-    &lt;button class=&#34;tab-button &#34; onclick=&#34;openTab(event, &#39;cv&#39;)&#34;&gt;CV&lt;/button&gt;
+    &lt;button class=&#34;tab-button&#34; onclick=&#34;openTab(event, &#39;cv&#39;)&#34;&gt;CV&lt;/button&gt;
   &lt;/div&gt;
   &lt;div id=&#34;resume&#34; class=&#34;tab-content active&#34;&gt;
     &lt;div class=&#34;pdf-container&#34;&gt;
@@ -717,23 +717,43 @@ function openTab(evt, tabName) {
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;script&gt;
-function openTab(evt, tabName) {
-  // 모든 탭 콘텐츠를 숨김
-  var tabcontent = document.getElementsByClassName(&#34;tab-content&#34;);
-  for (var i = 0; i &lt; tabcontent.length; i++) {
-    tabcontent[i].style.display = &#34;none&#34;;
-  }
+// DOM이 로드된 후 실행
+document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
+    // 탭 기능 함수
+    window.openTab = function(evt, tabName) {
+        try {
+            // 모든 탭 콘텐츠를 숨김
+            var tabcontent = document.getElementsByClassName(&#34;tab-content&#34;);
+            for (var i = 0; i &lt; tabcontent.length; i++) {
+                tabcontent[i].style.display = &#34;none&#34;;
+            }
 
-  // 모든 탭 버튼에서 active 클래스 제거
-  var tablinks = document.getElementsByClassName(&#34;tab-button&#34;);
-  for (var i = 0; i &lt; tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(&#34; active&#34;, &#34;&#34;);
-  }
+            // 모든 탭 버튼에서 active 클래스 제거
+            var tablinks = document.getElementsByClassName(&#34;tab-button&#34;);
+            for (var i = 0; i &lt; tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(&#34; active&#34;, &#34;&#34;);
+            }
 
-  // 클릭된 탭을 보여주고 버튼에 active 클래스 추가
-  document.getElementById(tabName).style.display = &#34;block&#34;;
-  evt.currentTarget.className += &#34; active&#34;;
-}
+            // 클릭된 탭을 보여주고 버튼에 active 클래스 추가
+            var targetTab = document.getElementById(tabName);
+            if (targetTab) {
+                targetTab.style.display = &#34;block&#34;;
+            }
+            
+            if (evt &amp;&amp; evt.currentTarget) {
+                evt.currentTarget.className += &#34; active&#34;;
+            }
+        } catch (error) {
+            console.error(&#39;Tab switching error:&#39;, error);
+        }
+    };
+
+    // 초기 탭 설정
+    var defaultTab = document.getElementById(&#39;resume&#39;);
+    if (defaultTab) {
+        defaultTab.style.display = &#34;block&#34;;
+    }
+});
 &lt;/script&gt;</description>
     </item>
     <item>
