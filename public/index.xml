@@ -700,56 +700,108 @@ function openTab(evt, tabName) {
       <link>http://localhost:1313/cv-resume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/cv-resume/</guid>
-      <description>&lt;div class=&#34;tab-container&#34;&gt;
-  &lt;div class=&#34;tab-buttons&#34;&gt;
-    &lt;button class=&#34;tab-button active&#34; onclick=&#34;switchTab(&#39;resume&#39;)&#34;&gt;Resume&lt;/button&gt;
-    &lt;button class=&#34;tab-button&#34; onclick=&#34;switchTab(&#39;cv&#39;)&#34;&gt;CV&lt;/button&gt;
-  &lt;/div&gt;
-  &lt;div id=&#34;resume&#34; class=&#34;tab-content active&#34;&gt;
-    &lt;div class=&#34;pdf-container&#34;&gt;
-      &lt;iframe src=&#34;http://localhost:1313/resume.pdf&#34; class=&#34;pdf-iframe&#34;&gt;&lt;/iframe&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div id=&#34;cv&#34; class=&#34;tab-content&#34;&gt;
-    &lt;div class=&#34;pdf-container&#34;&gt;
-      &lt;iframe src=&#34;http://localhost:1313/cv.pdf&#34; class=&#34;pdf-iframe&#34;&gt;&lt;/iframe&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;script type=&#34;text/javascript&#34;&gt;
-// 탭 전환 함수
-function switchTab(tabName) {
-    // 모든 탭 콘텐츠 숨기기
-    var contents = document.getElementsByClassName(&#39;tab-content&#39;);
-    for (var i = 0; i &lt; contents.length; i++) {
-        contents[i].style.display = &#39;none&#39;;
-    }
-    
-    // 모든 탭 버튼에서 active 클래스 제거
-    var buttons = document.getElementsByClassName(&#39;tab-button&#39;);
-    for (var i = 0; i &lt; buttons.length; i++) {
-        buttons[i].classList.remove(&#39;active&#39;);
-    }
-    
-    // 선택된 탭 보이기
-    var selectedTab = document.getElementById(tabName);
-    if (selectedTab) {
-        selectedTab.style.display = &#39;block&#39;;
-    }
-    
-    // 클릭된 버튼에 active 클래스 추가
-    event.target.classList.add(&#39;active&#39;);
+      <description>&lt;style&gt;
+/* 탭 스타일 */
+.tab-container {
+    margin: 20px 0;
+    max-width: 100%;
+    padding: 0;
 }
 
-// 페이지 로드 시 초기 설정
-document.addEventListener(&#39;DOMContentLoaded&#39;, function() {
-    // 기본 탭이 제대로 표시되도록 설정
-    var resumeTab = document.getElementById(&#39;resume&#39;);
-    if (resumeTab) {
-        resumeTab.style.display = &#39;block&#39;;
-    }
-});
-&lt;/script&gt;</description>
+.tab-buttons {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+    color: #0066cc;
+    background-color: #f8f9fa;
+}
+
+.tab-button.active {
+    color: #0066cc;
+    border-bottom-color: #0066cc;
+    background-color: #f8f9fa;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.pdf-container {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+.pdf-iframe {
+    width: 100%;
+    height: 800px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0;
+}
+
+/* 라디오 버튼을 사용한 탭 구현 */
+.tab-radio {
+    display: none;
+}
+
+.tab-radio:checked + .tab-button {
+    color: #0066cc;
+    border-bottom-color: #0066cc;
+    background-color: #f8f9fa;
+}
+
+/* 각 라디오 버튼이 해당하는 탭 콘텐츠만 제어 */
+#tab-resume:checked ~ .tab-content:first-of-type {
+    display: block;
+}
+
+#tab-cv:checked ~ .tab-content:last-of-type {
+    display: block;
+}
+
+/* 기본적으로 첫 번째 탭이 보이도록 */
+#tab-resume:checked ~ .tab-content:first-of-type {
+    display: block;
+}
+&lt;/style&gt;
+&lt;div class=&#34;tab-container&#34;&gt;
+  &lt;input type=&#34;radio&#34; name=&#34;tab&#34; id=&#34;tab-resume&#34; class=&#34;tab-radio&#34; checked&gt;
+  &lt;label for=&#34;tab-resume&#34; class=&#34;tab-button&#34;&gt;Resume&lt;/label&gt;
+  &lt;input type=&#34;radio&#34; name=&#34;tab&#34; id=&#34;tab-cv&#34; class=&#34;tab-radio&#34;&gt;
+  &lt;label for=&#34;tab-cv&#34; class=&#34;tab-button&#34;&gt;CV&lt;/label&gt;
+  &lt;div class=&#34;tab-content&#34;&gt;
+    &lt;div class=&#34;pdf-container&#34;&gt;
+      &lt;iframe src=&#34;http://localhost:1313/resume.pdf&#34; class=&#34;pdf-iframe&#34; type=&#34;application/pdf&#34; allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;tab-content&#34;&gt;
+    &lt;div class=&#34;pdf-container&#34;&gt;
+      &lt;iframe src=&#34;http://localhost:1313/cv.pdf&#34; class=&#34;pdf-iframe&#34; type=&#34;application/pdf&#34; allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</description>
     </item>
     <item>
       <title></title>

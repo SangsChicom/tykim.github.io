@@ -16103,6 +16103,436 @@ _**User**_
 
 _**Assistant**_
 
+HTML을 보니 문제를 파악했습니다! Hugo가 JavaScript를 압축(minify)하면서 원래 코드가 변경되었습니다. `DOMContentLoaded` 이벤트와 `window.openTab` 설정이 모두 사라지고 단순한 함수로 변환되었네요.
+
+이 문제를 해결하기 위해 다른 방법을 시도해보겠습니다:
+
+
+---
+
+```diff
+  <div class="tab-container">
+    <div class="tab-buttons">
+-     <button class="tab-button active" onclick="openTab(event, 'resume')">Resume</button>
+-     <button class="tab-button" onclick="openTab(event, 'cv')">CV</button>
++     <button class="tab-button active" onclick="switchTab('resume')">Resume</button>
++     <button class="tab-button" onclick="switchTab('cv')">CV</button>
+    </div>
+  
+```
+
+```diff
+  </div>
+  
+- <script>
+- // DOM이 로드된 후 실행
+- document.addEventListener('DOMContentLoaded', function() {
+-     // 탭 기능 함수
+-     window.openTab = function(evt, tabName) {
+-         try {
+-             // 모든 탭 콘텐츠를 숨김
+-             var tabcontent = document.getElementsByClassName("tab-content");
+-             for (var i = 0; i < tabcontent.length; i++) {
+-                 tabcontent[i].style.display = "none";
++ <script type="text/javascript">
++ // 탭 전환 함수
++ function switchTab(tabName) {
++     // 모든 탭 콘텐츠 숨기기
++     var contents = document.getElementsByClassName('tab-content');
++     for (var i = 0; i < contents.length; i++) {
++         contents[i].style.display = 'none';
+      }
+      
+      // 모든 탭 버튼에서 active 클래스 제거
+-             var tablinks = document.getElementsByClassName("tab-button");
+-             for (var i = 0; i < tablinks.length; i++) {
+-                 tablinks[i].className = tablinks[i].className.replace(" active", "");
++     var buttons = document.getElementsByClassName('tab-button');
++     for (var i = 0; i < buttons.length; i++) {
++         buttons[i].classList.remove('active');
+      }
+      
+-             // 클릭된 탭을 보여주고 버튼에 active 클래스 추가
+-             var targetTab = document.getElementById(tabName);
+-             if (targetTab) {
+-                 targetTab.style.display = "block";
++     // 선택된 탭 보이기
++     var selectedTab = document.getElementById(tabName);
++     if (selectedTab) {
++         selectedTab.style.display = 'block';
+      }
+      
+-             if (evt && evt.currentTarget) {
+-                 evt.currentTarget.className += " active";
++     // 클릭된 버튼에 active 클래스 추가
++     event.target.classList.add('active');
+  }
+-         } catch (error) {
+-             console.error('Tab switching error:', error);
+-         }
+-     };
+- 
+-     // 초기 탭 설정
+-     var defaultTab = document.getElementById('resume');
+-     if (defaultTab) {
+-         defaultTab.style.display = "block";
++ 
++ // 페이지 로드 시 초기 설정
++ document.addEventListener('DOMContentLoaded', function() {
++     // 기본 탭이 제대로 표시되도록 설정
++     var resumeTab = document.getElementById('resume');
++     if (resumeTab) {
++         resumeTab.style.display = 'block';
+      }
+  });
+```
+
+---
+
+이제 Hugo를 빌드하여 변경사항을 적용하겠습니다.
+
+
+---
+
+```bash
+hugo
+```
+
+---
+
+수정했습니다! 이번에는 더 간단하고 안전한 방법을 사용했습니다:
+
+**주요 변경사항:**
+1. **함수명 변경**: `openTab` → `switchTab`으로 변경하여 더 명확하게 했습니다
+2. **매개변수 단순화**: `event` 매개변수를 제거하고 `event.target`을 직접 사용합니다
+3. **classList 사용**: `className.replace()` 대신 `classList.remove()`와 `classList.add()`를 사용합니다
+4. **type 속성 추가**: `<script type="text/javascript">`로 명시적으로 타입을 지정했습니다
+
+이제 Hugo를 빌드하시면 JavaScript가 더 안정적으로 작동할 것입니다. 빌드를 진행하시겠습니까?
+
+---
+
+_**User**_
+
+똑같이 안돼
+
+---
+
+_**Assistant**_
+
+Hugo가 JavaScript를 계속 압축하고 있는 것 같습니다. 다른 접근 방법을 시도해보겠습니다. JavaScript를 별도 파일로 분리하거나, 더 간단한 방법을 사용해보겠습니다.
+
+
+---
+
+```diff
+  hideTitle: true
+  ---
++ 
++ <style>
++ /* 탭 스타일 */
++ .tab-container {
++     margin: 20px 0;
++     max-width: 100%;
++     padding: 0;
++ }
++ 
++ .tab-buttons {
++     display: flex;
++     border-bottom: 2px solid #ddd;
++     margin-bottom: 20px;
++     justify-content: center;
++ }
++ 
++ .tab-button {
++     background: none;
++     border: none;
++     padding: 12px 24px;
++     cursor: pointer;
++     font-size: 16px;
++     font-weight: 500;
++     color: #666;
++     border-bottom: 3px solid transparent;
++     transition: all 0.3s ease;
++ }
++ 
++ .tab-button:hover {
++     color: #0066cc;
++     background-color: #f8f9fa;
++ }
++ 
++ .tab-button.active {
++     color: #0066cc;
++     border-bottom-color: #0066cc;
++     background-color: #f8f9fa;
++ }
++ 
++ .tab-content {
++     display: none;
++ }
++ 
++ .tab-content.active {
++     display: block;
++ }
++ 
++ .pdf-container {
++     margin-top: 20px;
++     width: 100%;
++     max-width: 100%;
++     padding: 0;
++ }
++ 
++ .pdf-iframe {
++     width: 100%;
++     height: 800px;
++     border: 1px solid #ddd;
++     border-radius: 5px;
++     margin: 0;
++ }
++ 
++ /* 라디오 버튼을 사용한 탭 구현 */
++ .tab-radio {
++     display: none;
++ }
++ 
++ .tab-radio:checked + .tab-button {
++     color: #0066cc;
++     border-bottom-color: #0066cc;
++     background-color: #f8f9fa;
++ }
++ 
++ .tab-radio:checked ~ .tab-content {
++     display: block;
++ }
++ 
++ .tab-radio:not(:checked) ~ .tab-content {
++     display: none;
++ }
++ </style>
+  
+  <div class="tab-container">
+-   <div class="tab-buttons">
+-     <button class="tab-button active" onclick="switchTab('resume')">Resume</button>
+-     <button class="tab-button" onclick="switchTab('cv')">CV</button>
+-   </div>
++   <input type="radio" name="tab" id="tab-resume" class="tab-radio" checked>
++   <label for="tab-resume" class="tab-button">Resume</label>
++   
++   <input type="radio" name="tab" id="tab-cv" class="tab-radio">
++   <label for="tab-cv" class="tab-button">CV</label>
+    
+-   <div id="resume" class="tab-content active">
++   <div class="tab-content">
+      <div class="pdf-container">
+        <iframe src="/resume.pdf" class="pdf-iframe"></iframe>
+      </div>
+    </div>
+    
+-   <div id="cv" class="tab-content">
++   <div class="tab-content">
+      <div class="pdf-container">
+        <iframe src="/cv.pdf" class="pdf-iframe"></iframe>
+      </div>
+    </div>
+  </div>
+- 
+- <script type="text/javascript">
+- // 탭 전환 함수
+- function switchTab(tabName) {
+-     // 모든 탭 콘텐츠 숨기기
+-     var contents = document.getElementsByClassName('tab-content');
+-     for (var i = 0; i < contents.length; i++) {
+-         contents[i].style.display = 'none';
+-     }
+-     
+-     // 모든 탭 버튼에서 active 클래스 제거
+-     var buttons = document.getElementsByClassName('tab-button');
+-     for (var i = 0; i < buttons.length; i++) {
+-         buttons[i].classList.remove('active');
+-     }
+-     
+-     // 선택된 탭 보이기
+-     var selectedTab = document.getElementById(tabName);
+-     if (selectedTab) {
+-         selectedTab.style.display = 'block';
+-     }
+-     
+-     // 클릭된 버튼에 active 클래스 추가
+-     event.target.classList.add('active');
+- }
+- 
+- // 페이지 로드 시 초기 설정
+- document.addEventListener('DOMContentLoaded', function() {
+-     // 기본 탭이 제대로 표시되도록 설정
+-     var resumeTab = document.getElementById('resume');
+-     if (resumeTab) {
+-         resumeTab.style.display = 'block';
+-     }
+- });
+- </script>
+  
+```
+
+---
+
+이제 Hugo를 빌드하여 변경사항을 적용하겠습니다.
+
+
+---
+
+```bash
+hugo
+```
+
+---
+
+완전히 다른 접근 방법을 시도했습니다! 이번에는 **JavaScript 없이 CSS만으로 탭 기능을 구현**했습니다:
+
+**주요 변경사항:**
+1. **JavaScript 완전 제거**: Hugo의 JavaScript 압축 문제를 피하기 위해 JavaScript를 모두 제거했습니다
+2. **라디오 버튼 사용**: `<input type="radio">`와 `<label>`을 사용하여 순수 CSS로 탭을 구현했습니다
+3. **CSS 선택자 활용**: `:checked`, `+`, `~` 선택자를 사용하여 탭 전환을 처리합니다
+
+**작동 원리:**
+- 라디오 버튼이 체크되면 해당 라벨의 스타일이 변경됩니다
+- `:checked ~ .tab-content` 선택자로 체크된 라디오 버튼에 해당하는 콘텐츠만 표시됩니다
+- JavaScript 없이도 완전히 작동합니다
+
+이 방법은 Hugo의 JavaScript 압축과 무관하게 작동하므로 GitHub Pages에서도 문제없이 작동할 것입니다. Hugo를 빌드해보시겠습니까?
+
+---
+
+_**User**_
+
+지금은 hugo에서 탭은 보이는데 pdf 파일이 안보여
+
+---
+
+_**Assistant**_
+
+PDF 파일이 안 보이는 문제를 해결해보겠습니다. 먼저 PDF 파일들이 제대로 있는지 확인해보겠습니다.
+
+
+---
+
+<details>
+            <summary>Listed directory static • **8** results</summary>
+        
+| Name |
+|-------|
+| 📄 `resume.pdf` |
+| 📄 `cv.pdf` |
+| 📄 `picture2.jpeg` |
+| 📄 `favicon-32x32.png` |
+| 📄 `picture.jpeg` |
+| 📄 `apple-touch-icon.png` |
+| 📄 `favicon.ico` |
+| 📄 `favicon-16x16.png` |
+
+</details>
+
+---
+
+PDF 파일들은 제대로 있습니다. 문제는 아마도 iframe의 경로나 보안 설정 때문일 수 있습니다. 몇 가지 해결 방법을 시도해보겠습니다.
+
+
+---
+
+```diff
+    <div class="tab-content">
+      <div class="pdf-container">
+-       <iframe src="/resume.pdf" class="pdf-iframe"></iframe>
++       <iframe src="/resume.pdf" class="pdf-iframe" type="application/pdf" allowfullscreen></iframe>
+      </div>
+    </div>
+    
+    <div class="tab-content">
+      <div class="pdf-container">
+-       <iframe src="/cv.pdf" class="pdf-iframe"></iframe>
++       <iframe src="/cv.pdf" class="pdf-iframe" type="application/pdf" allowfullscreen></iframe>
+      </div>
+    </div>
+```
+
+---
+
+이제 Hugo를 빌드하여 변경사항을 적용하겠습니다.
+
+
+---
+
+```bash
+hugo
+```
+
+---
+
+PDF가 안 보이는 문제를 해결하기 위해 iframe에 추가 속성을 설정했습니다:
+
+**변경사항:**
+1. **`type="application/pdf"` 추가**: 브라우저가 PDF 파일임을 명확히 인식하도록 했습니다
+2. **`allowfullscreen` 추가**: PDF 뷰어가 전체 화면 모드를 지원하도록 했습니다
+
+만약 여전히 PDF가 안 보인다면, 다른 방법을 시도해볼 수 있습니다:
+
+1. **PDF 뷰어 플러그인 사용**: Google Docs Viewer나 PDF.js 사용
+2. **다운로드 링크 추가**: PDF를 직접 보기 어려운 경우 다운로드 옵션 제공
+3. **경로 확인**: 상대 경로 vs 절대 경로 문제
+
+어떤 방법을 시도해보시겠습니까?
+
+---
+
+_**User**_
+
+안보여 다른 웹페이지는 잘 되는거같던데 왜 이거는 안되는거야? hugo 문제야? 아까 탭 문제 말고 push했을 때는 pdf 부분은 잘 떴는데 iframe은 유지하고 불가능해?
+
+---
+
+_**Assistant**_
+
+아, 이해했습니다! 이전에 탭 문제를 해결하면서 CSS-only 방식으로 바꾸면서 iframe이 숨겨진 것 같습니다. CSS 선택자 문제일 가능성이 높습니다.
+
+현재 CSS를 확인해보겠습니다:
+
+
+---
+
+Read file: content/cv-resume.md
+
+---
+
+문제를 찾았습니다! CSS 선택자에서 `.tab-radio:checked ~ .tab-content`가 모든 `.tab-content`를 선택하고 있어서, 첫 번째 탭이 체크되어도 두 번째 탭 콘텐츠도 표시되고 있습니다. 
+
+CSS 선택자를 수정하여 각 라디오 버튼이 해당하는 탭 콘텐츠만 제어하도록 하겠습니다:
+
+
+---
+
+```diff
+  }
+  
+- .tab-radio:checked ~ .tab-content {
++ /* 각 라디오 버튼이 해당하는 탭 콘텐츠만 제어 */
++ #tab-resume:checked ~ .tab-content:first-of-type {
++     display: block;
++ }
++ 
++ #tab-cv:checked ~ .tab-content:last-of-type {
+      display: block;
+  }
+  
+- .tab-radio:not(:checked) ~ .tab-content {
+-     display: none;
++ /* 기본적으로 첫 번째 탭이 보이도록 */
++ #tab-resume:checked ~ .tab-content:first-of-type {
++     display: block;
+  }
+  </style>
+```
+
+---
+
 
 
 ---

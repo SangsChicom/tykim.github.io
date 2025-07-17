@@ -4,56 +4,109 @@ hideMeta: true
 hideTitle: true
 ---
 
-<div class="tab-container">
-  <div class="tab-buttons">
-    <button class="tab-button active" onclick="switchTab('resume')">Resume</button>
-    <button class="tab-button" onclick="switchTab('cv')">CV</button>
-  </div>
+<style>
+/* 탭 스타일 */
+.tab-container {
+    margin: 20px 0;
+    max-width: 100%;
+    padding: 0;
+}
 
-  <div id="resume" class="tab-content active">
+.tab-buttons {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: #666;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+    color: #0066cc;
+    background-color: #f8f9fa;
+}
+
+.tab-button.active {
+    color: #0066cc;
+    border-bottom-color: #0066cc;
+    background-color: #f8f9fa;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.pdf-container {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+.pdf-iframe {
+    width: 100%;
+    height: 800px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0;
+}
+
+/* 라디오 버튼을 사용한 탭 구현 */
+.tab-radio {
+    display: none;
+}
+
+.tab-radio:checked + .tab-button {
+    color: #0066cc;
+    border-bottom-color: #0066cc;
+    background-color: #f8f9fa;
+}
+
+/* 각 라디오 버튼이 해당하는 탭 콘텐츠만 제어 */
+#tab-resume:checked ~ .tab-content:first-of-type {
+    display: block;
+}
+
+#tab-cv:checked ~ .tab-content:last-of-type {
+    display: block;
+}
+
+/* 기본적으로 첫 번째 탭이 보이도록 */
+#tab-resume:checked ~ .tab-content:first-of-type {
+    display: block;
+}
+</style>
+
+<div class="tab-container">
+  <input type="radio" name="tab" id="tab-resume" class="tab-radio" checked>
+  <label for="tab-resume" class="tab-button">Resume</label>
+  
+  <input type="radio" name="tab" id="tab-cv" class="tab-radio">
+  <label for="tab-cv" class="tab-button">CV</label>
+  
+  <div class="tab-content">
     <div class="pdf-container">
-      <iframe src="/resume.pdf" class="pdf-iframe"></iframe>
+      <iframe src="/resume.pdf" class="pdf-iframe" type="application/pdf" allowfullscreen></iframe>
     </div>
   </div>
-
-  <div id="cv" class="tab-content">
+  
+  <div class="tab-content">
     <div class="pdf-container">
-      <iframe src="/cv.pdf" class="pdf-iframe"></iframe>
+      <iframe src="/cv.pdf" class="pdf-iframe" type="application/pdf" allowfullscreen></iframe>
     </div>
   </div>
 </div>
-
-<script type="text/javascript">
-// 탭 전환 함수
-function switchTab(tabName) {
-    // 모든 탭 콘텐츠 숨기기
-    var contents = document.getElementsByClassName('tab-content');
-    for (var i = 0; i < contents.length; i++) {
-        contents[i].style.display = 'none';
-    }
-    
-    // 모든 탭 버튼에서 active 클래스 제거
-    var buttons = document.getElementsByClassName('tab-button');
-    for (var i = 0; i < buttons.length; i++) {
-        buttons[i].classList.remove('active');
-    }
-    
-    // 선택된 탭 보이기
-    var selectedTab = document.getElementById(tabName);
-    if (selectedTab) {
-        selectedTab.style.display = 'block';
-    }
-    
-    // 클릭된 버튼에 active 클래스 추가
-    event.target.classList.add('active');
-}
-
-// 페이지 로드 시 초기 설정
-document.addEventListener('DOMContentLoaded', function() {
-    // 기본 탭이 제대로 표시되도록 설정
-    var resumeTab = document.getElementById('resume');
-    if (resumeTab) {
-        resumeTab.style.display = 'block';
-    }
-});
-</script>
