@@ -16052,9 +16052,56 @@ JavaScript 코드는 제대로 포함되어 있습니다. 문제는 아마도 Gi
 
 ---
 
+```bash
+hugo
+```
 
+```
+(base) ➜  tykim.github.io git:(master) hugo
+Start building sites … 
+hugo v0.147.5+extended+withdeploy darwin/amd64 BuildDate=2025-05-22T11:37:19Z VendorInfo=brew
+
+
+                   | EN  
+-------------------+-----
+  Pages            | 13  
+  Paginator pages  |  0  
+  Non-page files   |  0  
+  Static files     |  8  
+  Processed images |  0  
+  Aliases          |  0  
+  Cleaned          |  0  
+
+Total in 280 ms
+(base) ➜  tykim.github.io git:(master) ✗
+```
 
 ---
+
+완료되었습니다! JavaScript를 개선했습니다:
+
+**주요 개선사항:**
+1. **DOMContentLoaded 이벤트 사용**: DOM이 완전히 로드된 후에 JavaScript가 실행되도록 했습니다
+2. **전역 함수로 설정**: `window.openTab`으로 설정하여 HTML에서 접근할 수 있도록 했습니다
+3. **오류 처리 추가**: try-catch 블록으로 오류를 잡아서 디버깅할 수 있도록 했습니다
+4. **안전한 요소 접근**: `getElementById` 결과를 확인한 후 사용하도록 했습니다
+5. **초기 탭 설정**: 페이지 로드 시 기본 탭이 제대로 표시되도록 했습니다
+
+이제 GitHub Pages에서도 탭 기능이 제대로 작동할 것입니다. 변경사항을 Git에 커밋하고 푸시해보세요!
+
+---
+
+_**User**_
+
+<main class="main"><article class="post-single"><div class="post-content"><div class="tab-container"><div class="tab-buttons"><button class="tab-button active" onclick="openTab(event,&quot;resume&quot;)">Resume</button>
+<button class="tab-button" onclick="openTab(event,&quot;cv&quot;)">CV</button></div><div id="resume" class="tab-content active"><div class="pdf-container"><iframe src="/resume.pdf" class="pdf-iframe"></iframe></div></div><div id="cv" class="tab-content"><div class="pdf-container"><iframe src="/cv.pdf" class="pdf-iframe"></iframe></div></div></div><script>function openTab(e,t){for(var s,o=document.getElementsByClassName("tab-content"),n=0;n<o.length;n++)o[n].style.display="none";for(s=document.getElementsByClassName("tab-button"),n=0;n<s.length;n++)s[n].className=s[n].className.replace(" active","");document.getElementById(t).style.display="block",e.currentTarget.className+=" active"}</script></div><footer class="post-footer"><ul class="post-tags"></ul></footer></article></main>
+
+
+해결안됨. html 부분 긁어왔는데 파악해봐
+
+---
+
+_**Assistant**_
 
 
 
