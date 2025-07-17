@@ -16533,7 +16533,536 @@ CSS 선택자를 수정하여 각 라디오 버튼이 해당하는 탭 콘텐츠
 
 ---
 
+이제 Hugo를 빌드하여 변경사항을 적용하겠습니다.
 
+
+---
+
+```bash
+hugo
+```
+
+---
+
+수정했습니다! 문제는 CSS 선택자가 모든 `.tab-content`를 선택하고 있어서 탭 전환이 제대로 작동하지 않았던 것입니다.
+
+**수정한 내용:**
+1. **구체적인 선택자 사용**: `#tab-resume:checked ~ .tab-content:first-of-type`와 `#tab-cv:checked ~ .tab-content:last-of-type`로 각 라디오 버튼이 해당하는 탭 콘텐츠만 제어하도록 했습니다
+2. **중복 제거**: 불필요한 선택자를 제거했습니다
+
+이제 각 탭이 독립적으로 작동하고 PDF가 제대로 표시될 것입니다. Hugo를 빌드해보시겠습니까?
+
+---
+
+_**User**_
+
+여전히 push하면 탭 기능이 작동 안해
+
+---
+
+_**Assistant**_
+
+GitHub Pages에서 탭 기능이 작동하지 않는 문제를 해결해보겠습니다. CSS-only 방식이 복잡해서 문제가 생기는 것 같습니다. 더 간단하고 안정적인 JavaScript 방식으로 돌아가되, Hugo의 압축을 피하는 방법을 시도해보겠습니다.
+
+
+---
+
+```diff
+      margin: 0;
+  }
+- 
+- /* 라디오 버튼을 사용한 탭 구현 */
+- .tab-radio {
+-     display: none;
+- }
+- 
+- .tab-radio:checked + .tab-button {
+-     color: #0066cc;
+-     border-bottom-color: #0066cc;
+-     background-color: #f8f9fa;
+- }
+- 
+- /* 각 라디오 버튼이 해당하는 탭 콘텐츠만 제어 */
+- #tab-resume:checked ~ .tab-content:first-of-type {
+-     display: block;
+- }
+- 
+- #tab-cv:checked ~ .tab-content:last-of-type {
+-     display: block;
+- }
+- 
+- /* 기본적으로 첫 번째 탭이 보이도록 */
+- #tab-resume:checked ~ .tab-content:first-of-type {
+-     display: block;
+- }
+  </style>
+  
+  <div class="tab-container">
+-   <input type="radio" name="tab" id="tab-resume" class="tab-radio" checked>
+-   <label for="tab-resume" class="tab-button">Resume</label>
+-   
+-   <input type="radio" name="tab" id="tab-cv" class="tab-radio">
+-   <label for="tab-cv" class="tab-button">CV</label>
++   <div class="tab-buttons">
++     <button class="tab-button active" onclick="showTab('resume')">Resume</button>
++     <button class="tab-button" onclick="showTab('cv')">CV</button>
++   </div>
+    
+-   <div class="tab-content">
++   <div id="resume" class="tab-content active">
+      <div class="pdf-container">
+        <iframe src="/resume.pdf" class="pdf-iframe" type="application/pdf" allowfullscreen></iframe>
+      </div>
+    </div>
+    
+-   <div class="tab-content">
++   <div id="cv" class="tab-content">
+      <div class="pdf-container">
+        <iframe src="/cv.pdf" class="pdf-iframe" type="application/pdf" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
++ 
++ <script>
++ // 간단한 탭 전환 함수
++ function showTab(tabName) {
++     // 모든 탭 콘텐츠 숨기기
++     var contents = document.getElementsByClassName('tab-content');
++     for (var i = 0; i < contents.length; i++) {
++         contents[i].style.display = 'none';
++         contents[i].classList.remove('active');
++     }
++     
++     // 모든 탭 버튼에서 active 클래스 제거
++     var buttons = document.getElementsByClassName('tab-button');
++     for (var i = 0; i < buttons.length; i++) {
++         buttons[i].classList.remove('active');
++     }
++     
++     // 선택된 탭 보이기
++     var selectedTab = document.getElementById(tabName);
++     if (selectedTab) {
++         selectedTab.style.display = 'block';
++         selectedTab.classList.add('active');
++     }
++     
++     // 클릭된 버튼에 active 클래스 추가
++     event.target.classList.add('active');
++ }
++ 
++ // 페이지 로드 시 초기 설정
++ window.onload = function() {
++     // 기본 탭이 제대로 표시되도록 설정
++     var resumeTab = document.getElementById('resume');
++     if (resumeTab) {
++         resumeTab.style.display = 'block';
++         resumeTab.classList.add('active');
++     }
++ };
++ </script>
+  
+```
+
+---
+
+이제 Hugo를 빌드하여 변경사항을 적용하겠습니다.
+
+
+---
+
+```bash
+hugo
+```
+
+---
+
+CSS-only 방식을 제거하고 더 간단하고 안정적인 JavaScript 방식으로 변경했습니다:
+
+**주요 변경사항:**
+1. **라디오 버튼 제거**: 복잡한 CSS 선택자를 제거했습니다
+2. **단순한 버튼 사용**: 일반 `<button>` 요소를 사용합니다
+3. **간단한 JavaScript**: `showTab()` 함수를 사용하여 탭 전환을 처리합니다
+4. **window.onload 사용**: `DOMContentLoaded` 대신 `window.onload`를 사용하여 더 안정적으로 작동하도록 했습니다
+5. **classList 사용**: `classList.add()`와 `classList.remove()`를 사용하여 클래스를 관리합니다
+
+이 방식은 더 간단하고 안정적이므로 GitHub Pages에서도 제대로 작동할 것입니다. Hugo를 빌드해보시겠습니까?
+
+---
+
+_**User**_
+
+hugo 에서는 압축을 왜 하고 어떤방식으로하고 뭐 그런거야?
+
+---
+
+_**Assistant**_
+
+Hugo의 압축(minification) 과정에 대해 설명드리겠습니다.
+
+
+---
+
+Read file: layouts/partials/head.html
+
+---
+
+Read file: config.yml
+
+---
+
+## Hugo의 압축(Minification) 과정 설명:
+
+### **왜 압축을 하나요?**
+
+1. **성능 최적화**: 
+   - 파일 크기를 줄여서 로딩 속도 향상
+   - 불필요한 공백, 주석, 줄바꿈 제거
+   - 네트워크 전송량 감소
+
+2. **SEO 개선**: 
+   - 빠른 로딩으로 검색 엔진 순위 향상
+   - 사용자 경험 개선
+
+### **어떤 방식으로 압축하나요?**
+
+**CSS 압축** (`head.html`에서):
+```go
+{{- $core := (slice $theme_vars $reset $common $chroma_styles $chroma_mod $includes_all $media) | resources.Concat "assets/css/core.css" | resources.Minify }}
+```
+
+**JavaScript 압축**:
+```go
+{{- $fastsearch := resources.Get "js/fastsearch.js" | js.Build (dict "params" (dict "fuseOpts" site.Params.fuseOpts)) | resources.Minify }}
+```
+
+### **압축 과정:**
+
+1. **CSS 파일들 병합** → **압축** → **하나의 파일로 생성**
+2. **JavaScript 파일들 병합** → **압축** → **하나의 파일로 생성**
+3. **HTML 내 인라인 스크립트도 압축**
+
+### **문제가 되는 부분:**
+
+**인라인 JavaScript 압축**:
+```javascript
+// 원본
+function showTab(tabName) {
+    // 모든 탭 콘텐츠 숨기기
+    var contents = document.getElementsByClassName('tab-content');
+    // ...
+}
+
+// 압축 후
+function showTab(e,t){for(var s,o=document.getElementsByClassName("tab-content"),n=0;n<o.length;n++)o[n].style.display="none";...}
+```
+
+### **해결 방법들:**
+
+1. **외부 JavaScript 파일 사용**
+2. **압축 비활성화** (성능 저하)
+3. **더 간단한 코드 사용**
+4. **CSS-only 방식 사용**
+
+현재 상황에서는 **외부 JavaScript 파일**을 만드는 것이 가장 좋은 해결책일 것 같습니다. 시도해보시겠습니까?
+
+---
+
+_**User**_
+
+외부 스크립트 파일을 만든다는것은?
+
+---
+
+_**Assistant**_
+
+외부 JavaScript 파일을 만드는 방법을 설명드리겠습니다.
+
+
+---
+
+<details>
+            <summary>Listed directory assets • **1** results</summary>
+        
+| Name |
+|-------|
+| 📁 `css` |
+
+</details>
+
+---
+
+```bash
+mkdir -p assets/js
+```
+
+```
+(base) ➜  tykim.github.io git:(master) ✗ mkdir -p assets/js
+```
+
+---
+
+이제 외부 JavaScript 파일을 만들어보겠습니다:
+
+
+---
+
+```diff
+- 
++ // CV 페이지 탭 전환 기능
++ function showTab(tabName) {
++     // 모든 탭 콘텐츠 숨기기
++     var contents = document.getElementsByClassName('tab-content');
++     for (var i = 0; i < contents.length; i++) {
++         contents[i].style.display = 'none';
++         contents[i].classList.remove('active');
++     }
++     
++     // 모든 탭 버튼에서 active 클래스 제거
++     var buttons = document.getElementsByClassName('tab-button');
++     for (var i = 0; i < buttons.length; i++) {
++         buttons[i].classList.remove('active');
++     }
++     
++     // 선택된 탭 보이기
++     var selectedTab = document.getElementById(tabName);
++     if (selectedTab) {
++         selectedTab.style.display = 'block';
++         selectedTab.classList.add('active');
++     }
++     
++     // 클릭된 버튼에 active 클래스 추가
++     event.target.classList.add('active');
++ }
++ 
++ // 페이지 로드 시 초기 설정
++ window.onload = function() {
++     // 기본 탭이 제대로 표시되도록 설정
++     var resumeTab = document.getElementById('resume');
++     if (resumeTab) {
++         resumeTab.style.display = 'block';
++         resumeTab.classList.add('active');
++     }
++ }; 
+```
+
+---
+
+이제 `head.html`에 이 JavaScript 파일을 포함시키겠습니다:
+
+
+---
+
+```diff
+  {{- end }}
+  {{- end -}}
++ 
++ <!-- CV 페이지 탭 기능 JavaScript -->
++ {{- $tabs := resources.Get "js/tabs.js" | js.Build | resources.Minify }}
++ <script defer src="{{ $tabs.RelPermalink }}"></script>
+  
+  {{- /* Favicons */}}
+```
+
+---
+
+이제 CV-Resume 페이지에서 인라인 JavaScript를 제거하겠습니다:
+
+
+---
+
+```diff
+    </div>
+  </div>
+- 
+- <script>
+- // 간단한 탭 전환 함수
+- function showTab(tabName) {
+-     // 모든 탭 콘텐츠 숨기기
+-     var contents = document.getElementsByClassName('tab-content');
+-     for (var i = 0; i < contents.length; i++) {
+-         contents[i].style.display = 'none';
+-         contents[i].classList.remove('active');
+-     }
+-     
+-     // 모든 탭 버튼에서 active 클래스 제거
+-     var buttons = document.getElementsByClassName('tab-button');
+-     for (var i = 0; i < buttons.length; i++) {
+-         buttons[i].classList.remove('active');
+-     }
+-     
+-     // 선택된 탭 보이기
+-     var selectedTab = document.getElementById(tabName);
+-     if (selectedTab) {
+-         selectedTab.style.display = 'block';
+-         selectedTab.classList.add('active');
+-     }
+-     
+-     // 클릭된 버튼에 active 클래스 추가
+-     event.target.classList.add('active');
+- }
+- 
+- // 페이지 로드 시 초기 설정
+- window.onload = function() {
+-     // 기본 탭이 제대로 표시되도록 설정
+-     var resumeTab = document.getElementById('resume');
+-     if (resumeTab) {
+-         resumeTab.style.display = 'block';
+-         resumeTab.classList.add('active');
+-     }
+- };
+- </script>
+  
+```
+
+---
+
+이제 Hugo를 빌드하여 변경사항을 적용하겠습니다.
+
+
+---
+
+```bash
+hugo
+```
+
+---
+
+## 외부 JavaScript 파일 사용의 장점:
+
+### **왜 외부 파일을 사용하나요?**
+
+1. **Hugo 압축 최적화**: 
+   - Hugo가 외부 JS 파일을 더 효율적으로 처리
+   - 인라인 스크립트보다 안정적인 압축
+
+2. **캐싱**: 
+   - 브라우저가 JS 파일을 캐시하여 성능 향상
+   - 여러 페이지에서 재사용 가능
+
+3. **유지보수**: 
+   - 코드 분리로 관리 용이
+   - 디버깅 쉬움
+
+### **만든 파일들:**
+
+1. **`assets/js/tabs.js`**: 탭 기능 JavaScript
+2. **`layouts/partials/head.html`**: JS 파일 로드 추가
+3. **`content/cv-resume.md`**: 인라인 JS 제거
+
+### **작동 방식:**
+
+```html
+<!-- head.html에서 -->
+<script defer src="/assets/js/tabs.js"></script>
+
+<!-- cv-resume.md에서 -->
+<button onclick="showTab('resume')">Resume</button>
+```
+
+이제 Hugo가 외부 JS 파일을 제대로 처리하고, GitHub Pages에서도 안정적으로 작동할 것입니다. Hugo를 빌드해보시겠습니까?
+
+---
+
+_**User**_
+
+Hugo 에서 탭이 안눌리는데?
+
+---
+
+_**Assistant**_
+
+Hugo에서 탭이 안 눌리는 문제를 해결해보겠습니다. 먼저 현재 상황을 확인해보겠습니다.
+
+
+---
+
+```bash
+hugo
+```
+
+```
+(base) ?➜  tykim.github.io git:(master) ?✗ hugo
+Start building sites … 
+hugo v0.147.5+extended+withdeploy darwin/amd64 BuildDate=2025-05-22T11:37:19Z VendorInfo=brew
+
+
+                   | EN  
+-------------------+-----
+  Pages            | 13  
+  Paginator pages  |  0  
+  Non-page files   |  0  
+  Static files     |  8  
+  Processed images |  0  
+  Aliases          |  0  
+  Cleaned          |  0  
+
+Total in 260 ms
+(base) ➜  tykim.github.io git:(master) ✗
+```
+
+---
+
+Read file: public/cv-resume/index.html
+
+---
+
+좋습니다! JavaScript 파일이 제대로 로드되고 있습니다 (`<script defer src="/js/tabs.min.js"></script>`). 이제 JavaScript 파일이 제대로 생성되었는지 확인해보겠습니다.
+
+
+---
+
+<details>
+            <summary>Listed directory public/js • **1** results</summary>
+        
+| Name |
+|-------|
+| 📄 `tabs.min.js` |
+
+</details>
+
+---
+
+Read file: public/js/tabs.min.js
+
+---
+
+문제를 찾았습니다! Hugo가 JavaScript를 압축하면서 `showTab` 함수가 사라졌습니다. JavaScript 파일을 수정하여 함수를 전역으로 노출시키겠습니다.
+
+
+---
+
+```diff
+  // CV 페이지 탭 전환 기능
+- function showTab(tabName) {
++ window.showTab = function(tabName) {
+      // 모든 탭 콘텐츠 숨기기
+      var contents = document.getElementsByClassName('tab-content');
+```
+
+```diff
+      // 클릭된 버튼에 active 클래스 추가
+      event.target.classList.add('active');
+- }
++ };
+  
+  // 페이지 로드 시 초기 설정
+```
+
+---
+
+이제 Hugo를 다시 빌드하여 변경사항을 적용하겠습니다.
+
+
+---
+
+```bash
+hugo
+```
+
+---
+
+
+문제의 원인은 Hugo가 JavaScript를 압축하면서 `showTab` 함수가 전역에 노출되지 않아, 버튼 클릭 시 함수가
 
 ---
 

@@ -64,47 +64,21 @@ hideTitle: true
     border-radius: 5px;
     margin: 0;
 }
-
-/* 라디오 버튼을 사용한 탭 구현 */
-.tab-radio {
-    display: none;
-}
-
-.tab-radio:checked + .tab-button {
-    color: #0066cc;
-    border-bottom-color: #0066cc;
-    background-color: #f8f9fa;
-}
-
-/* 각 라디오 버튼이 해당하는 탭 콘텐츠만 제어 */
-#tab-resume:checked ~ .tab-content:first-of-type {
-    display: block;
-}
-
-#tab-cv:checked ~ .tab-content:last-of-type {
-    display: block;
-}
-
-/* 기본적으로 첫 번째 탭이 보이도록 */
-#tab-resume:checked ~ .tab-content:first-of-type {
-    display: block;
-}
 </style>
 
 <div class="tab-container">
-  <input type="radio" name="tab" id="tab-resume" class="tab-radio" checked>
-  <label for="tab-resume" class="tab-button">Resume</label>
+  <div class="tab-buttons">
+    <button class="tab-button active" onclick="showTab('resume')">Resume</button>
+    <button class="tab-button" onclick="showTab('cv')">CV</button>
+  </div>
   
-  <input type="radio" name="tab" id="tab-cv" class="tab-radio">
-  <label for="tab-cv" class="tab-button">CV</label>
-  
-  <div class="tab-content">
+  <div id="resume" class="tab-content active">
     <div class="pdf-container">
       <iframe src="/resume.pdf" class="pdf-iframe" type="application/pdf" allowfullscreen></iframe>
     </div>
   </div>
   
-  <div class="tab-content">
+  <div id="cv" class="tab-content">
     <div class="pdf-container">
       <iframe src="/cv.pdf" class="pdf-iframe" type="application/pdf" allowfullscreen></iframe>
     </div>

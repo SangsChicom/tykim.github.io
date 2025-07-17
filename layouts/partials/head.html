@@ -118,6 +118,10 @@
 {{- end }}
 {{- end -}}
 
+<!-- CV 페이지 탭 기능 JavaScript -->
+{{- $tabs := resources.Get "js/tabs.js" | js.Build | resources.Minify }}
+<script defer src="{{ $tabs.RelPermalink }}"></script>
+
 {{- /* Favicons */}}
 <link rel="icon" href="{{ site.Params.assets.favicon | default "favicon.ico" | absURL }}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ site.Params.assets.favicon16x16 | default "favicon-16x16.png" | absURL }}">
