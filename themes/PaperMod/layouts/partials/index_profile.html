@@ -42,10 +42,14 @@
             <h1>{{ .title | default site.Title | markdownify }}</h1>
             {{- partial "social_icons.html" -}}
         </div>
+
+        
         <!-- <h1>{{ .title | default site.Title | markdownify }}</h1> -->
         <!-- <span>{{ .subtitle | markdownify }}</span> -->
         <span>{{ readFile "subtitle.md" | markdownify }}</span>
         <!-- {{- partial "social_icons.html" -}} -->
+
+        <!-- <hr style="margin: 1px 0; border: none; border-top: 1px solid #616161;"> -->
 
         {{- with .buttons }}
         <div class="buttons">
@@ -65,14 +69,28 @@
             </a>
             {{- end }}
 
-            
-
-
         </div>
         {{- end }}
+
+        <hr style="margin: 2px 0; border: none; border-top: 1px solid #616161;">
         
         <div class="post-content">
-            {{ readFile "recent_news.md" | markdownify }}
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                <h3 style="margin: 0;">Recent News</h3>
+                <a href="/news/" style="color: #000000; text-decoration: none; font-size: 0.8em; margin-left: 0px; text-align: right;">📰 View All→</a>
+            </div>
+            <hr style="margin: 5px 0 15px 0; border: none; border-top: 1px solid #616161;">
+            <div style="font-size: 0.85em; line-height: 1.4;">
+                {{ $newsContent := readFile "news.md" }}
+                {{ $newsLines := split $newsContent "\n" }}
+                {{ $count := 0 }}
+                {{ range $newsLines }}
+                    {{ if and (hasPrefix . "**") (lt $count 5) }}
+                        {{ . | markdownify }}<br>
+                        {{ $count = add $count 1 }}
+                    {{ end }}
+                {{ end }}
+            </div>
         </div>
 
     </div>

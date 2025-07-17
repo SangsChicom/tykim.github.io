@@ -21,7 +21,6 @@ rm -f .git/index.lock
    www    CNAME    tykim.github.io
 
 
-
    echo "www.tykim.me" > CNAME
    git add CNAME
    git commit -m "docs: CNAME 파일 수정"

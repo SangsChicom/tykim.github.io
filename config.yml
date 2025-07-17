@@ -12,18 +12,21 @@ taxonomies:
 
 menu:
     main:
+        - name: Home
+          url: /
+          weight: 1
         - name: Research
-          url: books/
-          weight: 5 
-        - name: Resume
-          url: papers/
+          url: research/
           weight: 2
-        - name: CV
-          url: courses/
+        - name: Publication
+          url: publication/
           weight: 3
+        - name: Photo
+          url: photo/
+          weight: 4
         - name: Blog
           url: https://www.tykim.me
-          weight: 6
+          weight: 5
 
 params:
     description: "This website hosts Taeyoung Kim's research papers, books, course materials, data, curriculum vitae, and contact information."
@@ -58,28 +61,30 @@ params:
           imageWidth: 160
           imageHeight: 160
           buttons:
-            - name: CV / Resume
+            - name: CV & Resume
               url: cv-resume/
             - name: Research Project
               url: research/
             - name: Publication
               url: publication/
-            - name: News
-              url: news/
+            - name: Photo
+              url: photo/
             - name: Blog
-              url: https://www.tykim.me
+              url: https://tykimys.tistory.com/
 
     socialIcons:
         # - name: CV
           # url: cv.pdf
         - name: Email
           url: mailto:falcon@yonsei.ac.kr
+        - name: LinkedIn
+          url: http://www.linkedin.com/in/tykimdotme
         # - name: Zoom
           # url: https://www.zoom.us/my/igelfeld
         # - name: Location
           # url: location/
-        - name: Office Hours
-          url: officehours/
+        # - name: Office Hours
+          # url: officehours/
         - name: Google Scholar
           url: https://scholar.google.com/citations?user=U3-aG5oAAAAJ
         - name: GitHub
@@ -99,7 +104,7 @@ params:
         hiddenInList: false
         hiddenInSingle: true
     label:
-      text: "Moritz-Maria von Igelfeld"
+      text: "Taeyoung Kim - Hompage"
       icon: favicon.ico
       iconHeight: 18
 

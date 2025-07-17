@@ -6,80 +6,735 @@
     <description>Recent content on Taeyoung Kim</description>
     <generator>Hugo -- 0.147.5</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 08 May 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Location</title>
-      <link>http://localhost:1313/location/</link>
-      <pubDate>Wed, 08 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/location/</guid>
-      <description>Professor Dr von Igelfeld&amp;#39;s mailing and office addresses at the Institute of Romance Philology.</description>
+      <title>News</title>
+      <link>http://localhost:1313/news/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/news/</guid>
+      <description>&lt;h1 id=&#34;news&#34;&gt;News&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;May 10, 2025&lt;/strong&gt; - Web Page Opened!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mar 1, 2025&lt;/strong&gt; - Start reseach as a visiting graduate student at Computational Imaging Lab, Berkeley!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nov, 2024&lt;/strong&gt; - Wins the Best Poster Award at ABC 2024!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Oct, 2024&lt;/strong&gt; - Selected for the Support Program for Outstanding Graduate Students&amp;rsquo; International Joint Training from NRF!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Feb, 2024&lt;/strong&gt; - My paper on lensless eye tracker is published on SPIE&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nov, 2023&lt;/strong&gt; - Wins the Young Investigator Award at the SPIE ABC 2023!&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Office Hours</title>
-      <link>http://localhost:1313/officehours/</link>
-      <pubDate>Wed, 08 May 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/officehours/</guid>
-      <description>Schedule and location for Professor Dr von Igelfeld&amp;#39;s office hours.</description>
+      <title>Photos</title>
+      <link>http://localhost:1313/photo/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/photo/</guid>
+      <description>&lt;!-- # Photos
+
+&lt;style&gt;
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.photo-item {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fafafa;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.photo-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.photo-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-info {
+  padding: 15px;
+}
+
+.photo-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.photo-date {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 8px;
+}
+
+.photo-description {
+  color: #555;
+  line-height: 1.5;
+  font-size: 0.9em;
+}
+
+.photo-location {
+  color: #0066cc;
+  font-size: 0.8em;
+  margin-top: 8px;
+}
+
+.photo-category {
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: #0066cc;
+  color: white;
+  border-radius: 12px;
+  font-size: 0.7em;
+  margin-bottom: 8px;
+}
+&lt;/style&gt;
+
+## Recent Photos
+
+&lt;div class=&#34;photo-grid&#34;&gt;
+  &lt;div class=&#34;photo-item&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/photo-2024-01.jpg&#34; alt=&#34;Conference Presentation&#34; class=&#34;photo-image&#34;&gt;
+    &lt;div class=&#34;photo-info&#34;&gt;
+      &lt;div class=&#34;photo-category&#34;&gt;Conference&lt;/div&gt;
+      &lt;div class=&#34;photo-title&#34;&gt;ICML 2024 Presentation&lt;/div&gt;
+      &lt;div class=&#34;photo-date&#34;&gt;January 2024&lt;/div&gt;
+      &lt;div class=&#34;photo-description&#34;&gt;International Conference on Machine Learning에서 논문 발표 중입니다.&lt;/div&gt;
+      &lt;div class=&#34;photo-location&#34;&gt;📍 Vienna, Austria&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;photo-item&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/photo-2023-12.jpg&#34; alt=&#34;Research Lab&#34; class=&#34;photo-image&#34;&gt;
+    &lt;div class=&#34;photo-info&#34;&gt;
+      &lt;div class=&#34;photo-category&#34;&gt;Research&lt;/div&gt;
+      &lt;div class=&#34;photo-title&#34;&gt;AI Research Lab&lt;/div&gt;
+      &lt;div class=&#34;photo-date&#34;&gt;December 2023&lt;/div&gt;
+      &lt;div class=&#34;photo-description&#34;&gt;딥러닝 모델 실험을 위한 연구실 환경입니다.&lt;/div&gt;
+      &lt;div class=&#34;photo-location&#34;&gt;📍 Seoul, Korea&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;photo-item&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/photo-2023-11.jpg&#34; alt=&#34;Workshop&#34; class=&#34;photo-image&#34;&gt;
+    &lt;div class=&#34;photo-info&#34;&gt;
+      &lt;div class=&#34;photo-category&#34;&gt;Workshop&lt;/div&gt;
+      &lt;div class=&#34;photo-title&#34;&gt;NLP Workshop&lt;/div&gt;
+      &lt;div class=&#34;photo-date&#34;&gt;November 2023&lt;/div&gt;
+      &lt;div class=&#34;photo-description&#34;&gt;자연어 처리 워크샵에서 학생들과 함께하는 모습입니다.&lt;/div&gt;
+      &lt;div class=&#34;photo-location&#34;&gt;📍 Seoul, Korea&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;photo-item&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/photo-2023-10.jpg&#34; alt=&#34;Collaboration&#34; class=&#34;photo-image&#34;&gt;
+    &lt;div class=&#34;photo-info&#34;&gt;
+      &lt;div class=&#34;photo-category&#34;&gt;Collaboration&lt;/div&gt;
+      &lt;div class=&#34;photo-title&#34;&gt;International Collaboration Meeting&lt;/div&gt;
+      &lt;div class=&#34;photo-date&#34;&gt;October 2023&lt;/div&gt;
+      &lt;div class=&#34;photo-description&#34;&gt;해외 연구팀과의 협력 미팅에서 논의하는 모습입니다.&lt;/div&gt;
+      &lt;div class=&#34;photo-location&#34;&gt;📍 Tokyo, Japan&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;photo-item&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/photo-2023-09.jpg&#34; alt=&#34;Award Ceremony&#34; class=&#34;photo-image&#34;&gt;
+    &lt;div class=&#34;photo-info&#34;&gt;
+      &lt;div class=&#34;photo-category&#34;&gt;Award&lt;/div&gt;
+      &lt;div class=&#34;photo-title&#34;&gt;Best Paper Award&lt;/div&gt;
+      &lt;div class=&#34;photo-date&#34;&gt;September 2023&lt;/div&gt;
+      &lt;div class=&#34;photo-description&#34;&gt;컨퍼런스에서 최우수 논문상을 수상한 모습입니다.&lt;/div&gt;
+      &lt;div class=&#34;photo-location&#34;&gt;📍 San Francisco, USA&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;photo-item&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/photo-2023-08.jpg&#34; alt=&#34;Teaching&#34; class=&#34;photo-image&#34;&gt;
+    &lt;div class=&#34;photo-info&#34;&gt;
+      &lt;div class=&#34;photo-category&#34;&gt;Teaching&lt;/div&gt;
+      &lt;div class=&#34;photo-title&#34;&gt;Machine Learning Class&lt;/div&gt;
+      &lt;div class=&#34;photo-date&#34;&gt;August 2023&lt;/div&gt;
+      &lt;div class=&#34;photo-description&#34;&gt;머신러닝 수업에서 학생들에게 개념을 설명하는 모습입니다.&lt;/div&gt;
+      &lt;div class=&#34;photo-location&#34;&gt;📍 Seoul, Korea&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;photo-item&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/photo-2023-07.jpg&#34; alt=&#34;Research Trip&#34; class=&#34;photo-image&#34;&gt;
+    &lt;div class=&#34;photo-info&#34;&gt;
+      &lt;div class=&#34;photo-category&#34;&gt;Research Trip&lt;/div&gt;
+      &lt;div class=&#34;photo-title&#34;&gt;Research Visit to MIT&lt;/div&gt;
+      &lt;div class=&#34;photo-date&#34;&gt;July 2023&lt;/div&gt;
+      &lt;div class=&#34;photo-description&#34;&gt;MIT 연구실 방문 중 연구 협력에 대해 논의하는 모습입니다.&lt;/div&gt;
+      &lt;div class=&#34;photo-location&#34;&gt;📍 Cambridge, USA&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;photo-item&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/photo-2023-06.jpg&#34; alt=&#34;Data Collection&#34; class=&#34;photo-image&#34;&gt;
+    &lt;div class=&#34;photo-info&#34;&gt;
+      &lt;div class=&#34;photo-category&#34;&gt;Field Work&lt;/div&gt;
+      &lt;div class=&#34;photo-title&#34;&gt;Data Collection for Autonomous Driving&lt;/div&gt;
+      &lt;div class=&#34;photo-date&#34;&gt;June 2023&lt;/div&gt;
+      &lt;div class=&#34;photo-description&#34;&gt;자율주행 연구를 위한 데이터 수집 현장에서 작업하는 모습입니다.&lt;/div&gt;
+      &lt;div class=&#34;photo-location&#34;&gt;📍 Seoul, Korea&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;photo-item&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/photo-2023-05.jpg&#34; alt=&#34;Team Building&#34; class=&#34;photo-image&#34;&gt;
+    &lt;div class=&#34;photo-info&#34;&gt;
+      &lt;div class=&#34;photo-category&#34;&gt;Team&lt;/div&gt;
+      &lt;div class=&#34;photo-title&#34;&gt;Research Team Building&lt;/div&gt;
+      &lt;div class=&#34;photo-date&#34;&gt;May 2023&lt;/div&gt;
+      &lt;div class=&#34;photo-description&#34;&gt;연구팀과 함께하는 팀 빌딩 활동 중입니다.&lt;/div&gt;
+      &lt;div class=&#34;photo-location&#34;&gt;📍 Jeju, Korea&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;photo-item&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/photo-2023-04.jpg&#34; alt=&#34;Interview&#34; class=&#34;photo-image&#34;&gt;
+    &lt;div class=&#34;photo-info&#34;&gt;
+      &lt;div class=&#34;photo-category&#34;&gt;Media&lt;/div&gt;
+      &lt;div class=&#34;photo-title&#34;&gt;AI Research Interview&lt;/div&gt;
+      &lt;div class=&#34;photo-date&#34;&gt;April 2023&lt;/div&gt;
+      &lt;div class=&#34;photo-description&#34;&gt;AI 연구에 대한 미디어 인터뷰를 진행하는 모습입니다.&lt;/div&gt;
+      &lt;div class=&#34;photo-location&#34;&gt;📍 Seoul, Korea&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+---
+
+*더 많은 사진은 [Instagram](https://www.instagram.com/username) 또는 [Flickr](https://www.flickr.com/photos/username)에서 확인하실 수 있습니다.*  --&gt;</description>
     </item>
     <item>
-      <title>Your Inner Hedgehog</title>
-      <link>http://localhost:1313/papers/paper3/</link>
-      <pubDate>Tue, 06 Apr 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/paper3/</guid>
-      <description>This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.</description>
+      <title>Publications</title>
+      <link>http://localhost:1313/publication/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/</guid>
+      <description>&lt;!-- 
+# Publications
+
+&lt;style&gt;
+.publication-section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #0066cc;
+}
+
+.publication-item {
+  margin-bottom: 25px;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #fafafa;
+  transition: transform 0.2s ease;
+}
+
+.publication-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.publication-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.publication-authors {
+  color: #666;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.publication-venue {
+  color: #0066cc;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.publication-year {
+  color: #999;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.publication-abstract {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.publication-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.publication-link {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.publication-link:hover {
+  background-color: #0052a3;
+  color: white;
+  text-decoration: none;
+}
+
+.publication-link.secondary {
+  background-color: #6c757d;
+}
+
+.publication-link.secondary:hover {
+  background-color: #5a6268;
+}
+&lt;/style&gt;
+
+## Peer Reviewed Journals
+
+&lt;div class=&#34;publication-section&#34;&gt;
+  &lt;div class=&#34;publication-item&#34;&gt;
+    &lt;div class=&#34;publication-title&#34;&gt;Deep Learning Approaches for Time Series Forecasting in Financial Markets&lt;/div&gt;
+    &lt;div class=&#34;publication-authors&#34;&gt;Taeyoung Kim, John Smith, Sarah Johnson&lt;/div&gt;
+    &lt;div class=&#34;publication-venue&#34;&gt;Journal of Machine Learning Research (JMLR)&lt;/div&gt;
+    &lt;div class=&#34;publication-year&#34;&gt;2024&lt;/div&gt;
+    &lt;div class=&#34;publication-abstract&#34;&gt;
+      본 논문에서는 금융 시장의 시계열 예측을 위한 새로운 딥러닝 아키텍처를 제안합니다. 
+      LSTM과 Transformer를 결합한 하이브리드 모델을 통해 기존 방법 대비 15% 향상된 예측 성능을 달성했습니다.
+    &lt;/div&gt;
+    &lt;div class=&#34;publication-links&#34;&gt;
+      &lt;a href=&#34;http://localhost:1313/papers/jmlr-2024.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
+      &lt;a href=&#34;https://github.com/username/jmlr-2024&#34; class=&#34;publication-link&#34;&gt;💻 Code&lt;/a&gt;
+      &lt;a href=&#34;https://doi.org/10.1234/jmlr.2024.001&#34; class=&#34;publication-link secondary&#34;&gt;🔗 DOI&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;publication-item&#34;&gt;
+    &lt;div class=&#34;publication-title&#34;&gt;Multi-Modal Sentiment Analysis Using Transformer Networks&lt;/div&gt;
+    &lt;div class=&#34;publication-authors&#34;&gt;Taeyoung Kim, Michael Brown, Lisa Wang&lt;/div&gt;
+    &lt;div class=&#34;publication-venue&#34;&gt;IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)&lt;/div&gt;
+    &lt;div class=&#34;publication-year&#34;&gt;2023&lt;/div&gt;
+    &lt;div class=&#34;publication-abstract&#34;&gt;
+      텍스트와 이미지를 동시에 처리하는 멀티모달 감정 분석 시스템을 제안합니다. 
+      Vision-Language Transformer를 활용하여 텍스트와 이미지의 상호작용을 효과적으로 모델링했습니다.
+    &lt;/div&gt;
+    &lt;div class=&#34;publication-links&#34;&gt;
+      &lt;a href=&#34;http://localhost:1313/papers/tpami-2023.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
+      &lt;a href=&#34;https://github.com/username/tpami-2023&#34; class=&#34;publication-link&#34;&gt;💻 Code&lt;/a&gt;
+      &lt;a href=&#34;https://doi.org/10.1109/TPAMI.2023.001&#34; class=&#34;publication-link secondary&#34;&gt;🔗 DOI&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;publication-item&#34;&gt;
+    &lt;div class=&#34;publication-title&#34;&gt;Robust Object Detection in Adverse Weather Conditions&lt;/div&gt;
+    &lt;div class=&#34;publication-authors&#34;&gt;Taeyoung Kim, David Lee, Emily Chen&lt;/div&gt;
+    &lt;div class=&#34;publication-venue&#34;&gt;Computer Vision and Image Understanding (CVIU)&lt;/div&gt;
+    &lt;div class=&#34;publication-year&#34;&gt;2023&lt;/div&gt;
+    &lt;div class=&#34;publication-abstract&#34;&gt;
+      악천후 조건에서의 객체 탐지를 위한 강건한 딥러닝 모델을 제안합니다. 
+      데이터 증강과 어댑티브 학습을 통해 비, 안개, 눈 등의 조건에서도 높은 탐지 성능을 유지합니다.
+    &lt;/div&gt;
+    &lt;div class=&#34;publication-links&#34;&gt;
+      &lt;a href=&#34;http://localhost:1313/papers/cviu-2023.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
+      &lt;a href=&#34;https://github.com/username/cviu-2023&#34; class=&#34;publication-link&#34;&gt;💻 Code&lt;/a&gt;
+      &lt;a href=&#34;https://doi.org/10.1016/j.cviu.2023.001&#34; class=&#34;publication-link secondary&#34;&gt;🔗 DOI&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+## Conference Papers
+
+&lt;div class=&#34;publication-section&#34;&gt;
+  &lt;div class=&#34;publication-item&#34;&gt;
+    &lt;div class=&#34;publication-title&#34;&gt;Efficient Reinforcement Learning for Autonomous Navigation&lt;/div&gt;
+    &lt;div class=&#34;publication-authors&#34;&gt;Taeyoung Kim, Alex Rodriguez, Maria Garcia&lt;/div&gt;
+    &lt;div class=&#34;publication-venue&#34;&gt;International Conference on Machine Learning (ICML)&lt;/div&gt;
+    &lt;div class=&#34;publication-year&#34;&gt;2024&lt;/div&gt;
+    &lt;div class=&#34;publication-abstract&#34;&gt;
+      자율주행을 위한 효율적인 강화학습 알고리즘을 제안합니다. 
+      Hierarchical RL과 Meta-learning을 결합하여 새로운 환경에서도 빠른 적응이 가능합니다.
+    &lt;/div&gt;
+    &lt;div class=&#34;publication-links&#34;&gt;
+      &lt;a href=&#34;http://localhost:1313/papers/icml-2024.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
+      &lt;a href=&#34;https://github.com/username/icml-2024&#34; class=&#34;publication-link&#34;&gt;💻 Code&lt;/a&gt;
+      &lt;a href=&#34;http://localhost:1313/presentations/icml-2024.pdf&#34; class=&#34;publication-link&#34;&gt;📊 Slides&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;publication-item&#34;&gt;
+    &lt;div class=&#34;publication-title&#34;&gt;Korean Language Understanding with Pre-trained Models&lt;/div&gt;
+    &lt;div class=&#34;publication-authors&#34;&gt;Taeyoung Kim, James Wilson, Anna Kim&lt;/div&gt;
+    &lt;div class=&#34;publication-venue&#34;&gt;Association for Computational Linguistics (ACL)&lt;/div&gt;
+    &lt;div class=&#34;publication-year&#34;&gt;2023&lt;/div&gt;
+    &lt;div class=&#34;publication-abstract&#34;&gt;
+      한국어 자연어 처리를 위한 사전훈련 모델을 제안합니다. 
+      한국어 특성을 고려한 토크나이저와 아키텍처를 통해 한국어 태스크에서 SOTA 성능을 달성했습니다.
+    &lt;/div&gt;
+    &lt;div class=&#34;publication-links&#34;&gt;
+      &lt;a href=&#34;http://localhost:1313/papers/acl-2023.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
+      &lt;a href=&#34;https://github.com/username/acl-2023&#34; class=&#34;publication-link&#34;&gt;💻 Code&lt;/a&gt;
+      &lt;a href=&#34;http://localhost:1313/presentations/acl-2023.pdf&#34; class=&#34;publication-link&#34;&gt;📊 Slides&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;publication-item&#34;&gt;
+    &lt;div class=&#34;publication-title&#34;&gt;Real-time Human-Robot Interaction Using Computer Vision&lt;/div&gt;
+    &lt;div class=&#34;publication-authors&#34;&gt;Taeyoung Kim, Robert Taylor, Sophia Lee&lt;/div&gt;
+    &lt;div class=&#34;publication-venue&#34;&gt;IEEE International Conference on Robotics and Automation (ICRA)&lt;/div&gt;
+    &lt;div class=&#34;publication-year&#34;&gt;2023&lt;/div&gt;
+    &lt;div class=&#34;publication-abstract&#34;&gt;
+      실시간 인간-로봇 상호작용을 위한 컴퓨터 비전 시스템을 제안합니다. 
+      제스처 인식과 표정 분석을 통해 자연스러운 상호작용을 구현했습니다.
+    &lt;/div&gt;
+    &lt;div class=&#34;publication-links&#34;&gt;
+      &lt;a href=&#34;http://localhost:1313/papers/icra-2023.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
+      &lt;a href=&#34;https://github.com/username/icra-2023&#34; class=&#34;publication-link&#34;&gt;💻 Code&lt;/a&gt;
+      &lt;a href=&#34;http://localhost:1313/videos/icra-2023.mp4&#34; class=&#34;publication-link&#34;&gt;🎥 Video&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&#34;publication-item&#34;&gt;
+    &lt;div class=&#34;publication-title&#34;&gt;Medical Image Segmentation with Attention Mechanisms&lt;/div&gt;
+    &lt;div class=&#34;publication-authors&#34;&gt;Taeyoung Kim, Daniel Park, Jennifer White&lt;/div&gt;
+    &lt;div class=&#34;publication-venue&#34;&gt;Medical Image Computing and Computer Assisted Intervention (MICCAI)&lt;/div&gt;
+    &lt;div class=&#34;publication-year&#34;&gt;2023&lt;/div&gt;
+    &lt;div class=&#34;publication-abstract&#34;&gt;
+      의료 영상 분할을 위한 어텐션 메커니즘을 제안합니다. 
+      U-Net과 Vision Transformer를 결합하여 MRI 영상에서 종양 영역을 정확하게 분할합니다.
+    &lt;/div&gt;
+    &lt;div class=&#34;publication-links&#34;&gt;
+      &lt;a href=&#34;http://localhost:1313/papers/miccai-2023.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
+      &lt;a href=&#34;https://github.com/username/miccai-2023&#34; class=&#34;publication-link&#34;&gt;💻 Code&lt;/a&gt;
+      &lt;a href=&#34;http://localhost:1313/presentations/miccai-2023.pdf&#34; class=&#34;publication-link&#34;&gt;📊 Slides&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+## Technical Reports
+
+&lt;div class=&#34;publication-section&#34;&gt;
+  &lt;div class=&#34;publication-item&#34;&gt;
+    &lt;div class=&#34;publication-title&#34;&gt;Survey on Deep Learning for Natural Language Processing&lt;/div&gt;
+    &lt;div class=&#34;publication-authors&#34;&gt;Taeyoung Kim, Christopher Anderson&lt;/div&gt;
+    &lt;div class=&#34;publication-venue&#34;&gt;arXiv Technical Report&lt;/div&gt;
+    &lt;div class=&#34;publication-year&#34;&gt;2024&lt;/div&gt;
+    &lt;div class=&#34;publication-abstract&#34;&gt;
+      자연어 처리를 위한 딥러닝 방법론에 대한 포괄적인 서베이를 제공합니다. 
+      Transformer 아키텍처부터 최신 발전 동향까지 체계적으로 정리했습니다.
+    &lt;/div&gt;
+    &lt;div class=&#34;publication-links&#34;&gt;
+      &lt;a href=&#34;http://localhost:1313/papers/survey-2024.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
+      &lt;a href=&#34;https://arxiv.org/abs/2024.001&#34; class=&#34;publication-link secondary&#34;&gt;🔗 arXiv&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;  --&gt;</description>
     </item>
     <item>
-      <title>List of Irregular Verbs Across Romance Languages</title>
-      <link>http://localhost:1313/data/data1/</link>
-      <pubDate>Thu, 07 Mar 2013 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/data/data1/</guid>
-      <description>This dataset contains all irregular verbs in known Romance languages.</description>
-    </item>
-    <item>
-      <title>Unusual Uses For Olive Oil</title>
-      <link>http://localhost:1313/papers/paper1/</link>
-      <pubDate>Tue, 15 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/paper1/</guid>
-      <description>This paper reviews unusual uses for olive oil throughout the Mediterranean world. Published in the Journal of Oleic Science, 2013.</description>
-    </item>
-    <item>
-      <title>The Finer Points of Sausage Dogs</title>
-      <link>http://localhost:1313/papers/paper2/</link>
-      <pubDate>Tue, 28 Dec 2004 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/papers/paper2/</guid>
-      <description>This paper studies the pulmonary efficiency of sausage dogs. Published in the Journal of Canine Science, 2004.</description>
-    </item>
-    <item>
-      <title>Lectures at the Villa of Reduced Circumstances</title>
-      <link>http://localhost:1313/courses/course1/</link>
-      <pubDate>Mon, 10 Mar 2003 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/courses/course1/</guid>
-      <description>This graduate course presents classical results in Romance philology.</description>
-    </item>
-    <item>
-      <title>Portugese Irregular Verbs</title>
-      <link>http://localhost:1313/books/book1/</link>
-      <pubDate>Wed, 01 Jan 1997 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/books/book1/</guid>
-      <description>This book discusses Portugese irregular verbs in great details.</description>
-    </item>
-    <item>
-      <title>Profanity in Early Irish</title>
-      <link>http://localhost:1313/courses/course2/</link>
-      <pubDate>Sat, 16 Jun 1990 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/courses/course2/</guid>
-      <description>This undergraduate course discusses profanity in Early Irish.</description>
+      <title>Research Projects</title>
+      <link>http://localhost:1313/research/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/research/</guid>
+      <description>&lt;!--
+
+&lt;style&gt;
+.tab-container {
+  margin: 20px 0;
+  max-width: 100%;
+  padding: 0;
+}
+
+.tab-buttons {
+  display: flex;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  background: none;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #666;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+  margin: 0 5px;
+}
+
+.tab-button:hover {
+  color: #0066cc;
+  background-color: #f8f9fa;
+}
+
+.tab-button.active {
+  color: #0066cc;
+  border-bottom-color: #0066cc;
+  background-color: #f8f9fa;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.project-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.project-title {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.project-link {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #0066cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #0052a3;
+  color: white;
+  text-decoration: none;
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+&lt;/style&gt;
+
+&lt;div class=&#34;tab-container&#34;&gt;
+  &lt;div class=&#34;tab-buttons&#34;&gt;
+    &lt;button class=&#34;tab-button active&#34; onclick=&#34;openTab(event, &#39;ml&#39;)&#34;&gt;Machine Learning&lt;/button&gt;
+    &lt;button class=&#34;tab-button&#34; onclick=&#34;openTab(event, &#39;nlp&#39;)&#34;&gt;NLP&lt;/button&gt;
+    &lt;button class=&#34;tab-button&#34; onclick=&#34;openTab(event, &#39;cv&#39;)&#34;&gt;Computer Vision&lt;/button&gt;
+    &lt;button class=&#34;tab-button&#34; onclick=&#34;openTab(event, &#39;robotics&#39;)&#34;&gt;Robotics&lt;/button&gt;
+  &lt;/div&gt;
+
+  &lt;div id=&#34;ml&#34; class=&#34;tab-content active&#34;&gt;
+    &lt;div class=&#34;project-item&#34;&gt;
+      &lt;div class=&#34;project-title&#34;&gt;Deep Learning for Time Series Analysis&lt;/div&gt;
+      &lt;div class=&#34;project-description&#34;&gt;
+        연구 설명: 시계열 데이터 분석을 위한 딥러닝 모델 개발. LSTM과 Transformer 아키텍처를 활용하여 예측 성능을 향상시켰습니다.
+      &lt;/div&gt;
+      &lt;img src=&#34;http://localhost:1313/images/ml-project.png&#34; alt=&#34;ML Project&#34; class=&#34;project-image&#34;&gt;
+      &lt;div class=&#34;project-links&#34;&gt;
+        &lt;a href=&#34;http://localhost:1313/papers/ml-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
+        &lt;a href=&#34;https://github.com/username/ml-project&#34; class=&#34;project-link&#34;&gt;💻 Code&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/presentations/ml-presentation.pdf&#34; class=&#34;project-link&#34;&gt;📊 Presentation&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&#34;project-item&#34;&gt;
+      &lt;div class=&#34;project-title&#34;&gt;Reinforcement Learning for Autonomous Systems&lt;/div&gt;
+      &lt;div class=&#34;project-description&#34;&gt;
+        연구 설명: 자율 시스템을 위한 강화학습 알고리즘 개발. Q-learning과 Policy Gradient 방법을 결합하여 효율적인 의사결정 시스템을 구축했습니다.
+      &lt;/div&gt;
+      &lt;div class=&#34;project-links&#34;&gt;
+        &lt;a href=&#34;http://localhost:1313/papers/rl-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
+        &lt;a href=&#34;https://github.com/username/rl-project&#34; class=&#34;project-link&#34;&gt;💻 Code&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/conferences/icml-2024&#34; class=&#34;project-link&#34;&gt;🎯 Conference&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div id=&#34;nlp&#34; class=&#34;tab-content&#34;&gt;
+    &lt;div class=&#34;project-item&#34;&gt;
+      &lt;div class=&#34;project-title&#34;&gt;Transformer-based Text Classification&lt;/div&gt;
+      &lt;div class=&#34;project-description&#34;&gt;
+        연구 설명: BERT와 RoBERTa를 활용한 텍스트 분류 시스템 개발. 한국어 텍스트 데이터에 특화된 모델을 구축했습니다.
+      &lt;/div&gt;
+      &lt;img src=&#34;http://localhost:1313/images/nlp-project.png&#34; alt=&#34;NLP Project&#34; class=&#34;project-image&#34;&gt;
+      &lt;div class=&#34;project-links&#34;&gt;
+        &lt;a href=&#34;http://localhost:1313/papers/nlp-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
+        &lt;a href=&#34;https://github.com/username/nlp-project&#34; class=&#34;project-link&#34;&gt;💻 Code&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/datasets/korean-text&#34; class=&#34;project-link&#34;&gt;📊 Dataset&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&#34;project-item&#34;&gt;
+      &lt;div class=&#34;project-title&#34;&gt;Multilingual Sentiment Analysis&lt;/div&gt;
+      &lt;div class=&#34;project-description&#34;&gt;
+        연구 설명: 다국어 감정 분석 모델 개발. 영어, 한국어, 중국어 텍스트를 동시에 처리할 수 있는 통합 모델을 개발했습니다.
+      &lt;/div&gt;
+      &lt;div class=&#34;project-links&#34;&gt;
+        &lt;a href=&#34;http://localhost:1313/papers/sentiment-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
+        &lt;a href=&#34;https://github.com/username/sentiment-project&#34; class=&#34;project-link&#34;&gt;💻 Code&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/conferences/acl-2024&#34; class=&#34;project-link&#34;&gt;🎯 Conference&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div id=&#34;cv&#34; class=&#34;tab-content&#34;&gt;
+    &lt;div class=&#34;project-item&#34;&gt;
+      &lt;div class=&#34;project-title&#34;&gt;Object Detection with YOLO&lt;/div&gt;
+      &lt;div class=&#34;project-description&#34;&gt;
+        연구 설명: YOLO 아키텍처를 활용한 실시간 객체 탐지 시스템 개발. 자동차, 보행자, 신호등 등을 정확하게 탐지합니다.
+      &lt;/div&gt;
+      &lt;img src=&#34;http://localhost:1313/images/cv-project.png&#34; alt=&#34;CV Project&#34; class=&#34;project-image&#34;&gt;
+      &lt;div class=&#34;project-links&#34;&gt;
+        &lt;a href=&#34;http://localhost:1313/papers/cv-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
+        &lt;a href=&#34;https://github.com/username/cv-project&#34; class=&#34;project-link&#34;&gt;💻 Code&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/datasets/traffic-detection&#34; class=&#34;project-link&#34;&gt;📊 Dataset&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&#34;project-item&#34;&gt;
+      &lt;div class=&#34;project-title&#34;&gt;Image Segmentation for Medical Imaging&lt;/div&gt;
+      &lt;div class=&#34;project-description&#34;&gt;
+        연구 설명: 의료 영상 분할을 위한 U-Net 기반 모델 개발. MRI 영상에서 종양 영역을 정확하게 분할합니다.
+      &lt;/div&gt;
+      &lt;div class=&#34;project-links&#34;&gt;
+        &lt;a href=&#34;http://localhost:1313/papers/medical-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
+        &lt;a href=&#34;https://github.com/username/medical-project&#34; class=&#34;project-link&#34;&gt;💻 Code&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/conferences/miccai-2024&#34; class=&#34;project-link&#34;&gt;🎯 Conference&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div id=&#34;robotics&#34; class=&#34;tab-content&#34;&gt;
+    &lt;div class=&#34;project-item&#34;&gt;
+      &lt;div class=&#34;project-title&#34;&gt;Autonomous Navigation System&lt;/div&gt;
+      &lt;div class=&#34;project-description&#34;&gt;
+        연구 설명: 자율주행 로봇을 위한 경로 계획 및 장애물 회피 시스템 개발. SLAM 알고리즘을 활용하여 실시간 맵핑을 수행합니다.
+      &lt;/div&gt;
+      &lt;img src=&#34;http://localhost:1313/images/robotics-project.png&#34; alt=&#34;Robotics Project&#34; class=&#34;project-image&#34;&gt;
+      &lt;div class=&#34;project-links&#34;&gt;
+        &lt;a href=&#34;http://localhost:1313/papers/robotics-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
+        &lt;a href=&#34;https://github.com/username/robotics-project&#34; class=&#34;project-link&#34;&gt;💻 Code&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/videos/robot-demo.mp4&#34; class=&#34;project-link&#34;&gt;🎥 Demo&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class=&#34;project-item&#34;&gt;
+      &lt;div class=&#34;project-title&#34;&gt;Human-Robot Interaction&lt;/div&gt;
+      &lt;div class=&#34;project-description&#34;&gt;
+        연구 설명: 인간-로봇 상호작용을 위한 제스처 인식 시스템 개발. 손동작과 표정을 인식하여 자연스러운 상호작용을 구현했습니다.
+      &lt;/div&gt;
+      &lt;div class=&#34;project-links&#34;&gt;
+        &lt;a href=&#34;http://localhost:1313/papers/hri-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
+        &lt;a href=&#34;https://github.com/username/hri-project&#34; class=&#34;project-link&#34;&gt;💻 Code&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/conferences/icra-2024&#34; class=&#34;project-link&#34;&gt;🎯 Conference&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+function openTab(evt, tabName) {
+  // 모든 탭 콘텐츠를 숨김
+  var tabcontent = document.getElementsByClassName(&#34;tab-content&#34;);
+  for (var i = 0; i &lt; tabcontent.length; i++) {
+    tabcontent[i].style.display = &#34;none&#34;;
+  }
+
+  // 모든 탭 버튼에서 active 클래스 제거
+  var tablinks = document.getElementsByClassName(&#34;tab-button&#34;);
+  for (var i = 0; i &lt; tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(&#34; active&#34;, &#34;&#34;);
+  }
+
+  // 클릭된 탭을 보여주고 버튼에 active 클래스 추가
+  document.getElementById(tabName).style.display = &#34;block&#34;;
+  evt.currentTarget.className += &#34; active&#34;;
+}
+&lt;/script&gt;  --&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/recent_news/</link>
+      <link>http://localhost:1313/cv-resume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/recent_news/</guid>
-      <description>&lt;h3 id=&#34;recent-news&#34;&gt;Recent News&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;25.05.00 : First News&lt;/li&gt;
-&lt;/ul&gt;</description>
+      <guid>http://localhost:1313/cv-resume/</guid>
+      <description>&lt;div class=&#34;tab-container&#34;&gt;
+  &lt;div class=&#34;tab-buttons&#34;&gt;
+    &lt;button class=&#34;tab-button active&#34; onclick=&#34;openTab(event, &#39;resume&#39;)&#34;&gt;Resume&lt;/button&gt;
+    &lt;button class=&#34;tab-button &#34; onclick=&#34;openTab(event, &#39;cv&#39;)&#34;&gt;CV&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div id=&#34;resume&#34; class=&#34;tab-content active&#34;&gt;
+    &lt;div class=&#34;pdf-container&#34;&gt;
+      &lt;iframe src=&#34;http://localhost:1313/resume.pdf&#34; class=&#34;pdf-iframe&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div id=&#34;cv&#34; class=&#34;tab-content&#34;&gt;
+    &lt;div class=&#34;pdf-container&#34;&gt;
+      &lt;iframe src=&#34;http://localhost:1313/cv.pdf&#34; class=&#34;pdf-iframe&#34;&gt;&lt;/iframe&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+function openTab(evt, tabName) {
+  // 모든 탭 콘텐츠를 숨김
+  var tabcontent = document.getElementsByClassName(&#34;tab-content&#34;);
+  for (var i = 0; i &lt; tabcontent.length; i++) {
+    tabcontent[i].style.display = &#34;none&#34;;
+  }
+
+  // 모든 탭 버튼에서 active 클래스 제거
+  var tablinks = document.getElementsByClassName(&#34;tab-button&#34;);
+  for (var i = 0; i &lt; tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(&#34; active&#34;, &#34;&#34;);
+  }
+
+  // 클릭된 탭을 보여주고 버튼에 active 클래스 추가
+  document.getElementById(tabName).style.display = &#34;block&#34;;
+  evt.currentTarget.className += &#34; active&#34;;
+}
+&lt;/script&gt;</description>
     </item>
     <item>
       <title></title>
@@ -89,8 +744,14 @@
       <description>&lt;p&gt;Hi, I&amp;rsquo;m a Ph.D candidate at Electric and Electronic Engineering in Yonsei University,
 supervised by &lt;strong&gt;Prof. Seung Ah Lee&lt;/strong&gt; on &lt;strong&gt;Imaging Inteligence Lab&lt;/strong&gt; on SNU&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m now visiting &lt;strong&gt;Computational Imaging Lab&lt;/strong&gt; in UC Berkeley, supervised by &lt;strong&gt;Prof. Laura Waller&lt;/strong&gt;.&lt;/p&gt;
-&lt;div style=&#34;margin-top: 1.5rem;&#34;&gt;&lt;/div&gt;  &lt;!-- 2rem 만큼 공간 생성 --&gt;
-&lt;p&gt;&lt;strong&gt;Research Interests&lt;/strong&gt; : Computational Imaging, Lensless Cameara, Hyperspectral Imaging, Optimization, Image Security&lt;/p&gt;
+&lt;!-- &lt;div style=&#34;margin-top: 1.5rem;&#34;&gt;&lt;/div&gt;   --&gt;
+&lt;!-- 2rem 만큼 공간 생성 --&gt;
+&lt;!-- &lt;hr style=&#34;margin: 5px 0 15px 0; border: none; border-top: 1px solid #616161;&#34;&gt; --&gt;
+&lt;!-- **Research Interests**
+
+---
+ Computational Imaging, Lensless Cameara, Hyperspectral Imaging, Optimization, Image Security
+ --&gt;
 &lt;!-- &amp;nbsp;&amp;nbsp; --&gt;</description>
     </item>
   </channel>
