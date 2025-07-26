@@ -2872,8 +2872,8 @@ _**Assistant**_
 ---
 
 <details>
-            <summary>Searched codebase "overleaf api compile pdf" • **25** results</summary>
-        
+                <summary>Searched codebase "overleaf api compile pdf" • **25** results</summary>
+            
 | File | Lines |
 |------|-------|
 | `logs.md` | L1-43 |
@@ -3270,8 +3270,8 @@ _**Assistant**_
 ---
 
 <details>
-            <summary>Searched codebase "overleaf api documentation" • **25** results</summary>
-        
+                <summary>Searched codebase "overleaf api documentation" • **25** results</summary>
+            
 | File | Lines |
 |------|-------|
 | `cv_update.py` | L1-36 |
@@ -3599,8 +3599,8 @@ _**Assistant**_
 ---
 
 <details>
-            <summary>Searched codebase "overleaf sync with git github actions" • **25** results</summary>
-        
+                <summary>Searched codebase "overleaf sync with git github actions" • **25** results</summary>
+            
 | File | Lines |
 |------|-------|
 | `logs.md` | L1-43 |
@@ -5816,8 +5816,8 @@ LaTeX에서 마크다운과 유사한 기능을 구현하고 News 섹션을 추�
 ---
 
 <details>
-            <summary>Searched codebase "resume template class file" • **25** results</summary>
-        
+                <summary>Searched codebase "resume template class file" • **25** results</summary>
+            
 | File | Lines |
 |------|-------|
 | `.github/workflows/update-cv-resume.yml` | L78-102 |
@@ -7828,99 +7828,99 @@ Hedgehog가 포함된 파일을 찾아보겠습니다:
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/content/papers/paper3/index.md` | L1 | `title: "Your Inner Hedgehog"` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/content/papers/paper3/index.md` | L3 | `tags: ["social psychology","inner hedgehog","academia","experimental psychology","invasive thoughts"]` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/content/papers/paper3/index.md` | L5 | `description: "This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021."` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/content/papers/paper3/index.md` | L6 | `summary: "Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure."` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/content/papers/paper3/index.md` | L9 | `alt: "Vizualisation of an inner hedgehog"` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/content/papers/paper3/index.md` | L28 | `Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure. Mauris tincidunt quam a libero consequat, nec pharetra nunc tristique.` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/content/papers/paper3/index.md` | L34 | `Schreiber-Ziegler, Hilda, and Moritz-Maria von Igelfeld. 2021. "Your Inner Hedgehog." *Journal of Socio-Experimental Psychology* 131 (2): 1299–1302.` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/content/papers/paper3/index.md` | L40 | `title ={Your Inner Hedgehog},` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/content/papers/paper3/index.md` | L51 | `+ [Nontechnical summary](https://www.alexandermccallsmith.com/book/your-inner-hedgehog)` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/sitemap.xml` | L19 | `<loc>http://localhost:1313/tags/inner-hedgehog/</loc>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.xml` | L3 | `<title>Inner Hedgehog on Taeyoung Kim</title>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.xml` | L4 | `<link>http://localhost:1313/tags/inner-hedgehog/</link>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.xml` | L5 | `<description>Recent content in Inner Hedgehog on Taeyoung Kim</description>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.xml` | L9 | `<atom:link href="http://localhost:1313/tags/inner-hedgehog/index.xml" rel="self" type="application/rss+xml" />` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.xml` | L11 | `<title>Your Inner Hedgehog</title>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.xml` | L15 | `<description>This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.</description>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/invasive-thoughts/index.html` | L122 | `<img loading="lazy" src="http://localhost:1313/papers/paper3/paper3.png" alt="Vizualisation of an inner hedgehog">` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/invasive-thoughts/index.html` | L125 | `<h2 class="entry-hint-parent">Your Inner Hedgehog` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/invasive-thoughts/index.html` | L129 | `<p>Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure.</p>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/invasive-thoughts/index.html` | L132 | `<a class="entry-link" aria-label="post link to Your Inner Hedgehog" href="http://localhost:1313/papers/paper3/"></a>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/page/1/index.html` | L3 | `<title>http://localhost:1313/tags/inner-hedgehog/</title>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/page/1/index.html` | L4 | `<link rel="canonical" href="http://localhost:1313/tags/inner-hedgehog/">` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/page/1/index.html` | L7 | `<meta http-equiv="refresh" content="0; url=http://localhost:1313/tags/inner-hedgehog/">` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/academia/index.xml` | L11 | `<title>Your Inner Hedgehog</title>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/academia/index.xml` | L15 | `<description>This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.</description>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/academia/index.html` | L122 | `<img loading="lazy" src="http://localhost:1313/papers/paper3/paper3.png" alt="Vizualisation of an inner hedgehog">` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/academia/index.html` | L125 | `<h2 class="entry-hint-parent">Your Inner Hedgehog` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/academia/index.html` | L129 | `<p>Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure.</p>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/academia/index.html` | L132 | `<a class="entry-link" aria-label="post link to Your Inner Hedgehog" href="http://localhost:1313/papers/paper3/"></a>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L7 | `<title>Inner Hedgehog | Taeyoung Kim</title>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L11 | `<link rel="canonical" href="http://localhost:1313/tags/inner-hedgehog/">` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L19 | `<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/inner-hedgehog/index.xml">` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L20 | `<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/inner-hedgehog/">` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L29 | `</noscript><meta property="og:url" content="http://localhost:1313/tags/inner-hedgehog/">` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L31 | `<meta property="og:title" content="Inner Hedgehog">` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L36 | `<meta name="twitter:title" content="Inner Hedgehog">` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L116 | `⟪ 384 characters skipped ⟫6 9l-7-7H2v4.586z"/> </svg>&nbsp; Inner Hedgehog` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L122 | `<img loading="lazy" src="http://localhost:1313/papers/paper3/paper3.png" alt="Vizualisation of an inner hedgehog">` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L125 | `<h2 class="entry-hint-parent">Your Inner Hedgehog` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L129 | `<p>Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure.</p>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L132 | `<a class="entry-link" aria-label="post link to Your Inner Hedgehog" href="http://localhost:1313/papers/paper3/"></a>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/invasive-thoughts/index.xml` | L11 | `<title>Your Inner Hedgehog</title>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/invasive-thoughts/index.xml` | L15 | `<description>This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.</description>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/social-psychology/index.xml` | L11 | `<title>Your Inner Hedgehog</title>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/social-psychology/index.xml` | L15 | `<description>This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.</description>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/experimental-psychology/index.xml` | L11 | `<title>Your Inner Hedgehog</title>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/experimental-psychology/index.xml` | L15 | `<description>This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.</description>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/experimental-psychology/index.html` | L122 | `<img loading="lazy" src="http://localhost:1313/papers/paper3/paper3.png" alt="Vizualisation of an inner hedgehog">` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/experimental-psychology/index.html` | L125 | `<h2 class="entry-hint-parent">Your Inner Hedgehog` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/experimental-psychology/index.html` | L129 | `<p>Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure.</p>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/experimental-psychology/index.html` | L132 | `<a class="entry-link" aria-label="post link to Your Inner Hedgehog" href="http://localhost:1313/papers/paper3/"></a>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/social-psychology/index.html` | L122 | `<img loading="lazy" src="http://localhost:1313/papers/paper3/paper3.png" alt="Vizualisation of an inner hedgehog">` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/social-psychology/index.html` | L125 | `<h2 class="entry-hint-parent">Your Inner Hedgehog` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/social-psychology/index.html` | L129 | `<p>Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure.</p>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/social-psychology/index.html` | L132 | `<a class="entry-link" aria-label="post link to Your Inner Hedgehog" href="http://localhost:1313/papers/paper3/"></a>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/index.xml` | L25 | `<title>Inner Hedgehog</title>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/index.xml` | L26 | `<link>http://localhost:1313/tags/inner-hedgehog/</link>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/index.xml` | L28 | `<guid>http://localhost:1313/tags/inner-hedgehog/</guid>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/index.html` | L147 | `<a href="http://localhost:1313/tags/inner-hedgehog/">inner hedgehog <sup><strong><sup>1</sup></strong></sup> </a>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L7 | `<title>Your Inner Hedgehog | Taeyoung Kim</title>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L8 | `<meta name="keywords" content="social psychology, inner hedgehog, academia, experimental psychology, invasive thoughts">` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L9 | `<meta name="description" content="This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.">` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L30 | `<meta property="og:title" content="Your Inner Hedgehog">` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L31 | `<meta property="og:description" content="This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.">` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L38 | `<meta property="article:tag" content="Inner Hedgehog">` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L45 | `<meta name="twitter:title" content="Your Inner Hedgehog">` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L46 | `<meta name="twitter:description" content="This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.">` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L63 | `"name": "Your Inner Hedgehog",` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L73 | `"headline": "Your Inner Hedgehog",` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L74 | `"name": "Your Inner Hedgehog",` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L75 | `"description": "This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.",` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L77 | `"social psychology", "inner hedgehog", "academia", "experimental psychology", "invasive thoughts"` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L79 | `"articleBody": " Download Paper Raw data Abstract Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure. Mauris tincidunt quam a libero consequat, nec pharetra nunc tristique.⟪ 393 characters skipped ⟫z-Maria von Igelfeld. 2021. “Your Inner Hedgehog.” Journal of Socio-Experimental Psychology 131 (2): 1299–1302.\n@article{SZI21, author = {Hilda Schreiber-Ziegler and Moritz-Maria von Igelfeld}, year = {2021}, title ={Your Inner Hedgehog}, journal = {Journal of Socio-Experimental Psychology}, volume = {131}, number = {2}, pages = {1299--1302}} Related material Nontechnical summary ",` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L185 | `Your Inner Hedgehog` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L199 | `<p>Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure. Mauris tincidunt quam a libero consequat, nec pharetra nunc tristique.` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L202 | `<p>Schreiber-Ziegler, Hilda, and Moritz-Maria von Igelfeld. 2021. &ldquo;Your Inner Hedgehog.&rdquo; <em>Journal of Socio-Experimental Psychology</em> 131 (2): 1299–1302.</p>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L206 | `</span></span><span style="display:flex;"><span><span style="color:#1e90ff">title</span> =<span style="color:#a50">{Your Inner Hedgehog}</span>,` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L214 | `<li><a href="https://www.alexandermccallsmith.com/book/your-inner-hedgehog" target="_blank">Nontechnical summary</a></li>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L222 | `<li><a href="http://localhost:1313/tags/inner-hedgehog/">Inner Hedgehog</a></li>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/index.xml` | L11 | `<title>Your Inner Hedgehog</title>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/index.xml` | L15 | `<description>This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.</description>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/index.html` | L136 | `<img loading="lazy" src="http://localhost:1313/papers/paper3/paper3.png" alt="Vizualisation of an inner hedgehog">` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/index.html` | L139 | `<h2 class="entry-hint-parent">Your Inner Hedgehog` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/index.html` | L143 | `<p>Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure.</p>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/index.html` | L146 | `<a class="entry-link" aria-label="post link to Your Inner Hedgehog" href="http://localhost:1313/papers/paper3/"></a>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/index.xml` | L25 | `<title>Your Inner Hedgehog</title>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/index.xml` | L29 | `<description>This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.</description>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/archive/index.html` | L173 | `<h3 class="archive-entry-title entry-hint-parent">Your Inner Hedgehog` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/archive/index.html` | L175 | `<a class="entry-link" aria-label="post link to Your Inner Hedgehog" href="http://localhost:1313/papers/paper3/"></a>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/index.html` | L89 | `<img loading="lazy" src="http://localhost:1313/papers/paper3/paper3.png" alt="Vizualisation of an inner hedgehog">` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/index.html` | L92 | `<h2 class="entry-hint-parent">Your Inner Hedgehog` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/index.html` | L96 | `<p>Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure.</p>` |
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/index.html` | L99 | `<a class="entry-link" aria-label="post link to Your Inner Hedgehog" href="http://localhost:1313/papers/paper3/"></a>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/content/papers/paper3/index.md` | L2 | `title: "Your Inner Hedgehog"` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/content/papers/paper3/index.md` | L4 | `tags: ["social psychology","inner hedgehog","academia","experimental psychology","invasive thoughts"]` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/content/papers/paper3/index.md` | L6 | `description: "This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021."` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/content/papers/paper3/index.md` | L7 | `summary: "Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure."` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/content/papers/paper3/index.md` | L10 | `alt: "Vizualisation of an inner hedgehog"` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/content/papers/paper3/index.md` | L29 | `Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure. Mauris tincidunt quam a libero consequat, nec pharetra nunc tristique.` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/content/papers/paper3/index.md` | L35 | `Schreiber-Ziegler, Hilda, and Moritz-Maria von Igelfeld. 2021. "Your Inner Hedgehog." *Journal of Socio-Experimental Psychology* 131 (2): 1299–1302.` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/content/papers/paper3/index.md` | L41 | `title ={Your Inner Hedgehog},` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/content/papers/paper3/index.md` | L52 | `+ [Nontechnical summary](https://www.alexandermccallsmith.com/book/your-inner-hedgehog)` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/sitemap.xml` | L20 | `<loc>http://localhost:1313/tags/inner-hedgehog/</loc>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.xml` | L4 | `<title>Inner Hedgehog on Taeyoung Kim</title>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.xml` | L5 | `<link>http://localhost:1313/tags/inner-hedgehog/</link>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.xml` | L6 | `<description>Recent content in Inner Hedgehog on Taeyoung Kim</description>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.xml` | L10 | `<atom:link href="http://localhost:1313/tags/inner-hedgehog/index.xml" rel="self" type="application/rss+xml" />` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.xml` | L12 | `<title>Your Inner Hedgehog</title>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.xml` | L16 | `<description>This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.</description>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/invasive-thoughts/index.html` | L123 | `<img loading="lazy" src="http://localhost:1313/papers/paper3/paper3.png" alt="Vizualisation of an inner hedgehog">` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/invasive-thoughts/index.html` | L126 | `<h2 class="entry-hint-parent">Your Inner Hedgehog` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/invasive-thoughts/index.html` | L130 | `<p>Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure.</p>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/invasive-thoughts/index.html` | L133 | `<a class="entry-link" aria-label="post link to Your Inner Hedgehog" href="http://localhost:1313/papers/paper3/"></a>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/page/1/index.html` | L4 | `<title>http://localhost:1313/tags/inner-hedgehog/</title>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/page/1/index.html` | L5 | `<link rel="canonical" href="http://localhost:1313/tags/inner-hedgehog/">` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/page/1/index.html` | L8 | `<meta http-equiv="refresh" content="0; url=http://localhost:1313/tags/inner-hedgehog/">` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/academia/index.xml` | L12 | `<title>Your Inner Hedgehog</title>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/academia/index.xml` | L16 | `<description>This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.</description>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/academia/index.html` | L123 | `<img loading="lazy" src="http://localhost:1313/papers/paper3/paper3.png" alt="Vizualisation of an inner hedgehog">` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/academia/index.html` | L126 | `<h2 class="entry-hint-parent">Your Inner Hedgehog` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/academia/index.html` | L130 | `<p>Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure.</p>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/academia/index.html` | L133 | `<a class="entry-link" aria-label="post link to Your Inner Hedgehog" href="http://localhost:1313/papers/paper3/"></a>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L8 | `<title>Inner Hedgehog | Taeyoung Kim</title>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L12 | `<link rel="canonical" href="http://localhost:1313/tags/inner-hedgehog/">` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L20 | `<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/inner-hedgehog/index.xml">` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L21 | `<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/inner-hedgehog/">` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L30 | `</noscript><meta property="og:url" content="http://localhost:1313/tags/inner-hedgehog/">` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L32 | `<meta property="og:title" content="Inner Hedgehog">` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L37 | `<meta name="twitter:title" content="Inner Hedgehog">` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L117 | `⟪ 384 characters skipped ⟫6 9l-7-7H2v4.586z"/> </svg>&nbsp; Inner Hedgehog` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L123 | `<img loading="lazy" src="http://localhost:1313/papers/paper3/paper3.png" alt="Vizualisation of an inner hedgehog">` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L126 | `<h2 class="entry-hint-parent">Your Inner Hedgehog` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L130 | `<p>Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure.</p>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/inner-hedgehog/index.html` | L133 | `<a class="entry-link" aria-label="post link to Your Inner Hedgehog" href="http://localhost:1313/papers/paper3/"></a>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/invasive-thoughts/index.xml` | L12 | `<title>Your Inner Hedgehog</title>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/invasive-thoughts/index.xml` | L16 | `<description>This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.</description>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/social-psychology/index.xml` | L12 | `<title>Your Inner Hedgehog</title>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/social-psychology/index.xml` | L16 | `<description>This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.</description>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/experimental-psychology/index.xml` | L12 | `<title>Your Inner Hedgehog</title>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/experimental-psychology/index.xml` | L16 | `<description>This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.</description>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/experimental-psychology/index.html` | L123 | `<img loading="lazy" src="http://localhost:1313/papers/paper3/paper3.png" alt="Vizualisation of an inner hedgehog">` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/experimental-psychology/index.html` | L126 | `<h2 class="entry-hint-parent">Your Inner Hedgehog` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/experimental-psychology/index.html` | L130 | `<p>Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure.</p>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/experimental-psychology/index.html` | L133 | `<a class="entry-link" aria-label="post link to Your Inner Hedgehog" href="http://localhost:1313/papers/paper3/"></a>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/social-psychology/index.html` | L123 | `<img loading="lazy" src="http://localhost:1313/papers/paper3/paper3.png" alt="Vizualisation of an inner hedgehog">` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/social-psychology/index.html` | L126 | `<h2 class="entry-hint-parent">Your Inner Hedgehog` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/social-psychology/index.html` | L130 | `<p>Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure.</p>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/social-psychology/index.html` | L133 | `<a class="entry-link" aria-label="post link to Your Inner Hedgehog" href="http://localhost:1313/papers/paper3/"></a>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/index.xml` | L26 | `<title>Inner Hedgehog</title>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/index.xml` | L27 | `<link>http://localhost:1313/tags/inner-hedgehog/</link>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/index.xml` | L29 | `<guid>http://localhost:1313/tags/inner-hedgehog/</guid>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/tags/index.html` | L148 | `<a href="http://localhost:1313/tags/inner-hedgehog/">inner hedgehog <sup><strong><sup>1</sup></strong></sup> </a>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L8 | `<title>Your Inner Hedgehog | Taeyoung Kim</title>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L9 | `<meta name="keywords" content="social psychology, inner hedgehog, academia, experimental psychology, invasive thoughts">` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L10 | `<meta name="description" content="This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.">` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L31 | `<meta property="og:title" content="Your Inner Hedgehog">` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L32 | `<meta property="og:description" content="This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.">` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L39 | `<meta property="article:tag" content="Inner Hedgehog">` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L46 | `<meta name="twitter:title" content="Your Inner Hedgehog">` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L47 | `<meta name="twitter:description" content="This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.">` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L64 | `"name": "Your Inner Hedgehog",` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L74 | `"headline": "Your Inner Hedgehog",` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L75 | `"name": "Your Inner Hedgehog",` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L76 | `"description": "This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.",` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L78 | `"social psychology", "inner hedgehog", "academia", "experimental psychology", "invasive thoughts"` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L80 | `"articleBody": " Download Paper Raw data Abstract Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure. Mauris tincidunt quam a libero consequat, nec pharetra nunc tristique.⟪ 393 characters skipped ⟫z-Maria von Igelfeld. 2021. “Your Inner Hedgehog.” Journal of Socio-Experimental Psychology 131 (2): 1299–1302.\n@article{SZI21, author = {Hilda Schreiber-Ziegler and Moritz-Maria von Igelfeld}, year = {2021}, title ={Your Inner Hedgehog}, journal = {Journal of Socio-Experimental Psychology}, volume = {131}, number = {2}, pages = {1299--1302}} Related material Nontechnical summary ",` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L186 | `Your Inner Hedgehog` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L200 | `<p>Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure. Mauris tincidunt quam a libero consequat, nec pharetra nunc tristique.` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L203 | `<p>Schreiber-Ziegler, Hilda, and Moritz-Maria von Igelfeld. 2021. &ldquo;Your Inner Hedgehog.&rdquo; <em>Journal of Socio-Experimental Psychology</em> 131 (2): 1299–1302.</p>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L207 | `</span></span><span style="display:flex;"><span><span style="color:#1e90ff">title</span> =<span style="color:#a50">{Your Inner Hedgehog}</span>,` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L215 | `<li><a href="https://www.alexandermccallsmith.com/book/your-inner-hedgehog" target="_blank">Nontechnical summary</a></li>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/paper3/index.html` | L223 | `<li><a href="http://localhost:1313/tags/inner-hedgehog/">Inner Hedgehog</a></li>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/index.xml` | L12 | `<title>Your Inner Hedgehog</title>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/index.xml` | L16 | `<description>This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.</description>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/index.html` | L137 | `<img loading="lazy" src="http://localhost:1313/papers/paper3/paper3.png" alt="Vizualisation of an inner hedgehog">` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/index.html` | L140 | `<h2 class="entry-hint-parent">Your Inner Hedgehog` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/index.html` | L144 | `<p>Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure.</p>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/papers/index.html` | L147 | `<a class="entry-link" aria-label="post link to Your Inner Hedgehog" href="http://localhost:1313/papers/paper3/"></a>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/index.xml` | L26 | `<title>Your Inner Hedgehog</title>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/index.xml` | L30 | `<description>This paper describes the inner hedgehog, a psychological condition widespread in academia. Published in the Journal of Socio-Experimental Psychology, 2021.</description>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/archive/index.html` | L174 | `<h3 class="archive-entry-title entry-hint-parent">Your Inner Hedgehog` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/archive/index.html` | L176 | `<a class="entry-link" aria-label="post link to Your Inner Hedgehog" href="http://localhost:1313/papers/paper3/"></a>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/index.html` | L90 | `<img loading="lazy" src="http://localhost:1313/papers/paper3/paper3.png" alt="Vizualisation of an inner hedgehog">` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/index.html` | L93 | `<h2 class="entry-hint-parent">Your Inner Hedgehog` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/index.html` | L97 | `<p>Using several case studies, this paper describes the inner hedgehog, a psychological condition widespread in academic occupations. The condition has lasting consequences and no known cure.</p>` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/public/index.html` | L100 | `<a class="entry-link" aria-label="post link to Your Inner Hedgehog" href="http://localhost:1313/papers/paper3/"></a>` |
 
 </details>
 
@@ -8189,7 +8189,7 @@ _**Assistant**_
         
 | File |
 |------|
-| `undefined` |
+| `/Users/tykim/Documents/GitHub/tykim.github.io/themes/PaperMod/layouts/partials/index_profile.html` |
 
 </details>
 
@@ -11195,7 +11195,7 @@ CV-Resume 페이지 문제를 확인해보겠습니다. 먼저 현재 구조를 
         
 | File | Line | Match |
 |------|------|-------|
-| `file:///Users/tykim/Documents/GitHub/tykim.github.io/README.md` | L73 | `+ [latex-cv](https://github.com/pmichaillat/latex-cv) - This LaTeX template produces a minimalist academic CV, which you can post on your website. The CV should be named `cv.pdf` and placed in the `static` folder. It will be accessible from the homepage via a social icon.` |
+| `file:///Users/tykim/Documents/GitHub/tykim.github.io/README.md` | L74 | `+ [latex-cv](https://github.com/pmichaillat/latex-cv) - This LaTeX template produces a minimalist academic CV, which you can post on your website. The CV should be named `cv.pdf` and placed in the `static` folder. It will be accessible from the homepage via a social icon.` |
 
 </details>
 
@@ -11239,7 +11239,28 @@ Read file: config.yml
 
 ---
 
+<details><summary>Edit file: config.yml</summary>
 
+undefined
+
+**Chunk 1**
+Lines added: 4, lines removed: 2
+
+```diff
+@@ -59,6 +59,8 @@
+            imageHeight: 160
+            buttons:
+-             - name: CV / Resume
+-               url: cv-resume/
++             - name: CV
++               url: cv.pdf
++             - name: Resume
++               url: resume.pdf
+              - name: Research Project
+                url: research/
+```
+
+</details>
 
 ---
 
@@ -11248,7 +11269,28 @@ Read file: config.yml
 
 ---
 
+<details><summary>Edit file: config.yml</summary>
 
+undefined
+
+**Chunk 1**
+Lines added: 2, lines removed: 2
+
+```diff
+@@ -16,8 +16,8 @@
+            url: books/
+            weight: 5 
+-         - name: Resume
++         - name: Papers
+            url: papers/
+            weight: 2
+-         - name: CV
++         - name: Courses
+            url: courses/
+            weight: 3
+```
+
+</details>
 
 ---
 
@@ -11259,7 +11301,15 @@ Read file: config.yml
 
 ---
 
+<details><summary>Edit file: content/cv.md</summary>
+
+CV 페이지를 위한 새로운 마크다운 파일을 생성합니다.
+
+**Chunk 1**
+Lines added: 11, lines removed: 1
+
 ```diff
+@@ -1,1 +1,11 @@
 - 
 + ---
 + title: "CV"
@@ -11274,9 +11324,19 @@ Read file: config.yml
 + <iframe src="/cv.pdf" width="100%" height="800px"></iframe> 
 ```
 
+</details>
+
 ---
 
+<details><summary>Edit file: content/resume.md</summary>
+
+Resume 페이지를 위한 새로운 마크다운 파일을 생성합니다.
+
+**Chunk 1**
+Lines added: 11, lines removed: 1
+
 ```diff
+@@ -1,1 +1,11 @@
 - 
 + ---
 + title: "Resume"
@@ -11291,6 +11351,8 @@ Read file: config.yml
 + <iframe src="/resume.pdf" width="100%" height="800px"></iframe> 
 ```
 
+</details>
+
 ---
 
 이제 profileMode 버튼을 페이지로 연결하도록 수정:
@@ -11298,7 +11360,27 @@ Read file: config.yml
 
 ---
 
+<details><summary>Edit file: config.yml</summary>
 
+undefined
+
+**Chunk 1**
+Lines added: 2, lines removed: 2
+
+```diff
+@@ -60,7 +60,7 @@
+            buttons:
+              - name: CV
+-               url: cv.pdf
++               url: cv/
+              - name: Resume
+-               url: resume.pdf
++               url: resume/
+              - name: Research Project
+                url: research/
+```
+
+</details>
 
 ---
 
@@ -11339,7 +11421,15 @@ static 폴더에 있는 PDF 파일들을 자연스럽게 보여주는 방법을 
 
 ---
 
+<details><summary>Edit file: content/cv-resume.md</summary>
+
+CV와 Resume을 하나의 페이지에서 보여주는 새로운 마크다운 파일을 생성합니다.
+
+**Chunk 1**
+Lines added: 23, lines removed: 1
+
 ```diff
+@@ -1,1 +1,23 @@
 - 
 + ---
 + title: "CV & Resume"
@@ -11366,6 +11456,8 @@ static 폴더에 있는 PDF 파일들을 자연스럽게 보여주는 방법을 
 + *PDF가 보이지 않는 경우, 위의 다운로드 링크를 클릭하여 파일을 다운로드하세요.* 
 ```
 
+</details>
+
 ---
 
 ### 옵션 2: 개별 페이지로 분리 (더 깔끔)
@@ -11373,7 +11465,15 @@ static 폴더에 있는 PDF 파일들을 자연스럽게 보여주는 방법을 
 
 ---
 
+<details><summary>Edit file: content/cv.md</summary>
+
+CV 전용 페이지를 더 깔끔하게 수정합니다.
+
+**Chunk 1**
+Lines added: 10, lines removed: 2
+
 ```diff
+@@ -7,5 +7,13 @@
   # Curriculum Vitae
   
 - [CV 다운로드 (PDF)](/cv.pdf)
@@ -11391,9 +11491,19 @@ static 폴더에 있는 PDF 파일들을 자연스럽게 보여주는 방법을 
 + *PDF가 보이지 않는 경우, 위의 다운로드 버튼을 클릭하여 파일을 다운로드하세요.* 
 ```
 
+</details>
+
 ---
 
+<details><summary>Edit file: content/resume.md</summary>
+
+Resume 전용 페이지를 더 깔끔하게 수정합니다.
+
+**Chunk 1**
+Lines added: 10, lines removed: 2
+
 ```diff
+@@ -7,5 +7,13 @@
   # Resume
   
 - [Resume 다운로드 (PDF)](/resume.pdf)
@@ -11411,6 +11521,8 @@ static 폴더에 있는 PDF 파일들을 자연스럽게 보여주는 방법을 
 + *PDF가 보이지 않는 경우, 위의 다운로드 버튼을 클릭하여 파일을 다운로드하세요.* 
 ```
 
+</details>
+
 ---
 
 ### config.yml에서 버튼 설정 수정
@@ -11418,7 +11530,28 @@ static 폴더에 있는 PDF 파일들을 자연스럽게 보여주는 방법을 
 
 ---
 
+<details><summary>Edit file: config.yml</summary>
 
+undefined
+
+**Chunk 1**
+Lines added: 2, lines removed: 4
+
+```diff
+@@ -59,8 +59,6 @@
+            imageHeight: 160
+            buttons:
+-             - name: CV
+-               url: cv/
+-             - name: Resume
+-               url: resume/
++             - name: CV & Resume
++               url: cv-resume/
+              - name: Research Project
+                url: research/
+```
+
+</details>
 
 ---
 
@@ -11453,7 +11586,15 @@ _**Assistant**_
 
 ---
 
+<details><summary>Edit file: content/cv-resume.md</summary>
+
+탭 형태로 CV와 Resume을 보여주도록 페이지를 수정합니다.
+
+**Chunk 1**
+Lines added: 113, lines removed: 12
+
 ```diff
+@@ -5,19 +5,120 @@
   ---
   
 - # Curriculum Vitae & Resume
@@ -11588,6 +11729,8 @@ _**Assistant**_
 + *PDF가 보이지 않는 경우, 위의 다운로드 버튼을 클릭하여 파일을 다운로드하세요.* 
 ```
 
+</details>
+
 ---
 
 완성되었습니다! ��
@@ -11636,7 +11779,15 @@ _**Assistant**_
 
 ---
 
+<details><summary>Edit file: content/cv-resume.md</summary>
+
+다운로드 버튼을 제거하고 좌우 간격을 최대한 넓히도록 수정합니다.
+
+**Chunk 1**
+Lines added: 2, lines removed: undefined
+
 ```diff
+@@ -10,4 +10,6 @@
   .tab-container {
     margin: 20px 0;
 +   max-width: 100%;
@@ -11645,7 +11796,11 @@ _**Assistant**_
   
 ```
 
+**Chunk 2**
+Lines added: 1, lines removed: undefined
+
 ```diff
+@@ -16,4 +18,5 @@
     border-bottom: 2px solid #ddd;
     margin-bottom: 20px;
 +   justify-content: center;
@@ -11653,7 +11808,11 @@ _**Assistant**_
   
 ```
 
+**Chunk 3**
+Lines added: 5, lines removed: 19
+
 ```diff
+@@ -51,29 +54,15 @@
   .pdf-container {
     margin-top: 20px;
 - }
@@ -11690,7 +11849,11 @@ _**Assistant**_
   </style>
 ```
 
+**Chunk 4**
+Lines added: undefined, lines removed: 1
+
 ```diff
+@@ -87,5 +76,4 @@
     <div id="cv" class="tab-content active">
       <div class="pdf-container">
 -       <a href="/cv.pdf" target="_blank" class="download-button">📄 CV 다운로드 (PDF)</a>
@@ -11698,13 +11861,19 @@ _**Assistant**_
       </div>
 ```
 
+**Chunk 5**
+Lines added: undefined, lines removed: 1
+
 ```diff
+@@ -94,5 +82,4 @@
     <div id="resume" class="tab-content">
       <div class="pdf-container">
 -       <a href="/resume.pdf" target="_blank" class="download-button">📄 Resume 다운로드 (PDF)</a>
         <iframe src="/resume.pdf" class="pdf-iframe"></iframe>
       </div>
 ```
+
+</details>
 
 ---
 
@@ -11987,7 +12156,24 @@ Read file: content/cv-resume.md
 
 ---
 
+<details><summary>Edit file: content/cv-resume.md</summary>
 
+undefined
+
+**Chunk 1**
+Lines added: 2, lines removed: undefined
+
+```diff
+@@ -1,4 +1,6 @@
+  ---
+  title: "CV & Resume"
++ date: 2024-01-01
++ draft: false
+  ---
+  
+```
+
+</details>
 
 ---
 
@@ -11996,7 +12182,31 @@ Read file: content/cv-resume.md
 
 ---
 
+<details><summary>Edit file: content/cv-resume.md</summary>
 
+undefined
+
+**Chunk 1**
+Lines added: 2, lines removed: 2
+
+```diff
+@@ -72,11 +72,11 @@
+    </div>
+  
+-   <div id="resume" class="tab-content">
++   <div id="resume" class="tab-content active">
+      <div class="pdf-container">
+        <iframe src="/resume.pdf" class="pdf-iframe"></iframe>
+      </div>
+    </div>
+  
+-   <div id="cv" class="tab-content active">
++   <div id="cv" class="tab-content">
+      <div class="pdf-container">
+        <iframe src="/cv.pdf" class="pdf-iframe"></iframe>
+```
+
+</details>
 
 ---
 
@@ -12385,7 +12595,7 @@ _**Assistant**_
 
 ---
 
-
+The model made no changes to the file.
 
 ---
 
@@ -12398,7 +12608,43 @@ Read file: config.yml
 
 ---
 
+<details><summary>Edit file: config.yml</summary>
 
+undefined
+
+**Chunk 1**
+Lines added: 6, lines removed: 9
+
+```diff
+@@ -13,19 +13,16 @@
+  menu:
+      main:
+-         - name: Home
+-           url: https://tykim.me
+-           weight: 1
+          - name: Research
+-           url: research/
++           url: books/
++           weight: 5 
++         - name: Papers
++           url: papers/
+            weight: 2
+-         - name: Publication
++         - name: Courses
+            url: courses/
+            weight: 3
+-         - name: News
+-           url: news/
+-           weight: 4
+          - name: Blog
+            url: https://www.tykim.me
+-           weight: 5
++           weight: 6
+  
+  params:
+```
+
+</details>
 
 ---
 
@@ -12407,7 +12653,41 @@ Read file: config.yml
 
 ---
 
+<details><summary>Edit file: content/cv-resume.md</summary>
 
+undefined
+
+**Chunk 1**
+Lines added: 6, lines removed: 6
+
+```diff
+@@ -68,17 +68,17 @@
+  <div class="tab-container">
+    <div class="tab-buttons">
+-     <button class="tab-button active" onclick="openTab(event, 'resume')">Resume</button>
+-     <button class="tab-button " onclick="openTab(event, 'cv')">CV</button>
++     <button class="tab-button active" onclick="openTab(event, 'cv')">CV</button>
++     <button class="tab-button" onclick="openTab(event, 'resume')">Resume</button>
+    </div>
+  
+-   <div id="resume" class="tab-content active">
++   <div id="cv" class="tab-content active">
+      <div class="pdf-container">
+-       <iframe src="/resume.pdf" class="pdf-iframe"></iframe>
++       <iframe src="/cv.pdf" class="pdf-iframe"></iframe>
+      </div>
+    </div>
+  
+-   <div id="cv" class="tab-content">
++   <div id="resume" class="tab-content">
+      <div class="pdf-container">
+-       <iframe src="/cv.pdf" class="pdf-iframe"></iframe>
++       <iframe src="/resume.pdf" class="pdf-iframe"></iframe>
+      </div>
+    </div>
+```
+
+</details>
 
 ---
 
@@ -12459,7 +12739,38 @@ Home 버튼을 메인 페이지로 연결하려면 URL을 루트 경로로 변�
 
 ---
 
+<details><summary>Edit file: config.yml</summary>
 
+undefined
+
+**Chunk 1**
+Lines added: 6, lines removed: 6
+
+```diff
+@@ -14,14 +14,14 @@
+      main:
+          - name: Home
+-           url: https://tykim.me
++           url: /
+            weight: 1
+          - name: Research
+-           url: research/
++           url: books/
+            weight: 2
+-         - name: Publication
+-           url: courses/ 
++         - name: Papers
++           url: papers/
+            weight: 3
+-         - name: News
+-           url: news/
++         - name: Courses
++           url: courses/
+            weight: 4
+          - name: Blog
+```
+
+</details>
 
 ---
 
@@ -12523,7 +12834,24 @@ LinkedIn이 없네요. 추가해드리겠습니다:
 
 ---
 
+<details><summary>Edit file: config.yml</summary>
 
+undefined
+
+**Chunk 1**
+Lines added: 2, lines removed: undefined
+
+```diff
+@@ -78,4 +78,6 @@
+          - name: Email
+            url: mailto:falcon@yonsei.ac.kr
++         - name: LinkedIn
++           url: https://www.linkedin.com/in/taeyoung-kim/
+          # - name: Zoom
+            # url: https://www.zoom.us/my/igelfeld
+```
+
+</details>
 
 ---
 
@@ -12532,7 +12860,15 @@ LinkedIn이 없네요. 추가해드리겠습니다:
 
 ---
 
+<details><summary>Edit file: content/research.md</summary>
+
+Research Project 페이지를 탭 형태로 생성합니다.
+
+**Chunk 1**
+Lines added: 243, lines removed: 1
+
 ```diff
+@@ -1,1 +1,243 @@
 - 
 + ---
 + title: "Research Projects"
@@ -12779,6 +13115,8 @@ LinkedIn이 없네요. 추가해드리겠습니다:
 + </script> 
 ```
 
+</details>
+
 ---
 
 ## 3. Publication 페이지 생성
@@ -12786,7 +13124,15 @@ LinkedIn이 없네요. 추가해드리겠습니다:
 
 ---
 
+<details><summary>Edit file: content/publication.md</summary>
+
+Publication 페이지를 생성하여 Peer Reviewed Journal과 Conference 논문들을 나열합니다.
+
+**Chunk 1**
+Lines added: 237, lines removed: 1
+
 ```diff
+@@ -1,1 +1,237 @@
 - 
 + ---
 + title: "Publications"
@@ -13027,6 +13373,8 @@ LinkedIn이 없네요. 추가해드리겠습니다:
 + </div> 
 ```
 
+</details>
+
 ---
 
 ## 4. Photo 페이지 생성 (최신순 정렬)
@@ -13034,7 +13382,15 @@ LinkedIn이 없네요. 추가해드리겠습니다:
 
 ---
 
+<details><summary>Edit file: content/photo.md</summary>
+
+Photo 페이지를 생성하여 최신 사진이 위쪽에 오도록 리스팅합니다.
+
+**Chunk 1**
+Lines added: 193, lines removed: 1
+
 ```diff
+@@ -1,1 +1,193 @@
 - 
 + ---
 + title: "Photos"
@@ -13231,6 +13587,8 @@ LinkedIn이 없네요. 추가해드리겠습니다:
 + *더 많은 사진은 [Instagram](https://www.instagram.com/username) 또는 [Flickr](https://www.flickr.com/photos/username)에서 확인하실 수 있습니다.* 
 ```
 
+</details>
+
 ---
 
 ## 5. News 페이지 생성 및 Recent News 링크 추가
@@ -13238,7 +13596,15 @@ LinkedIn이 없네요. 추가해드리겠습니다:
 
 ---
 
+<details><summary>Edit file: content/news.md</summary>
+
+News 페이지를 생성하여 최신 뉴스를 나열합니다.
+
+**Chunk 1**
+Lines added: 182, lines removed: 1
+
 ```diff
+@@ -1,1 +1,182 @@
 - 
 + ---
 + title: "News"
@@ -13424,6 +13790,8 @@ LinkedIn이 없네요. 추가해드리겠습니다:
 + </div> 
 ```
 
+</details>
+
 ---
 
 ## 6. Recent News 링크 추가 (메인 페이지)
@@ -13440,7 +13808,26 @@ Recent News 섹션에 링크를 추가해보겠습니다:
 
 ---
 
+<details><summary>Edit file: themes/PaperMod/layouts/partials/index_profile.html</summary>
 
+undefined
+
+**Chunk 1**
+Lines added: 4, lines removed: undefined
+
+```diff
+@@ -73,4 +73,8 @@
+          
+          <div class="post-content">
++             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
++                 <h3 style="margin: 0;">Recent News</h3>
++                 <a href="/news/" style="color: #0066cc; text-decoration: none; font-size: 0.9em;">📰 View All News →</a>
++             </div>
+              {{ readFile "recent_news.md" | markdownify }}
+          </div>
+```
+
+</details>
 
 ---
 
@@ -13449,7 +13836,15 @@ Recent News 섹션에 링크를 추가해보겠습니다:
 
 ---
 
+<details><summary>Edit file: content/recent_news.md</summary>
+
+Recent News 내용을 최신 5개 뉴스로 제한합니다.
+
+**Chunk 1**
+Lines added: 9, lines removed: 3
+
 ```diff
+@@ -1,3 +1,9 @@
 - ### Recent News
 - 
 - - 25.05.00 : First News
@@ -13463,6 +13858,8 @@ Recent News 섹션에 링크를 추가해보겠습니다:
 + 
 + **December 10, 2023** - International collaboration agreement signed with MIT CSAIL for NLP and Computer Vision research
 ```
+
+</details>
 
 ---
 
@@ -13512,7 +13909,24 @@ _**Assistant**_
 
 ---
 
+<details><summary>Edit file: themes/PaperMod/layouts/partials/index_profile.html</summary>
 
+undefined
+
+**Chunk 1**
+Lines added: 1, lines removed: 1
+
+```diff
+@@ -75,5 +75,5 @@
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                  <h3 style="margin: 0;">Recent News</h3>
+-                 <a href="/news/" style="color: #000000; text-decoration: none; font-size: 0.8em;">📰 View All→</a>
++                 <a href="/news/" style="color: #000000; text-decoration: none; font-size: 0.8em; margin-left: auto;">📰 View All→</a>
+              </div>
+              {{ readFile "recent_news.md" | markdownify }}
+```
+
+</details>
 
 ---
 
@@ -13543,7 +13957,25 @@ _**Assistant**_
 
 ---
 
+<details><summary>Edit file: themes/PaperMod/layouts/partials/index_profile.html</summary>
 
+undefined
+
+**Chunk 1**
+Lines added: 2, lines removed: undefined
+
+```diff
+@@ -77,5 +77,7 @@
+                  <a href="/news/" style="color: #000000; text-decoration: none; font-size: 0.8em; margin-left: auto;">📰 View All→</a>
+              </div>
++             <div style="text-align: right; font-size: 0.85em; line-height: 1.4;">
+                  {{ readFile "recent_news.md" | markdownify }}
++             </div>
+          </div>
+  
+```
+
+</details>
 
 ---
 
@@ -13590,7 +14022,15 @@ Read file: content/news.md
 
 ---
 
+<details><summary>Edit file: content/news.md</summary>
+
+News 페이지를 간단한 날짜와 제목만 있는 형태로 수정합니다.
+
+**Chunk 1**
+Lines added: 107, lines removed: 174
+
 ```diff
+@@ -7,176 +7,109 @@
   # News
   
 - <style>
@@ -13876,6 +14316,8 @@ Read file: content/news.md
 + **April 5, 2023** - Academic journey in computer science began 
 ```
 
+</details>
+
 ---
 
 이제 메인 페이지에서 recent_news.md 대신 news.md의 내용을 읽어오도록 수정하겠습니다:
@@ -13883,7 +14325,28 @@ Read file: content/news.md
 
 ---
 
+<details><summary>Edit file: themes/PaperMod/layouts/partials/index_profile.html</summary>
 
+undefined
+
+**Chunk 1**
+Lines added: 5, lines removed: 1
+
+```diff
+@@ -78,5 +78,9 @@
+              </div>
+              <div style="font-size: 0.85em; line-height: 1.4;">
+-                 {{ readFile "recent_news.md" | markdownify }}
++                 {{ range first 5 (split (readFile "news.md") "\n\n") }}
++                     {{ if and (ne . "") (hasPrefix . "**") }}
++                         {{ . | markdownify }}
++                     {{ end }}
++                 {{ end }}
+              </div>
+          </div>
+```
+
+</details>
 
 ---
 
@@ -13937,7 +14400,32 @@ _**Assistant**_
 
 ---
 
+<details><summary>Edit file: themes/PaperMod/layouts/partials/index_profile.html</summary>
 
+undefined
+
+**Chunk 1**
+Lines added: 7, lines removed: 3
+
+```diff
+@@ -78,7 +78,11 @@
+              </div>
+              <div style="font-size: 0.85em; line-height: 1.4;">
+-                 {{ range first 5 (split (readFile "news.md") "\n\n") }}
+-                     {{ if and (ne . "") (hasPrefix . "**") }}
+-                         {{ . | markdownify }}
++                 {{ $newsContent := readFile "news.md" }}
++                 {{ $newsLines := split $newsContent "\n" }}
++                 {{ $count := 0 }}
++                 {{ range $newsLines }}
++                     {{ if and (hasPrefix . "**") (lt $count 5) }}
++                         {{ . | markdownify }}<br><br>
++                         {{ $count = add $count 1 }}
+                      {{ end }}
+                  {{ end }}
+```
+
+</details>
 
 ---
 
@@ -13976,7 +14464,24 @@ Research Interests와 Recent News 아래에 구분선을 추가하겠습니다!
 
 ---
 
+<details><summary>Edit file: themes/PaperMod/layouts/partials/index_profile.html</summary>
 
+undefined
+
+**Chunk 1**
+Lines added: 1, lines removed: 1
+
+```diff
+@@ -69,5 +69,5 @@
+          <!-- {{- partial "social_icons.html" -}} -->
+  
+- 
++         <hr style="margin: 30px 0; border: none; border-top: 1px solid #eee;">
+          
+          <div class="post-content">
+```
+
+</details>
 
 ---
 
@@ -14012,7 +14517,23 @@ _**Assistant**_
 
 ---
 
+<details><summary>Edit file: themes/PaperMod/layouts/partials/index_profile.html</summary>
 
+undefined
+
+**Chunk 1**
+Lines added: 1, lines removed: undefined
+
+```diff
+@@ -76,4 +76,5 @@
+                  <a href="/news/" style="color: #000000; text-decoration: none; font-size: 0.8em; margin-left: 0px; text-align: right;">📰 View All→</a>
+              </div>
++             <hr style="margin: 5px 0 15px 0; border: none; border-top: 1px solid #616161;">
+              <div style="font-size: 0.85em; line-height: 1.4;">
+                  {{ $newsContent := readFile "news.md" }}
+```
+
+</details>
 
 ---
 
@@ -14403,7 +14924,24 @@ _**Assistant**_
 
 ---
 
+<details><summary>Edit file: themes/PaperMod/layouts/partials/index_profile.html</summary>
 
+undefined
+
+**Chunk 1**
+Lines added: 1, lines removed: 1
+
+```diff
+@@ -87,5 +87,5 @@
+                  {{ range $newsLines }}
+                      {{ if and (hasPrefix . "**") (lt $count 5) }}
+-                         {{ . | markdownify }}<br><br>
++                         {{ . | markdownify }}<br>
+                          {{ $count = add $count 1 }}
+                      {{ end }}
+```
+
+</details>
 
 ---
 
@@ -14448,7 +14986,15 @@ Read file: public/cv-resume/index.html
 
 ---
 
+<details><summary>Edit file: assets/css/custom.css</summary>
+
+전체 사이트의 최대 너비를 조절하는 CSS를 추가합니다.
+
+**Chunk 1**
+Lines added: 46, lines removed: undefined
+
 ```diff
+@@ -90,2 +90,48 @@
       object-fit: cover;
   }
 + 
@@ -14499,6 +15045,8 @@ Read file: public/cv-resume/index.html
 + }
 ```
 
+</details>
+
 ---
 
 ## **방법 2: 특정 페이지만 너비 조절**
@@ -14506,7 +15054,15 @@ Read file: public/cv-resume/index.html
 
 ---
 
+<details><summary>Edit file: content/cv-resume.md</summary>
+
+CV-Resume 페이지에만 적용되는 너비 조절 CSS를 추가합니다.
+
+**Chunk 1**
+Lines added: 22, lines removed: 1
+
 ```diff
+@@ -1,5 +1,26 @@
 - 
 + ---
 + title: "CV & Resume"
@@ -14535,6 +15091,8 @@ Read file: public/cv-resume/index.html
   .tab-container {
     margin: 20px 0;
 ```
+
+</details>
 
 ---
 
@@ -14604,7 +15162,15 @@ Read file: themes/PaperMod/layouts/_default/single.html
 
 ---
 
+<details><summary>Edit file: layouts/_default/single.html</summary>
+
+CV-Resume 페이지에서 헤더를 숨기도록 조건부 렌더링을 추가합니다.
+
+**Chunk 1**
+Lines added: 1, lines removed: undefined
+
 ```diff
+@@ -2,4 +2,5 @@
   
   <article class="post-single">
 +   {{- if ne .Title "CV & Resume" }}
@@ -14612,7 +15178,11 @@ Read file: themes/PaperMod/layouts/_default/single.html
       {{ partial "breadcrumbs.html" . }}
 ```
 
+**Chunk 2**
+Lines added: 1, lines removed: 1
+
 ```diff
+@@ -8,5 +9,5 @@
         {{- if .Draft }}
         <span class="entry-hint" title="Draft">
 -         <svg xmlns="http://www.w3.org/2000/svg" height="42" viewBox="0 -960 960 960" fill="currentColor">
@@ -14621,7 +15191,11 @@ Read file: themes/PaperMod/layouts/_default/single.html
               d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
 ```
 
+**Chunk 3**
+Lines added: 5, lines removed: undefined
+
 ```diff
+@@ -15,4 +16,9 @@
         {{- end }}
       </h1>
 +     {{- if .Description }}
@@ -14633,7 +15207,11 @@ Read file: themes/PaperMod/layouts/_default/single.html
       <div class="post-meta">
 ```
 
+**Chunk 4**
+Lines added: 1, lines removed: undefined
+
 ```diff
+@@ -24,4 +30,5 @@
       {{- end }}
     </header>
 +   {{- end }}
@@ -14641,7 +15219,11 @@ Read file: themes/PaperMod/layouts/_default/single.html
     {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
 ```
 
+**Chunk 5**
+Lines added: 1, lines removed: undefined
+
 ```diff
+@@ -38,4 +45,5 @@
     {{- end }}
   
 +   {{- if ne .Title "CV & Resume" }}
@@ -14649,13 +15231,19 @@ Read file: themes/PaperMod/layouts/_default/single.html
       {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
 ```
 
+**Chunk 6**
+Lines added: 1, lines removed: undefined
+
 ```diff
+@@ -52,4 +60,5 @@
       {{- end }}
     </footer>
 +   {{- end }}
   
     {{- if (.Param "comments") }}
 ```
+
+</details>
 
 ---
 
@@ -14709,7 +15297,15 @@ CV-Resume 페이지의 front matter에 `hideMeta: true`를 추가하여 메타 �
 
 ---
 
+<details><summary>Edit file: content/cv-resume.md</summary>
+
+CV-Resume 페이지의 맨 위에 front matter를 추가하여 hideMeta 파라미터를 true로 설정합니다.
+
+**Chunk 1**
+Lines added: 4, lines removed: 1
+
 ```diff
+@@ -1,3 +1,6 @@
 - 
 + ---
 + title: "CV & Resume"
@@ -14718,6 +15314,8 @@ CV-Resume 페이지의 front matter에 `hideMeta: true`를 추가하여 메타 �
   
   <style>
 ```
+
+</details>
 
 ---
 
@@ -14791,13 +15389,23 @@ Read file: content/cv-resume.md
 
 ---
 
+<details><summary>Edit file: content/cv-resume.md</summary>
+
+front matter에서 title을 완전히 주석 처리하고 hideTitle 파라미터를 추가하여 제목을 숨깁니다.
+
+**Chunk 1**
+Lines added: 1, lines removed: undefined
+
 ```diff
+@@ -2,4 +2,5 @@
   # title: "CV & Resume"
   hideMeta: true
 + hideTitle: true
   ---
   
 ```
+
+</details>
 
 ---
 
@@ -14806,7 +15414,15 @@ Read file: content/cv-resume.md
 
 ---
 
+<details><summary>Edit file: layouts/_default/single.html</summary>
+
+hideTitle 파라미터를 추가하여 제목을 조건부로 숨길 수 있도록 수정합니다.
+
+**Chunk 1**
+Lines added: 1, lines removed: undefined
+
 ```diff
+@@ -2,4 +2,5 @@
   
   <article class="post-single">
 +   {{- if not (.Param "hideTitle") }}
@@ -14814,13 +15430,19 @@ Read file: content/cv-resume.md
       {{ partial "breadcrumbs.html" . }}
 ```
 
+**Chunk 2**
+Lines added: 1, lines removed: undefined
+
 ```diff
+@@ -24,4 +25,5 @@
       {{- end }}
     </header>
 +   {{- end }}
     {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
     {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
 ```
+
+</details>
 
 ---
 
@@ -14871,7 +15493,15 @@ Read file: layouts/_default/single.html
 
 ---
 
+<details><summary>Edit file: layouts/_default/single.html</summary>
+
+wideLayout 파라미터를 추가하여 넓은 레이아웃을 적용할 수 있도록 수정합니다.
+
+**Chunk 1**
+Lines added: 1, lines removed: 1
+
 ```diff
+@@ -1,5 +1,5 @@
   {{- define "main" }}
   
 - <article class="post-single">
@@ -14879,6 +15509,8 @@ Read file: layouts/_default/single.html
     {{- if not (.Param "hideTitle") }}
     <header class="post-header">
 ```
+
+</details>
 
 ---
 
@@ -14896,7 +15528,15 @@ Read file: assets/css/custom.css
 
 ---
 
+<details><summary>Edit file: assets/css/custom.css</summary>
+
+파일 끝에 넓은 레이아웃을 위한 CSS 스타일을 추가합니다.
+
+**Chunk 1**
+Lines added: 88, lines removed: undefined
+
 ```diff
+@@ -90,2 +90,90 @@
       object-fit: cover;
   }
 + 
@@ -14989,6 +15629,8 @@ Read file: assets/css/custom.css
 + }
 ```
 
+</details>
+
 ---
 
 이제 CV-Resume 페이지의 front matter에 `wideLayout: true`를 추가하겠습니다.
@@ -14996,13 +15638,23 @@ Read file: assets/css/custom.css
 
 ---
 
+<details><summary>Edit file: content/cv-resume.md</summary>
+
+front matter에 wideLayout 파라미터를 추가하여 넓은 레이아웃을 적용합니다.
+
+**Chunk 1**
+Lines added: 1, lines removed: undefined
+
 ```diff
+@@ -3,4 +3,5 @@
   hideMeta: true
   hideTitle: true
 + wideLayout: true
   ---
   
 ```
+
+</details>
 
 ---
 
@@ -15011,7 +15663,15 @@ Read file: assets/css/custom.css
 
 ---
 
+<details><summary>Edit file: content/cv-resume.md</summary>
+
+인라인 스타일을 제거하고 템플릿 기반 스타일을 사용하도록 수정합니다.
+
+**Chunk 1**
+Lines added: undefined, lines removed: 78
+
 ```diff
+@@ -5,82 +5,4 @@
   wideLayout: true
   ---
 - 
@@ -15096,7 +15756,11 @@ Read file: assets/css/custom.css
   <div class="tab-container">
 ```
 
+**Chunk 2**
+Lines added: undefined, lines removed: 2
+
 ```diff
+@@ -101,6 +23,4 @@
       </div>
     </div>
 - 
@@ -15104,6 +15768,8 @@ Read file: assets/css/custom.css
   </div>
   
 ```
+
+</details>
 
 ---
 
@@ -15194,7 +15860,15 @@ CSS는 제대로 포함되어 있습니다. 문제는 `head.html`에서 custom C
 
 ---
 
+<details><summary>Edit file: layouts/partials/head.html</summary>
+
+custom CSS 로드 부분을 제거하고 메인 스타일시트에 포함되도록 수정합니다.
+
+**Chunk 1**
+Lines added: undefined, lines removed: 4
+
 ```diff
+@@ -51,8 +51,4 @@
   {{- $license_css := (resources.Get "css/core/license.css") }}
   {{- $common := (resources.Match "css/common/*.css") | resources.Concat "assets/css/common.css" }}
 - 
@@ -15205,7 +15879,11 @@ CSS는 제대로 포함되어 있습니다. 문제는 `head.html`에서 custom C
   <!-- 구글 애널리틱스 추가 -->
 ```
 
+**Chunk 2**
+Lines added: 2, lines removed: 1
+
 ```diff
+@@ -95,5 +91,6 @@
   {{- /* bundle all required css */}}
   {{- /* Add extended css after theme style */ -}}
 - {{- $stylesheet := (slice $license_css $core $extended) | resources.Concat "assets/css/stylesheet.css"  }}
@@ -15214,6 +15892,8 @@ CSS는 제대로 포함되어 있습니다. 문제는 `head.html`에서 custom C
   
   {{- if not site.Params.assets.disableFingerprinting }}
 ```
+
+</details>
 
 ---
 
@@ -15265,7 +15945,15 @@ Read file: assets/css/custom.css
 
 ---
 
+<details><summary>Edit file: assets/css/custom.css</summary>
+
+CV-Resume 페이지 전용 스타일을 더 구체적으로 수정하고, 메인 페이지 스타일과 충돌하지 않도록 개선합니다.
+
+**Chunk 1**
+Lines added: undefined, lines removed: 2
+
 ```diff
+@@ -51,6 +51,4 @@
       max-width: 600px;  /* 적절한 최대 너비 설정 */
   }
 - 
@@ -15274,7 +15962,11 @@ Read file: assets/css/custom.css
   /* 아이콘 이미지 돌리기 */
 ```
 
+**Chunk 2**
+Lines added: 9, lines removed: 13
+
 ```diff
+@@ -91,40 +89,36 @@
   }
   
 - /* 넓은 레이아웃을 위한 스타일 */
@@ -15326,7 +16018,11 @@ Read file: assets/css/custom.css
       border-bottom: 2px solid #ddd;
 ```
 
+**Chunk 3**
+Lines added: 1, lines removed: 1
+
 ```diff
+@@ -133,5 +127,5 @@
   }
   
 - .wide-layout .tab-button {
@@ -15335,7 +16031,11 @@ Read file: assets/css/custom.css
       border: none;
 ```
 
+**Chunk 4**
+Lines added: 5, lines removed: 5
+
 ```diff
+@@ -145,24 +139,24 @@
   }
   
 - .wide-layout .tab-button:hover {
@@ -15367,7 +16067,11 @@ Read file: assets/css/custom.css
       width: 100%;
 ```
 
+**Chunk 5**
+Lines added: 1, lines removed: 1
+
 ```diff
+@@ -171,5 +165,5 @@
   }
   
 - .wide-layout .pdf-iframe {
@@ -15375,6 +16079,8 @@ Read file: assets/css/custom.css
       width: 100%;
       height: 800px;
 ```
+
+</details>
 
 ---
 
@@ -15441,7 +16147,15 @@ _**Assistant**_
 
 ---
 
+<details><summary>Edit file: assets/css/custom.css</summary>
+
+부모 요소의 너비를 먼저 설정하고, post-content의 max-width를 픽셀 값으로 변경합니다.
+
+**Chunk 1**
+Lines added: 3, lines removed: 2
+
 ```diff
+@@ -91,11 +91,12 @@
   /* CV-Resume 페이지 전용 넓은 레이아웃 스타일 */
   .post-single.wide-layout {
 -     max-width: 2000px !important;
@@ -15457,6 +16171,8 @@ _**Assistant**_
       width: 100% !important;
   }
 ```
+
+</details>
 
 ---
 
@@ -15494,7 +16210,15 @@ _**Assistant**_
 
 ---
 
+<details><summary>Edit file: assets/css/custom.css</summary>
+
+CV 페이지 전용 스타일을 제거하고 원래 상태로 롤백합니다.
+
+**Chunk 1**
+Lines added: undefined, lines removed: 85
+
 ```diff
+@@ -88,87 +88,2 @@
       object-fit: cover;
   }
 - 
@@ -15584,6 +16308,8 @@ _**Assistant**_
 - }
 ```
 
+</details>
+
 ---
 
 이제 `single.html` 템플릿에서도 `wideLayout` 관련 부분을 제거하겠습니다.
@@ -15591,7 +16317,15 @@ _**Assistant**_
 
 ---
 
+<details><summary>Edit file: layouts/_default/single.html</summary>
+
+wideLayout 관련 클래스 적용 부분을 제거하고 원래 상태로 롤백합니다.
+
+**Chunk 1**
+Lines added: 1, lines removed: 1
+
 ```diff
+@@ -1,5 +1,5 @@
   {{- define "main" }}
   
 - <article class="post-single{{ if (.Param "wideLayout") }} wide-layout{{ end }}">
@@ -15600,6 +16334,8 @@ _**Assistant**_
     <header class="post-header">
 ```
 
+</details>
+
 ---
 
 이제 CV-Resume 페이지에서도 `wideLayout` 파라미터를 제거하겠습니다.
@@ -15607,13 +16343,23 @@ _**Assistant**_
 
 ---
 
+<details><summary>Edit file: content/cv-resume.md</summary>
+
+wideLayout 파라미터를 제거하고 원래 상태로 롤백합니다.
+
+**Chunk 1**
+Lines added: undefined, lines removed: 1
+
 ```diff
+@@ -3,5 +3,4 @@
   hideMeta: true
   hideTitle: true
 - wideLayout: true
   ---
   
 ```
+
+</details>
 
 ---
 
@@ -15654,7 +16400,15 @@ CV 페이지의 탭 관련 부분이 망가졌네요. 탭 스타일을 다시 �
 
 ---
 
+<details><summary>Edit file: assets/css/custom.css</summary>
+
+CV 페이지의 탭 스타일을 다시 추가합니다.
+
+**Chunk 1**
+Lines added: 60, lines removed: undefined
+
 ```diff
+@@ -88,2 +88,62 @@
       object-fit: cover;
   }
 + 
@@ -15718,6 +16472,8 @@ CV 페이지의 탭 관련 부분이 망가졌네요. 탭 스타일을 다시 �
 +     margin: 0;
 + }
 ```
+
+</details>
 
 ---
 
@@ -15996,7 +16752,15 @@ JavaScript 코드는 제대로 포함되어 있습니다. 문제는 아마도 Gi
 
 ---
 
+<details><summary>Edit file: content/cv-resume.md</summary>
+
+JavaScript를 더 안전하게 만들고 DOMContentLoaded 이벤트를 사용하여 탭 기능을 개선합니다.
+
+**Chunk 1**
+Lines added: 1, lines removed: 1
+
 ```diff
+@@ -8,5 +8,5 @@
     <div class="tab-buttons">
       <button class="tab-button active" onclick="openTab(event, 'resume')">Resume</button>
 -     <button class="tab-button " onclick="openTab(event, 'cv')">CV</button>
@@ -16005,7 +16769,11 @@ JavaScript 코드는 제대로 포함되어 있습니다. 문제는 아마도 Gi
   
 ```
 
+**Chunk 2**
+Lines added: 5, lines removed: 1
+
 ```diff
+@@ -25,5 +25,9 @@
   
   <script>
 - function openTab(evt, tabName) {
@@ -16018,7 +16786,11 @@ JavaScript 코드는 제대로 포함되어 있습니다. 문제는 아마도 Gi
               var tabcontent = document.getElementsByClassName("tab-content");
 ```
 
+**Chunk 3**
+Lines added: 17, lines removed: 1
+
 ```diff
+@@ -39,7 +43,23 @@
   
               // 클릭된 탭을 보여주고 버튼에 active 클래스 추가
 -   document.getElementById(tabName).style.display = "block";
@@ -16044,6 +16816,8 @@ JavaScript 코드는 제대로 포함되어 있습니다. 문제는 아마도 Gi
   </script>
   
 ```
+
+</details>
 
 ---
 
@@ -16110,7 +16884,15 @@ HTML을 보니 문제를 파악했습니다! Hugo가 JavaScript를 압축(minify
 
 ---
 
+<details><summary>Edit file: content/cv-resume.md</summary>
+
+JavaScript를 인라인으로 직접 작성하고 Hugo의 압축을 피하기 위해 더 간단한 방식으로 수정합니다.
+
+**Chunk 1**
+Lines added: 2, lines removed: 2
+
 ```diff
+@@ -7,6 +7,6 @@
   <div class="tab-container">
     <div class="tab-buttons">
 -     <button class="tab-button active" onclick="openTab(event, 'resume')">Resume</button>
@@ -16121,7 +16903,11 @@ HTML을 보니 문제를 파악했습니다! Hugo가 JavaScript를 압축(minify
   
 ```
 
+**Chunk 2**
+Lines added: 23, lines removed: 28
+
 ```diff
+@@ -24,40 +24,35 @@
   </div>
   
 - <script>
@@ -16187,6 +16973,8 @@ HTML을 보니 문제를 파악했습니다! Hugo가 JavaScript를 압축(minify
   });
 ```
 
+</details>
+
 ---
 
 이제 Hugo를 빌드하여 변경사항을 적용하겠습니다.
@@ -16225,7 +17013,15 @@ Hugo가 JavaScript를 계속 압축하고 있는 것 같습니다. 다른 접근
 
 ---
 
+<details><summary>Edit file: content/cv-resume.md</summary>
+
+JavaScript를 완전히 제거하고 CSS만으로 탭 기능을 구현합니다.
+
+**Chunk 1**
+Lines added: 88, lines removed: 41
+
 ```diff
+@@ -4,57 +4,104 @@
   hideTitle: true
   ---
 + 
@@ -16373,6 +17169,8 @@ Hugo가 JavaScript를 계속 압축하고 있는 것 같습니다. 다른 접근
   
 ```
 
+</details>
+
 ---
 
 이제 Hugo를 빌드하여 변경사항을 적용하겠습니다.
@@ -16438,7 +17236,15 @@ PDF 파일들은 제대로 있습니다. 문제는 아마도 iframe의 경로나
 
 ---
 
+<details><summary>Edit file: content/cv-resume.md</summary>
+
+PDF 경로를 수정하고 iframe에 추가 속성을 설정하여 PDF가 제대로 표시되도록 합니다.
+
+**Chunk 1**
+Lines added: 2, lines removed: 2
+
 ```diff
+@@ -95,11 +95,11 @@
     <div class="tab-content">
       <div class="pdf-container">
 -       <iframe src="/resume.pdf" class="pdf-iframe"></iframe>
@@ -16453,6 +17259,8 @@ PDF 파일들은 제대로 있습니다. 문제는 아마도 iframe의 경로나
       </div>
     </div>
 ```
+
+</details>
 
 ---
 
@@ -16509,7 +17317,15 @@ CSS 선택자를 수정하여 각 라디오 버튼이 해당하는 탭 콘텐츠
 
 ---
 
+<details><summary>Edit file: content/cv-resume.md</summary>
+
+CSS 선택자를 수정하여 각 라디오 버튼이 해당하는 탭 콘텐츠만 제어하도록 합니다.
+
+**Chunk 1**
+Lines added: 9, lines removed: 3
+
 ```diff
+@@ -77,10 +77,16 @@
   }
   
 - .tab-radio:checked ~ .tab-content {
@@ -16530,6 +17346,8 @@ CSS 선택자를 수정하여 각 라디오 버튼이 해당하는 탭 콘텐츠
   }
   </style>
 ```
+
+</details>
 
 ---
 
@@ -16567,7 +17385,15 @@ GitHub Pages에서 탭 기능이 작동하지 않는 문제를 해결해보겠�
 
 ---
 
+<details><summary>Edit file: content/cv-resume.md</summary>
+
+CSS-only 방식을 제거하고 더 간단하고 안정적인 JavaScript 방식으로 변경합니다.
+
+**Chunk 1**
+Lines added: 44, lines removed: 32
+
 ```diff
+@@ -65,49 +65,61 @@
       margin: 0;
   }
 - 
@@ -16662,6 +17488,8 @@ GitHub Pages에서 탭 기능이 작동하지 않는 문제를 해결해보겠�
 + </script>
   
 ```
+
+</details>
 
 ---
 
@@ -16806,7 +17634,15 @@ mkdir -p assets/js
 
 ---
 
+<details><summary>Edit file: assets/js/tabs.js</summary>
+
+CV 페이지의 탭 기능을 위한 외부 JavaScript 파일을 생성합니다.
+
+**Chunk 1**
+Lines added: 35, lines removed: 1
+
 ```diff
+@@ -1,1 +1,35 @@
 - 
 + // CV 페이지 탭 전환 기능
 + function showTab(tabName) {
@@ -16845,6 +17681,8 @@ mkdir -p assets/js
 + }; 
 ```
 
+</details>
+
 ---
 
 이제 `head.html`에 이 JavaScript 파일을 포함시키겠습니다:
@@ -16852,7 +17690,15 @@ mkdir -p assets/js
 
 ---
 
+<details><summary>Edit file: layouts/partials/head.html</summary>
+
+외부 JavaScript 파일을 로드하도록 head.html에 추가합니다.
+
+**Chunk 1**
+Lines added: 4, lines removed: undefined
+
 ```diff
+@@ -118,4 +118,8 @@
   {{- end }}
   {{- end -}}
 + 
@@ -16863,6 +17709,8 @@ mkdir -p assets/js
   {{- /* Favicons */}}
 ```
 
+</details>
+
 ---
 
 이제 CV-Resume 페이지에서 인라인 JavaScript를 제거하겠습니다:
@@ -16870,7 +17718,15 @@ mkdir -p assets/js
 
 ---
 
+<details><summary>Edit file: content/cv-resume.md</summary>
+
+인라인 JavaScript를 제거하고 외부 파일을 사용하도록 수정합니다.
+
+**Chunk 1**
+Lines added: undefined, lines removed: 38
+
 ```diff
+@@ -85,41 +85,3 @@
     </div>
   </div>
 - 
@@ -16913,6 +17769,8 @@ mkdir -p assets/js
 - </script>
   
 ```
+
+</details>
 
 ---
 
@@ -17031,7 +17889,15 @@ Read file: public/js/tabs.min.js
 
 ---
 
+<details><summary>Edit file: assets/js/tabs.js</summary>
+
+showTab 함수를 전역으로 노출시키고 Hugo 압축을 고려하여 수정합니다.
+
+**Chunk 1**
+Lines added: 1, lines removed: 1
+
 ```diff
+@@ -1,4 +1,4 @@
   // CV 페이지 탭 전환 기능
 - function showTab(tabName) {
 + window.showTab = function(tabName) {
@@ -17039,7 +17905,11 @@ Read file: public/js/tabs.min.js
       var contents = document.getElementsByClassName('tab-content');
 ```
 
+**Chunk 2**
+Lines added: 1, lines removed: 1
+
 ```diff
+@@ -23,5 +23,5 @@
       // 클릭된 버튼에 active 클래스 추가
       event.target.classList.add('active');
 - }
@@ -17047,6 +17917,8 @@ Read file: public/js/tabs.min.js
   
   // 페이지 로드 시 초기 설정
 ```
+
+</details>
 
 ---
 
@@ -17061,8 +17933,241 @@ hugo
 
 ---
 
+문제의 원인은 Hugo가 JavaScript를 압축하면서 `showTab` 함수가 전역에 노출되지 않아, 버튼 클릭 시 함수가 실행되지 않는 것이었습니다.
 
-문제의 원인은 Hugo가 JavaScript를 압축하면서 `showTab` 함수가 전역에 노출되지 않아, 버튼 클릭 시 함수가
+**해결 방법:**
+- `assets/js/tabs.js`에서 `function showTab`을 `window.showTab = function`으로 바꿔 전역 함수로 노출시켰습니다.
+
+이제 Hugo를 다시 빌드하면 탭이 정상적으로 동작할 것입니다.  
+**빌드 후 push까지 진행해보세요!**
+
+만약 그래도 안 된다면,  
+1. 브라우저 캐시를 꼭 새로고침(Shift+F5) 하시고,  
+2. public/js/tabs.min.js 파일에 `window.showTab`이 포함되어 있는지 확인해보세요.
+
+추가로 궁금한 점 있으면 언제든 말씀해 주세요!
+
+---
+
+_**User**_
+
+좋아 이제 push해도 동작한다 다만 버튼들이 중앙에 있지 않고 한쪽으로 정렬되어있어
+
+---
+
+_**Assistant**_
+
+좋은 소식입니다!  
+버튼이 한쪽으로 치우쳐 있는 문제는 CSS의 flex 정렬 때문입니다.  
+아래처럼 `.tab-buttons`에 `justify-content: center;`가 적용되어야 버튼이 중앙에 정렬됩니다.
+
+이미 `.tab-buttons`에 `justify-content: center;`가 들어가 있지만,  
+혹시 마크업 구조가 바뀌면서 적용이 안 되고 있을 수 있습니다.
+
+**확실하게 중앙 정렬이 되도록 CSS를 아래처럼 수정해보세요:**
+
+```css
+.tab-buttons {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    gap: 8px; /* 버튼 사이 간격 */
+}
+```
+
+그리고 마크업이 아래처럼 되어 있는지 확인하세요:
+
+```html
+<div class="tab-buttons">
+  <button class="tab-button active" onclick="showTab('resume')">Resume</button>
+  <button class="tab-button" onclick="showTab('cv')">CV</button>
+</div>
+```
+
+**수정 방법 요약**
+1. `assets/css/custom.css`에서 `.tab-buttons` 부분을 위 코드로 교체
+2. Hugo 빌드 후 확인
+
+바로 적용해드릴까요?
+
+---
+
+_**User**_
+
+고고
+
+---
+
+_**Assistant**_
+
+<details><summary>Edit file: assets/css/custom.css</summary>
+
+tab-buttons를 flex 중앙정렬, 간격 추가 등으로 수정합니다.
+
+**Chunk 1**
+Lines added: 3, lines removed: 1
+
+```diff
+@@ -98,7 +98,9 @@
+  .tab-buttons {
+      display: flex;
++     justify-content: center !important;
++     align-items: center;
+      border-bottom: 2px solid #ddd;
+      margin-bottom: 20px;
+-     justify-content: center;
++     gap: 8px;
+  }
+  
+```
+
+</details>
+
+---
+
+```bash
+hugo
+```
+
+---
+
+수정
+
+---
+
+_**User**_
+
+메인페이지 소개글 어디서 수정해
+
+---
+
+_**Assistant**_
+
+메인페이지 소개글은 `config.yml` 파일의 `profileMode` 섹션에서 수정할 수 있습니다.
+
+
+---
+
+Read file: config.yml
+
+---
+
+메인페이지 소개글은 `config.yml` 파일의 `profileMode` 섹션에서 수정할 수 있습니다. 현재 `subtitle` 부분이 비어있네요.
+
+**수정 방법:**
+
+1. **`config.yml`에서 직접 수정:**
+   ```yaml
+   profileMode:
+     enabled: true
+     title: Taeyoung Kim
+     subtitle: |
+       I'm a Ph.D Candidate in Electric and Electronic Engineering in Yonsei University.
+       My research interests are in the field of computer vision and machine learning.
+     imageUrl: "picture.jpeg"
+     hoverImageUrl: "picture2.jpeg"
+     imageWidth: 160
+     imageHeight: 160
+   ```
+
+2. **또는 외부 파일 사용 (현재 설정):**
+   `content/subtitle.md` 파일을 수정하면 됩니다.
+
+어떤 방법으로 수정하시겠어요? `config.yml`에서 직접 수정하시겠어요, 아니면 `content/subtitle.md` 파일을 수정하시겠어요?
+
+---
+
+_**User**_
+
+subtitle.md 수정했는데 링크가 안들어가지네
+
+---
+
+_**Assistant**_
+
+`subtitle.md` 파일의 링크가 작동하지 않는 문제를 확인해보겠습니다.
+
+
+---
+
+Read file: content/subtitle.md
+
+---
+
+문제를 찾았습니다! `subtitle.md`에서 HTML 링크를 사용하고 있는데, Hugo의 markdownify가 이를 제대로 처리하지 못할 수 있습니다. 
+
+**해결 방법:**
+
+1. **HTML 링크 대신 Markdown 링크 사용:**
+
+
+---
+
+<details><summary>Edit file: content/subtitle.md</summary>
+
+HTML 링크를 Markdown 링크로 변경하여 Hugo에서 제대로 렌더링되도록 수정합니다.
+
+**Chunk 1**
+Lines added: 2, lines removed: 2
+
+```diff
+@@ -1,6 +1,6 @@
+  Hi, I'm a Ph.D candidate at Electric and Electronic Engineering in Yonsei University,
+- supervised by [**<span style="color: black;">Prof. Seung Ah Lee</span>**](https://scholar.google.com/citations?user=dlRF9NAAAAAJ) on [**<span style="color: black;">Imaging Intelligence Lab</span>**](https://imaging.snu.ac.kr/) on SNU
++ supervised by **[Prof. Seung Ah Lee](https://scholar.google.com/citations?user=dlRF9NAAAAAJ)** on **[Imaging Intelligence Lab](https://imaging.snu.ac.kr/)** on SNU
+  
+- I'm now visiting [**<span style="color: black;">Computational Imaging Lab</span>**](https://www.laurawaller.com/) in UC Berkeley, supervised by [**<span style="color: black;">Prof. Laura Waller</span>**](https://scholar.google.com/citations?user=3343olgAAAAJ).
++ I'm now visiting **[Computational Imaging Lab](https://www.laurawaller.com/)** in UC Berkeley, supervised by **[Prof. Laura Waller](https://scholar.google.com/citations?user=3343olgAAAAJ)**.
+  
+  <!-- <div style="margin-top: 1.5rem;"></div>   -->
+```
+
+</details>
+
+---
+
+이제 Hugo를 빌드해서 확인해보겠습니다:
+
+
+---
+
+```bash
+hugo
+```
+
+```
+Start building sites … 
+hugo v0.147.5+extended+withdeploy darwin/amd64 BuildDate=2025-05-22T11:37:19Z Ve
+ndorInfo=brew
+
+
+                   | EN  
+-------------------+-----
+  Pages            | 13  
+  Paginator pages  |  0  
+  Non-page files   |  0  
+  Static files     |  8  
+  Processed images |  0  
+  Aliases          |  0  
+  Cleaned          |  0  
+
+Total in 277 ms
+
+```
+
+---
+
+수정이 완료되었습니다! 
+
+**변경 사항:**
+- HTML `<span>` 태그를 제거하고 순수 Markdown 링크로 변경
+- `[**텍스트**](링크)` 형태로 통일
+
+이제 링크가 제대로 작동할 것입니다. Hugo의 `markdownify` 함수가 HTML 태그를 포함한 링크를 제대로 처리하지 못하는 경우가 있어서, 순수 Markdown 링크로 변경했습니다.
+
+로컬에서 확인해보시거나 GitHub에 푸시해서 확인해보세요!
 
 ---
 

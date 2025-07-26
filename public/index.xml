@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Taeyoung Kim</title>
-    <link>https://sangschicom.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Taeyoung Kim</description>
     <generator>Hugo -- 0.147.5</generator>
     <language>en</language>
     <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://sangschicom.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>News</title>
-      <link>https://sangschicom.github.io/news/</link>
+      <link>http://localhost:1313/news/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://sangschicom.github.io/news/</guid>
+      <guid>http://localhost:1313/news/</guid>
       <description>&lt;h1 id=&#34;news&#34;&gt;News&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;May 10, 2025&lt;/strong&gt; - Web Page Opened!&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Mar 1, 2025&lt;/strong&gt; - Start reseach as a visiting graduate student at Computational Imaging Lab, Berkeley!&lt;/p&gt;
@@ -23,9 +23,9 @@
     </item>
     <item>
       <title>Photos</title>
-      <link>https://sangschicom.github.io/photo/</link>
+      <link>http://localhost:1313/photo/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://sangschicom.github.io/photo/</guid>
+      <guid>http://localhost:1313/photo/</guid>
       <description>&lt;!-- # Photos
 
 &lt;style&gt;
@@ -100,7 +100,7 @@
 
 &lt;div class=&#34;photo-grid&#34;&gt;
   &lt;div class=&#34;photo-item&#34;&gt;
-    &lt;img src=&#34;https://sangschicom.github.io/images/photo-2024-01.jpg&#34; alt=&#34;Conference Presentation&#34; class=&#34;photo-image&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/photo-2024-01.jpg&#34; alt=&#34;Conference Presentation&#34; class=&#34;photo-image&#34;&gt;
     &lt;div class=&#34;photo-info&#34;&gt;
       &lt;div class=&#34;photo-category&#34;&gt;Conference&lt;/div&gt;
       &lt;div class=&#34;photo-title&#34;&gt;ICML 2024 Presentation&lt;/div&gt;
@@ -111,7 +111,7 @@
   &lt;/div&gt;
 
   &lt;div class=&#34;photo-item&#34;&gt;
-    &lt;img src=&#34;https://sangschicom.github.io/images/photo-2023-12.jpg&#34; alt=&#34;Research Lab&#34; class=&#34;photo-image&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/photo-2023-12.jpg&#34; alt=&#34;Research Lab&#34; class=&#34;photo-image&#34;&gt;
     &lt;div class=&#34;photo-info&#34;&gt;
       &lt;div class=&#34;photo-category&#34;&gt;Research&lt;/div&gt;
       &lt;div class=&#34;photo-title&#34;&gt;AI Research Lab&lt;/div&gt;
@@ -122,7 +122,7 @@
   &lt;/div&gt;
 
   &lt;div class=&#34;photo-item&#34;&gt;
-    &lt;img src=&#34;https://sangschicom.github.io/images/photo-2023-11.jpg&#34; alt=&#34;Workshop&#34; class=&#34;photo-image&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/photo-2023-11.jpg&#34; alt=&#34;Workshop&#34; class=&#34;photo-image&#34;&gt;
     &lt;div class=&#34;photo-info&#34;&gt;
       &lt;div class=&#34;photo-category&#34;&gt;Workshop&lt;/div&gt;
       &lt;div class=&#34;photo-title&#34;&gt;NLP Workshop&lt;/div&gt;
@@ -133,7 +133,7 @@
   &lt;/div&gt;
 
   &lt;div class=&#34;photo-item&#34;&gt;
-    &lt;img src=&#34;https://sangschicom.github.io/images/photo-2023-10.jpg&#34; alt=&#34;Collaboration&#34; class=&#34;photo-image&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/photo-2023-10.jpg&#34; alt=&#34;Collaboration&#34; class=&#34;photo-image&#34;&gt;
     &lt;div class=&#34;photo-info&#34;&gt;
       &lt;div class=&#34;photo-category&#34;&gt;Collaboration&lt;/div&gt;
       &lt;div class=&#34;photo-title&#34;&gt;International Collaboration Meeting&lt;/div&gt;
@@ -144,7 +144,7 @@
   &lt;/div&gt;
 
   &lt;div class=&#34;photo-item&#34;&gt;
-    &lt;img src=&#34;https://sangschicom.github.io/images/photo-2023-09.jpg&#34; alt=&#34;Award Ceremony&#34; class=&#34;photo-image&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/photo-2023-09.jpg&#34; alt=&#34;Award Ceremony&#34; class=&#34;photo-image&#34;&gt;
     &lt;div class=&#34;photo-info&#34;&gt;
       &lt;div class=&#34;photo-category&#34;&gt;Award&lt;/div&gt;
       &lt;div class=&#34;photo-title&#34;&gt;Best Paper Award&lt;/div&gt;
@@ -155,7 +155,7 @@
   &lt;/div&gt;
 
   &lt;div class=&#34;photo-item&#34;&gt;
-    &lt;img src=&#34;https://sangschicom.github.io/images/photo-2023-08.jpg&#34; alt=&#34;Teaching&#34; class=&#34;photo-image&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/photo-2023-08.jpg&#34; alt=&#34;Teaching&#34; class=&#34;photo-image&#34;&gt;
     &lt;div class=&#34;photo-info&#34;&gt;
       &lt;div class=&#34;photo-category&#34;&gt;Teaching&lt;/div&gt;
       &lt;div class=&#34;photo-title&#34;&gt;Machine Learning Class&lt;/div&gt;
@@ -166,7 +166,7 @@
   &lt;/div&gt;
 
   &lt;div class=&#34;photo-item&#34;&gt;
-    &lt;img src=&#34;https://sangschicom.github.io/images/photo-2023-07.jpg&#34; alt=&#34;Research Trip&#34; class=&#34;photo-image&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/photo-2023-07.jpg&#34; alt=&#34;Research Trip&#34; class=&#34;photo-image&#34;&gt;
     &lt;div class=&#34;photo-info&#34;&gt;
       &lt;div class=&#34;photo-category&#34;&gt;Research Trip&lt;/div&gt;
       &lt;div class=&#34;photo-title&#34;&gt;Research Visit to MIT&lt;/div&gt;
@@ -177,7 +177,7 @@
   &lt;/div&gt;
 
   &lt;div class=&#34;photo-item&#34;&gt;
-    &lt;img src=&#34;https://sangschicom.github.io/images/photo-2023-06.jpg&#34; alt=&#34;Data Collection&#34; class=&#34;photo-image&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/photo-2023-06.jpg&#34; alt=&#34;Data Collection&#34; class=&#34;photo-image&#34;&gt;
     &lt;div class=&#34;photo-info&#34;&gt;
       &lt;div class=&#34;photo-category&#34;&gt;Field Work&lt;/div&gt;
       &lt;div class=&#34;photo-title&#34;&gt;Data Collection for Autonomous Driving&lt;/div&gt;
@@ -188,7 +188,7 @@
   &lt;/div&gt;
 
   &lt;div class=&#34;photo-item&#34;&gt;
-    &lt;img src=&#34;https://sangschicom.github.io/images/photo-2023-05.jpg&#34; alt=&#34;Team Building&#34; class=&#34;photo-image&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/photo-2023-05.jpg&#34; alt=&#34;Team Building&#34; class=&#34;photo-image&#34;&gt;
     &lt;div class=&#34;photo-info&#34;&gt;
       &lt;div class=&#34;photo-category&#34;&gt;Team&lt;/div&gt;
       &lt;div class=&#34;photo-title&#34;&gt;Research Team Building&lt;/div&gt;
@@ -199,7 +199,7 @@
   &lt;/div&gt;
 
   &lt;div class=&#34;photo-item&#34;&gt;
-    &lt;img src=&#34;https://sangschicom.github.io/images/photo-2023-04.jpg&#34; alt=&#34;Interview&#34; class=&#34;photo-image&#34;&gt;
+    &lt;img src=&#34;http://localhost:1313/images/photo-2023-04.jpg&#34; alt=&#34;Interview&#34; class=&#34;photo-image&#34;&gt;
     &lt;div class=&#34;photo-info&#34;&gt;
       &lt;div class=&#34;photo-category&#34;&gt;Media&lt;/div&gt;
       &lt;div class=&#34;photo-title&#34;&gt;AI Research Interview&lt;/div&gt;
@@ -216,9 +216,9 @@
     </item>
     <item>
       <title>Publications</title>
-      <link>https://sangschicom.github.io/publication/</link>
+      <link>http://localhost:1313/publication/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://sangschicom.github.io/publication/</guid>
+      <guid>http://localhost:1313/publication/</guid>
       <description>&lt;!-- 
 # Publications
 
@@ -326,7 +326,7 @@
       LSTM과 Transformer를 결합한 하이브리드 모델을 통해 기존 방법 대비 15% 향상된 예측 성능을 달성했습니다.
     &lt;/div&gt;
     &lt;div class=&#34;publication-links&#34;&gt;
-      &lt;a href=&#34;https://sangschicom.github.io/papers/jmlr-2024.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
+      &lt;a href=&#34;http://localhost:1313/papers/jmlr-2024.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
       &lt;a href=&#34;https://github.com/username/jmlr-2024&#34; class=&#34;publication-link&#34;&gt;💻 Code&lt;/a&gt;
       &lt;a href=&#34;https://doi.org/10.1234/jmlr.2024.001&#34; class=&#34;publication-link secondary&#34;&gt;🔗 DOI&lt;/a&gt;
     &lt;/div&gt;
@@ -342,7 +342,7 @@
       Vision-Language Transformer를 활용하여 텍스트와 이미지의 상호작용을 효과적으로 모델링했습니다.
     &lt;/div&gt;
     &lt;div class=&#34;publication-links&#34;&gt;
-      &lt;a href=&#34;https://sangschicom.github.io/papers/tpami-2023.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
+      &lt;a href=&#34;http://localhost:1313/papers/tpami-2023.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
       &lt;a href=&#34;https://github.com/username/tpami-2023&#34; class=&#34;publication-link&#34;&gt;💻 Code&lt;/a&gt;
       &lt;a href=&#34;https://doi.org/10.1109/TPAMI.2023.001&#34; class=&#34;publication-link secondary&#34;&gt;🔗 DOI&lt;/a&gt;
     &lt;/div&gt;
@@ -358,7 +358,7 @@
       데이터 증강과 어댑티브 학습을 통해 비, 안개, 눈 등의 조건에서도 높은 탐지 성능을 유지합니다.
     &lt;/div&gt;
     &lt;div class=&#34;publication-links&#34;&gt;
-      &lt;a href=&#34;https://sangschicom.github.io/papers/cviu-2023.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
+      &lt;a href=&#34;http://localhost:1313/papers/cviu-2023.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
       &lt;a href=&#34;https://github.com/username/cviu-2023&#34; class=&#34;publication-link&#34;&gt;💻 Code&lt;/a&gt;
       &lt;a href=&#34;https://doi.org/10.1016/j.cviu.2023.001&#34; class=&#34;publication-link secondary&#34;&gt;🔗 DOI&lt;/a&gt;
     &lt;/div&gt;
@@ -378,9 +378,9 @@
       Hierarchical RL과 Meta-learning을 결합하여 새로운 환경에서도 빠른 적응이 가능합니다.
     &lt;/div&gt;
     &lt;div class=&#34;publication-links&#34;&gt;
-      &lt;a href=&#34;https://sangschicom.github.io/papers/icml-2024.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
+      &lt;a href=&#34;http://localhost:1313/papers/icml-2024.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
       &lt;a href=&#34;https://github.com/username/icml-2024&#34; class=&#34;publication-link&#34;&gt;💻 Code&lt;/a&gt;
-      &lt;a href=&#34;https://sangschicom.github.io/presentations/icml-2024.pdf&#34; class=&#34;publication-link&#34;&gt;📊 Slides&lt;/a&gt;
+      &lt;a href=&#34;http://localhost:1313/presentations/icml-2024.pdf&#34; class=&#34;publication-link&#34;&gt;📊 Slides&lt;/a&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
@@ -394,9 +394,9 @@
       한국어 특성을 고려한 토크나이저와 아키텍처를 통해 한국어 태스크에서 SOTA 성능을 달성했습니다.
     &lt;/div&gt;
     &lt;div class=&#34;publication-links&#34;&gt;
-      &lt;a href=&#34;https://sangschicom.github.io/papers/acl-2023.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
+      &lt;a href=&#34;http://localhost:1313/papers/acl-2023.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
       &lt;a href=&#34;https://github.com/username/acl-2023&#34; class=&#34;publication-link&#34;&gt;💻 Code&lt;/a&gt;
-      &lt;a href=&#34;https://sangschicom.github.io/presentations/acl-2023.pdf&#34; class=&#34;publication-link&#34;&gt;📊 Slides&lt;/a&gt;
+      &lt;a href=&#34;http://localhost:1313/presentations/acl-2023.pdf&#34; class=&#34;publication-link&#34;&gt;📊 Slides&lt;/a&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
@@ -410,9 +410,9 @@
       제스처 인식과 표정 분석을 통해 자연스러운 상호작용을 구현했습니다.
     &lt;/div&gt;
     &lt;div class=&#34;publication-links&#34;&gt;
-      &lt;a href=&#34;https://sangschicom.github.io/papers/icra-2023.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
+      &lt;a href=&#34;http://localhost:1313/papers/icra-2023.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
       &lt;a href=&#34;https://github.com/username/icra-2023&#34; class=&#34;publication-link&#34;&gt;💻 Code&lt;/a&gt;
-      &lt;a href=&#34;https://sangschicom.github.io/videos/icra-2023.mp4&#34; class=&#34;publication-link&#34;&gt;🎥 Video&lt;/a&gt;
+      &lt;a href=&#34;http://localhost:1313/videos/icra-2023.mp4&#34; class=&#34;publication-link&#34;&gt;🎥 Video&lt;/a&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 
@@ -426,9 +426,9 @@
       U-Net과 Vision Transformer를 결합하여 MRI 영상에서 종양 영역을 정확하게 분할합니다.
     &lt;/div&gt;
     &lt;div class=&#34;publication-links&#34;&gt;
-      &lt;a href=&#34;https://sangschicom.github.io/papers/miccai-2023.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
+      &lt;a href=&#34;http://localhost:1313/papers/miccai-2023.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
       &lt;a href=&#34;https://github.com/username/miccai-2023&#34; class=&#34;publication-link&#34;&gt;💻 Code&lt;/a&gt;
-      &lt;a href=&#34;https://sangschicom.github.io/presentations/miccai-2023.pdf&#34; class=&#34;publication-link&#34;&gt;📊 Slides&lt;/a&gt;
+      &lt;a href=&#34;http://localhost:1313/presentations/miccai-2023.pdf&#34; class=&#34;publication-link&#34;&gt;📊 Slides&lt;/a&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
@@ -446,7 +446,7 @@
       Transformer 아키텍처부터 최신 발전 동향까지 체계적으로 정리했습니다.
     &lt;/div&gt;
     &lt;div class=&#34;publication-links&#34;&gt;
-      &lt;a href=&#34;https://sangschicom.github.io/papers/survey-2024.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
+      &lt;a href=&#34;http://localhost:1313/papers/survey-2024.pdf&#34; class=&#34;publication-link&#34;&gt;📄 PDF&lt;/a&gt;
       &lt;a href=&#34;https://arxiv.org/abs/2024.001&#34; class=&#34;publication-link secondary&#34;&gt;🔗 arXiv&lt;/a&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -454,9 +454,9 @@
     </item>
     <item>
       <title>Research Projects</title>
-      <link>https://sangschicom.github.io/research/</link>
+      <link>http://localhost:1313/research/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://sangschicom.github.io/research/</guid>
+      <guid>http://localhost:1313/research/</guid>
       <description>&lt;!--
 
 &lt;style&gt;
@@ -572,11 +572,11 @@
       &lt;div class=&#34;project-description&#34;&gt;
         연구 설명: 시계열 데이터 분석을 위한 딥러닝 모델 개발. LSTM과 Transformer 아키텍처를 활용하여 예측 성능을 향상시켰습니다.
       &lt;/div&gt;
-      &lt;img src=&#34;https://sangschicom.github.io/images/ml-project.png&#34; alt=&#34;ML Project&#34; class=&#34;project-image&#34;&gt;
+      &lt;img src=&#34;http://localhost:1313/images/ml-project.png&#34; alt=&#34;ML Project&#34; class=&#34;project-image&#34;&gt;
       &lt;div class=&#34;project-links&#34;&gt;
-        &lt;a href=&#34;https://sangschicom.github.io/papers/ml-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/papers/ml-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
         &lt;a href=&#34;https://github.com/username/ml-project&#34; class=&#34;project-link&#34;&gt;💻 Code&lt;/a&gt;
-        &lt;a href=&#34;https://sangschicom.github.io/presentations/ml-presentation.pdf&#34; class=&#34;project-link&#34;&gt;📊 Presentation&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/presentations/ml-presentation.pdf&#34; class=&#34;project-link&#34;&gt;📊 Presentation&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
 
@@ -586,9 +586,9 @@
         연구 설명: 자율 시스템을 위한 강화학습 알고리즘 개발. Q-learning과 Policy Gradient 방법을 결합하여 효율적인 의사결정 시스템을 구축했습니다.
       &lt;/div&gt;
       &lt;div class=&#34;project-links&#34;&gt;
-        &lt;a href=&#34;https://sangschicom.github.io/papers/rl-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/papers/rl-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
         &lt;a href=&#34;https://github.com/username/rl-project&#34; class=&#34;project-link&#34;&gt;💻 Code&lt;/a&gt;
-        &lt;a href=&#34;https://sangschicom.github.io/conferences/icml-2024&#34; class=&#34;project-link&#34;&gt;🎯 Conference&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/conferences/icml-2024&#34; class=&#34;project-link&#34;&gt;🎯 Conference&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -599,11 +599,11 @@
       &lt;div class=&#34;project-description&#34;&gt;
         연구 설명: BERT와 RoBERTa를 활용한 텍스트 분류 시스템 개발. 한국어 텍스트 데이터에 특화된 모델을 구축했습니다.
       &lt;/div&gt;
-      &lt;img src=&#34;https://sangschicom.github.io/images/nlp-project.png&#34; alt=&#34;NLP Project&#34; class=&#34;project-image&#34;&gt;
+      &lt;img src=&#34;http://localhost:1313/images/nlp-project.png&#34; alt=&#34;NLP Project&#34; class=&#34;project-image&#34;&gt;
       &lt;div class=&#34;project-links&#34;&gt;
-        &lt;a href=&#34;https://sangschicom.github.io/papers/nlp-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/papers/nlp-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
         &lt;a href=&#34;https://github.com/username/nlp-project&#34; class=&#34;project-link&#34;&gt;💻 Code&lt;/a&gt;
-        &lt;a href=&#34;https://sangschicom.github.io/datasets/korean-text&#34; class=&#34;project-link&#34;&gt;📊 Dataset&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/datasets/korean-text&#34; class=&#34;project-link&#34;&gt;📊 Dataset&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
 
@@ -613,9 +613,9 @@
         연구 설명: 다국어 감정 분석 모델 개발. 영어, 한국어, 중국어 텍스트를 동시에 처리할 수 있는 통합 모델을 개발했습니다.
       &lt;/div&gt;
       &lt;div class=&#34;project-links&#34;&gt;
-        &lt;a href=&#34;https://sangschicom.github.io/papers/sentiment-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/papers/sentiment-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
         &lt;a href=&#34;https://github.com/username/sentiment-project&#34; class=&#34;project-link&#34;&gt;💻 Code&lt;/a&gt;
-        &lt;a href=&#34;https://sangschicom.github.io/conferences/acl-2024&#34; class=&#34;project-link&#34;&gt;🎯 Conference&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/conferences/acl-2024&#34; class=&#34;project-link&#34;&gt;🎯 Conference&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -626,11 +626,11 @@
       &lt;div class=&#34;project-description&#34;&gt;
         연구 설명: YOLO 아키텍처를 활용한 실시간 객체 탐지 시스템 개발. 자동차, 보행자, 신호등 등을 정확하게 탐지합니다.
       &lt;/div&gt;
-      &lt;img src=&#34;https://sangschicom.github.io/images/cv-project.png&#34; alt=&#34;CV Project&#34; class=&#34;project-image&#34;&gt;
+      &lt;img src=&#34;http://localhost:1313/images/cv-project.png&#34; alt=&#34;CV Project&#34; class=&#34;project-image&#34;&gt;
       &lt;div class=&#34;project-links&#34;&gt;
-        &lt;a href=&#34;https://sangschicom.github.io/papers/cv-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/papers/cv-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
         &lt;a href=&#34;https://github.com/username/cv-project&#34; class=&#34;project-link&#34;&gt;💻 Code&lt;/a&gt;
-        &lt;a href=&#34;https://sangschicom.github.io/datasets/traffic-detection&#34; class=&#34;project-link&#34;&gt;📊 Dataset&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/datasets/traffic-detection&#34; class=&#34;project-link&#34;&gt;📊 Dataset&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
 
@@ -640,9 +640,9 @@
         연구 설명: 의료 영상 분할을 위한 U-Net 기반 모델 개발. MRI 영상에서 종양 영역을 정확하게 분할합니다.
       &lt;/div&gt;
       &lt;div class=&#34;project-links&#34;&gt;
-        &lt;a href=&#34;https://sangschicom.github.io/papers/medical-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/papers/medical-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
         &lt;a href=&#34;https://github.com/username/medical-project&#34; class=&#34;project-link&#34;&gt;💻 Code&lt;/a&gt;
-        &lt;a href=&#34;https://sangschicom.github.io/conferences/miccai-2024&#34; class=&#34;project-link&#34;&gt;🎯 Conference&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/conferences/miccai-2024&#34; class=&#34;project-link&#34;&gt;🎯 Conference&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -653,11 +653,11 @@
       &lt;div class=&#34;project-description&#34;&gt;
         연구 설명: 자율주행 로봇을 위한 경로 계획 및 장애물 회피 시스템 개발. SLAM 알고리즘을 활용하여 실시간 맵핑을 수행합니다.
       &lt;/div&gt;
-      &lt;img src=&#34;https://sangschicom.github.io/images/robotics-project.png&#34; alt=&#34;Robotics Project&#34; class=&#34;project-image&#34;&gt;
+      &lt;img src=&#34;http://localhost:1313/images/robotics-project.png&#34; alt=&#34;Robotics Project&#34; class=&#34;project-image&#34;&gt;
       &lt;div class=&#34;project-links&#34;&gt;
-        &lt;a href=&#34;https://sangschicom.github.io/papers/robotics-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/papers/robotics-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
         &lt;a href=&#34;https://github.com/username/robotics-project&#34; class=&#34;project-link&#34;&gt;💻 Code&lt;/a&gt;
-        &lt;a href=&#34;https://sangschicom.github.io/videos/robot-demo.mp4&#34; class=&#34;project-link&#34;&gt;🎥 Demo&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/videos/robot-demo.mp4&#34; class=&#34;project-link&#34;&gt;🎥 Demo&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
 
@@ -667,9 +667,9 @@
         연구 설명: 인간-로봇 상호작용을 위한 제스처 인식 시스템 개발. 손동작과 표정을 인식하여 자연스러운 상호작용을 구현했습니다.
       &lt;/div&gt;
       &lt;div class=&#34;project-links&#34;&gt;
-        &lt;a href=&#34;https://sangschicom.github.io/papers/hri-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/papers/hri-paper.pdf&#34; class=&#34;project-link&#34;&gt;📄 Paper&lt;/a&gt;
         &lt;a href=&#34;https://github.com/username/hri-project&#34; class=&#34;project-link&#34;&gt;💻 Code&lt;/a&gt;
-        &lt;a href=&#34;https://sangschicom.github.io/conferences/icra-2024&#34; class=&#34;project-link&#34;&gt;🎯 Conference&lt;/a&gt;
+        &lt;a href=&#34;http://localhost:1313/conferences/icra-2024&#34; class=&#34;project-link&#34;&gt;🎯 Conference&lt;/a&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -697,9 +697,9 @@ function openTab(evt, tabName) {
     </item>
     <item>
       <title></title>
-      <link>https://sangschicom.github.io/cv-resume/</link>
+      <link>http://localhost:1313/cv-resume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sangschicom.github.io/cv-resume/</guid>
+      <guid>http://localhost:1313/cv-resume/</guid>
       <description>&lt;style&gt;
 /* 탭 스타일 */
 .tab-container {
@@ -768,24 +768,24 @@ function openTab(evt, tabName) {
   &lt;/div&gt;
   &lt;div id=&#34;resume&#34; class=&#34;tab-content active&#34;&gt;
     &lt;div class=&#34;pdf-container&#34;&gt;
-      &lt;iframe src=&#34;https://sangschicom.github.io/resume.pdf&#34; class=&#34;pdf-iframe&#34; type=&#34;application/pdf&#34; allowfullscreen&gt;&lt;/iframe&gt;
+      &lt;iframe src=&#34;http://localhost:1313/resume.pdf&#34; class=&#34;pdf-iframe&#34; type=&#34;application/pdf&#34; allowfullscreen&gt;&lt;/iframe&gt;
     &lt;/div&gt;
   &lt;/div&gt;
   &lt;div id=&#34;cv&#34; class=&#34;tab-content&#34;&gt;
     &lt;div class=&#34;pdf-container&#34;&gt;
-      &lt;iframe src=&#34;https://sangschicom.github.io/cv.pdf&#34; class=&#34;pdf-iframe&#34; type=&#34;application/pdf&#34; allowfullscreen&gt;&lt;/iframe&gt;
+      &lt;iframe src=&#34;http://localhost:1313/cv.pdf&#34; class=&#34;pdf-iframe&#34; type=&#34;application/pdf&#34; allowfullscreen&gt;&lt;/iframe&gt;
     &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>https://sangschicom.github.io/subtitle/</link>
+      <link>http://localhost:1313/subtitle/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://sangschicom.github.io/subtitle/</guid>
+      <guid>http://localhost:1313/subtitle/</guid>
       <description>&lt;p&gt;Hi, I&amp;rsquo;m a Ph.D candidate at Electric and Electronic Engineering in Yonsei University,
-supervised by &lt;strong&gt;Prof. Seung Ah Lee&lt;/strong&gt; on &lt;strong&gt;Imaging Inteligence Lab&lt;/strong&gt; on SNU&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;m now visiting &lt;strong&gt;Computational Imaging Lab&lt;/strong&gt; in UC Berkeley, supervised by &lt;strong&gt;Prof. Laura Waller&lt;/strong&gt;.&lt;/p&gt;
+supervised by &lt;strong&gt;&lt;a href=&#34;https://scholar.google.com/citations?user=dlRF9NAAAAAJ&#34; target=&#34;_blank&#34;&gt;Prof. Seung Ah Lee&lt;/a&gt;&lt;/strong&gt; on &lt;strong&gt;&lt;a href=&#34;https://imaging.snu.ac.kr/&#34; target=&#34;_blank&#34;&gt;Imaging Intelligence Lab&lt;/a&gt;&lt;/strong&gt; on SNU&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m now visiting &lt;strong&gt;&lt;a href=&#34;https://www.laurawaller.com/&#34; target=&#34;_blank&#34;&gt;Computational Imaging Lab&lt;/a&gt;&lt;/strong&gt; in UC Berkeley, supervised by &lt;strong&gt;&lt;a href=&#34;https://scholar.google.com/citations?user=3343olgAAAAJ&#34; target=&#34;_blank&#34;&gt;Prof. Laura Waller&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
 &lt;!-- &lt;div style=&#34;margin-top: 1.5rem;&#34;&gt;&lt;/div&gt;   --&gt;
 &lt;!-- 2rem 만큼 공간 생성 --&gt;
 &lt;!-- &lt;hr style=&#34;margin: 5px 0 15px 0; border: none; border-top: 1px solid #616161;&#34;&gt; --&gt;

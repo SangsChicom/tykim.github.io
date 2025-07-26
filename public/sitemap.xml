@@ -2,25 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://sangschicom.github.io/news/</loc>
+    <loc>http://localhost:1313/news/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sangschicom.github.io/photo/</loc>
+    <loc>http://localhost:1313/photo/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sangschicom.github.io/publication/</loc>
+    <loc>http://localhost:1313/publication/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sangschicom.github.io/research/</loc>
+    <loc>http://localhost:1313/research/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sangschicom.github.io/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sangschicom.github.io/cv-resume/</loc>
+    <loc>http://localhost:1313/cv-resume/</loc>
   </url><url>
-    <loc>https://sangschicom.github.io/subtitle/</loc>
+    <loc>http://localhost:1313/subtitle/</loc>
   </url><url>
-    <loc>https://sangschicom.github.io/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

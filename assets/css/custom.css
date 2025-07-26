@@ -97,9 +97,11 @@
 
 .tab-buttons {
     display: flex;
+    justify-content: center !important;
+    align-items: center;
     border-bottom: 2px solid #ddd;
     margin-bottom: 20px;
-    justify-content: center;
+    gap: 8px;
 }
 
 .tab-button {
