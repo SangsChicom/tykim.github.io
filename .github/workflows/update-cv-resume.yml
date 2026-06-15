@@ -5,6 +5,9 @@ on:
     - cron: '0 0 * * 0'  # 매주 일요일 자정에 실행
   workflow_dispatch:  # 수동 실행 가능
 
+permissions:
+  contents: write
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -18,14 +21,43 @@ jobs:
         run: |
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'actions@github.com'
+
+      - name: Prepare Overleaf Git credentials
+        env:
+          OVERLEAF_TOKEN: ${{ secrets.OVERLEAF_TOKEN }}
+          OVERLEAF_PROJECT_ID: ${{ secrets.OVERLEAF_PROJECT_ID }}
+          OVERLEAF_PROJECT_RESUME: ${{ secrets.OVERLEAF_PROJECT_RESUME }}
+        run: |
+          set -euo pipefail
+          test -n "$OVERLEAF_TOKEN" || { echo "OVERLEAF_TOKEN secret is empty or missing"; exit 1; }
+          test -n "$OVERLEAF_PROJECT_ID" || { echo "OVERLEAF_PROJECT_ID secret is empty or missing"; exit 1; }
+          test -n "$OVERLEAF_PROJECT_RESUME" || { echo "OVERLEAF_PROJECT_RESUME secret is empty or missing"; exit 1; }
+
+          cat > "$RUNNER_TEMP/overleaf-askpass" <<'EOF'
+          #!/usr/bin/env bash
+          case "$1" in
+            *Username*) printf '%s\n' 'git' ;;
+            *Password*) printf '%s\n' "$OVERLEAF_TOKEN" ;;
+            *) printf '%s\n' "$OVERLEAF_TOKEN" ;;
+          esac
+          EOF
+          chmod 700 "$RUNNER_TEMP/overleaf-askpass"
+          echo "GIT_ASKPASS=$RUNNER_TEMP/overleaf-askpass" >> "$GITHUB_ENV"
+          echo "GIT_TERMINAL_PROMPT=0" >> "$GITHUB_ENV"
           
       - name: Clone CV repository
+        env:
+          OVERLEAF_TOKEN: ${{ secrets.OVERLEAF_TOKEN }}
+          OVERLEAF_PROJECT_ID: ${{ secrets.OVERLEAF_PROJECT_ID }}
         run: |
-          git clone https://git:${{ secrets.OVERLEAF_TOKEN }}@git.overleaf.com/${{ secrets.OVERLEAF_PROJECT_ID }} overleaf-cv
+          git clone "https://git.overleaf.com/${OVERLEAF_PROJECT_ID}" overleaf-cv
           
       - name: Clone Resume repository
+        env:
+          OVERLEAF_TOKEN: ${{ secrets.OVERLEAF_TOKEN }}
+          OVERLEAF_PROJECT_RESUME: ${{ secrets.OVERLEAF_PROJECT_RESUME }}
         run: |
-          git clone https://git:${{ secrets.OVERLEAF_TOKEN }}@git.overleaf.com/${{ secrets.OVERLEAF_PROJECT_RESUME }} overleaf-resume
+          git clone "https://git.overleaf.com/${OVERLEAF_PROJECT_RESUME}" overleaf-resume
           
       - name: Compile LaTeX documents
         run: |
